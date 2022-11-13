@@ -1,0 +1,1433 @@
+/* Common CSS */
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+/* .scrollbar-track {
+    opacity: 1 !important;
+    transition: .2s all ease;
+} */
+
+/* Common CSS */
+/* Fonts */
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('/assets/fonts/GT-Walsheim-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('/assets/fonts/GT-Walsheim-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('/assets/fonts/GT-Walsheim-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universo-bold';
+    src: url('/assets/fonts/Universo-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'universo-black';
+    src: url('/assets/fonts/Universo-Black.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universo-thin';
+    src: url('/assets/fonts/Universo-Light.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'universo-rg';
+    src: url('/assets/fonts/Universo-Regular.ttf');
+    font-style: normal;
+}
+
+#smooth-content {
+    overflow-y: hidden !important;
+}
+
+/* Fonts */
+/* Preloader */
+._preloader_wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--bg); */
+    background-color: #fff;
+    border: 38px solid var(--bg);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._preloader_txt {
+    font-family: 'Universo';
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    transform: scale(1.01);
+}
+
+/* Preloader */
+/* heading */
+.line {
+    overflow: hidden;
+}
+
+/* heading */
+/* BIG */
+._rylic_big_wrapper {
+    overflow: hidden;
+    background: linear-gradient(125.17deg, #F1E4E4 -45.13%, #C3BEAE 109.3%);
+}
+
+._rylic_big_2_wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.webgl {
+    /* position: sticky;
+    top: 0; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Header */
+/* Navbar */
+._rylic_navbar_wrap {
+    padding-top: 20px;
+    background-color: var(--bg) !important;
+}
+
+._rylic_nav_btn {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    padding: 12px 20px !important;
+}
+
+._rylic_nav_btn ._rylic_cta_content_btn_ic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 8.92975px 16.3712px rgba(0, 0, 0, 0.25), inset 0px -2.23244px 2.97658px rgba(0, 0, 0, 0.45), inset 0px -5.95317px 7.44146px rgba(0, 0, 0, 0.29); */
+}
+
+._rylic_nav_btn ._rylic_cta_content_btn_txt {
+    margin: 0 6px 0 -4px;
+}
+
+/* Navbar */
+
+._rylic_header_wrapper {
+    position: relative;
+}
+
+._rylic_header_shape1 {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+._rylic_header_shape2 {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    transform: translate(0, 50%);
+}
+
+._rylic_header_cursor_wrap {
+    position: absolute;
+    min-height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+._rylic_header_cursor {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+._rylic_header_cursor1 {
+    left: 50px;
+}
+
+._rylic_header_cursor2 {
+    right: 160px;
+    z-index: 20;
+}
+
+._rylic_header_cursor3 {
+    /* top: calc(75% - 5px); */
+    top: calc(75% - 20px);
+    left: calc(50% - 70px);
+    transform: translate(-50%, 0);
+}
+
+._rylic_header_cursor_img2 {
+    position: absolute;
+    width: fit-content;
+    top: -40px;
+    left: -44px;
+}
+
+._rylic_header_shape_r_wrap {
+    position: absolute;
+    right: 300px;
+    bottom: -40px;
+    transform: rotate(-20deg);
+}
+
+._rylic_header_wrap {
+    /* padding: 100px 0 50px; */
+    padding: 18px 0 50px;
+    min-height: 560px;
+}
+
+._rylic_header_txt_title {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0 auto 18px;
+    max-width: 50%;
+}
+
+._rylic_header_txt_title2 {
+    background: #F8CE68;
+    width: fit-content;
+    color: #040229;
+    text-transform: uppercase;
+    padding: 4px 18px;
+    margin: 10px auto;
+    position: relative;
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+._rylic_header_txt_title2 span {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(100%, -100%);
+}
+
+._rylic_header_txt_p {
+    font-family: 'GT Walsheim';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.72;
+    max-width: 45%;
+    margin: 48px auto 0;
+}
+
+._rylic_header_circular_txt_wrap {
+    width: fit-content;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+._arrow {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+/* Header */
+/* Service */
+._rylic_service_wrapper {
+    padding: 130px 0 78px;
+    position: relative;
+}
+
+._rylic_service_shape {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+
+._rylic_service_heading_title {
+    font-family: universo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #121212;
+}
+
+._rylic_service_heading_title2 {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #656565;
+}
+
+._rylic_service_content_wrap {
+    margin: 68px 0 0;
+}
+
+._rylic_service_content {
+    margin: 0 -12px;
+}
+
+._rylic_service_content_top {
+    background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313559/rylic-assets/images/service1_umohhq.png");
+    background-size: cover;
+    border-radius: 15px;
+    min-height: 240px;
+    max-width: 270px;
+    position: relative;
+}
+
+._rylic_service_content_top_inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 240px;
+    min-height: 240px;
+    padding: 20px 10px 36px;
+}
+
+._service1_top ._rylic_service_content_top_img_wrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+._service2_top {
+    background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313559/rylic-assets/images/service2_ii3enu.png");
+    background-color: #040229;
+}
+
+._service3_top {
+    background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313559/rylic-assets/images/service3_hmiid0.png");
+}
+
+._service1_top ._rylic_service_content_top_img {
+    margin-top: -28px;
+}
+
+._service2_top ._rylic_service_content_top_img_wrap {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    transform: translate(-50%, -36px);
+}
+
+._service2_top ._rylic_service_content_top_img {
+    margin-top: 0px;
+}
+
+._service3_top ._rylic_service_content_top_img_wrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+._service3_top ._rylic_service_content_top_img {
+    margin-top: -28px;
+}
+
+
+._rylic_service_content_top_title {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #121212;
+    max-width: 128px;
+}
+
+._service2_top ._rylic_service_content_top_title {
+    color: #fff;
+    max-width: 240px;
+}
+
+._service3_top ._rylic_service_content_top_title {
+    color: #fff;
+    max-width: 270px;
+}
+
+._rylic_service_content_txt {
+    margin: 30px 0;
+}
+
+._service2_txt {
+    margin-top: 0;
+}
+
+._rylic_service_content_p {
+    font-family: 'GT Walsheim';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #121212;
+    max-width: 95%;
+}
+
+/* Service */
+._rylic_port_divider {
+    background: #592F00;
+    opacity: 0.24;
+    margin: 0;
+}
+
+/* Portfolio */
+._rylic_port_wrapper {
+    padding: 130px 0 100px;
+    position: relative;
+}
+
+._rylic_port_shape_ball {
+    position: absolute;
+    top: -30px;
+    right: 240px;
+}
+
+._rylic_port_wrap {
+    position: relative;
+
+}
+
+._rylic_port_shape {
+    position: absolute;
+    top: -90px;
+    left: 0;
+}
+
+._rylic_port_wrapper ._rylic_service_heading_title2 {
+    margin: 0 0 30px;
+}
+
+._rylic_port_wrapper ._rylic_service_heading_title span {
+    color: #ED2975;
+}
+
+._rylic_port_slider {
+    list-style: none;
+}
+
+._rylic_port_slider_wrap {
+    padding: 50px 0;
+}
+
+._rylic_port_slider_inner {}
+
+._rylic_port_slider_item {
+    padding: 0 15px;
+}
+
+._port_btn {
+    background: none;
+    transition: .2s all ease;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._port_prev {
+    left: auto;
+    right: 236px;
+    /* top: -40px; */
+}
+
+._port_prev g {
+    transition: .2s all ease;
+}
+
+._port_prev:hover svg g {
+    opacity: 1;
+}
+
+._port_next:hover {
+    opacity: 1;
+}
+
+._port_next {
+    right: 180px;
+    /* top: -40px; */
+}
+
+._port_prev svg {
+    width: 18px;
+}
+
+._port_next svg {
+    width: 48px;
+}
+
+._port_next g {
+    transition: .2s all ease;
+}
+
+._port_next:hover svg g {
+    opacity: 1;
+}
+
+._port_next svg path {
+    transition: .2s all ease;
+}
+
+._port_next:hover svg path {
+    opacity: 1;
+    fill: #000412;
+    stroke: #000412;
+}
+
+._rylic_port_slider_content {
+    position: relative;
+    padding: 20px 0;
+    transition: .2s all ease;
+    cursor: grab;
+}
+
+._rylic_port_slider_ball {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, 0) scale(.1);
+    transition: .2s all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    opacity: 0;
+}
+
+._rylic_port_slider_content:hover ._rylic_port_slider_ball {
+    bottom: -25px;
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+}
+
+._rylic_port_slider_content:hover {
+    transform: translate(0, -20px);
+}
+
+/* Portfolio */
+/* BIG */
+/* Process */
+._rylic_process_wrapper {
+    padding: 100px 0 10px;
+    position: relative;
+}
+
+._rylic_process_shape1 {
+    position: absolute;
+    top: -100px;
+    left: 300px;
+}
+
+._rylic_process_shape2 {
+    position: absolute;
+    top: -65px;
+    right: 300px;
+}
+
+._rylic_process_heading {
+    text-align: center;
+}
+
+._rylic_process_heading_title {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #49F595;
+    margin: 0 0 18px;
+}
+
+._rylic_process_heading_title2 {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+._rylic_process_heading_title2 span {
+    color: #F8CE68;
+}
+
+._rylic_process_content_wrap {
+    margin-top: 60px;
+}
+
+._rylic_process_content1 {
+    margin: 0 0 100px;
+}
+
+._rylic_process_content_num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #49F595;
+    border-radius: 50%;
+}
+
+._rylic_process_content_num_txt {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #121212;
+}
+
+._rylic_process_content_txt {
+    margin: 15px 0;
+}
+
+._rylic_process_content_p {
+    font-family: 'GT Walsheim';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #C0C0C9;
+}
+
+._rylic_process_content_p span {
+    color: #FFFFFF;
+}
+
+._rylic_process_content_mid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._rylic_process_content_mid_ul {
+    width: fit-content;
+}
+
+._rylic_process_content_mid_li {
+    width: fit-content;
+    margin: 14px 0;
+    transition: .35s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: bottom;
+}
+
+
+._rylic_process_content_mid_li:nth-child(odd) {
+    transform: rotate(3deg);
+}
+
+._rylic_process_content_mid_li:nth-child(even) {
+    transform: rotate(-3deg);
+}
+
+._rylic_process_content_mid_li:hover {
+    transform: rotate(0deg) !important;
+}
+
+._rylic_process_bottom_wrap {
+    margin: 50px 0;
+    position: relative;
+    z-index: 2;
+}
+
+._rylic_process_bottom_shape {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: .2;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: -1;
+    position: absolute;
+}
+
+._rylic_process_bottom_btn_wrap {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 24px;
+    background: #040229;
+}
+
+/* Process */
+/*Project css start*/
+._rylic_project_wrapper {
+    padding: 10px 0 36px;
+}
+
+._rylic_project_top {
+    margin: 0 0 50px;
+}
+
+._rylic_project_top_text_para {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FF5722;
+    margin: 0 0 18px;
+}
+
+._rylic_project_top_text_title {
+    font-family: universo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+._rylic_project_top_text_title span {
+    color: #F8CE68;
+}
+
+._rylic_project_card {
+    margin: 0 0 80px;
+    transition: .2s all ease;
+}
+
+._rylic_project_card_image {
+    /* padding: 16px; */
+    background: #fff;
+    border: 16px solid #fff;
+    margin: 0 0 30px;
+    transition: .2s all ease;
+    overflow: hidden;
+    position: relative;
+
+}
+
+._rylic_project_card_image_view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+._rylic_project_card_image:hover ._rylic_project_card_img {
+    transform: scale(1.1);
+}
+
+._rylic_project_card_image:hover ._rylic_project_card_image_view {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+._rylic_project_card_img {
+    transition: .5s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+._rylic_project_card_title {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+._rylic_project_card_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Project css end*/
+/* Marque */
+._real_marque_wrapper {
+    position: relative;
+    padding: 120px 0 56px;
+    overflow: hidden;
+}
+
+._real_marque_wrap {
+    position: relative;
+}
+
+._real_marque_shape {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    z-index: 2;
+}
+
+._real_marque_content_wrap {
+    width: 130%;
+    height: 90px;
+    background-color: #f8ce68;
+    display: flex;
+    align-items: center;
+    transform: rotate(-5deg) translate(-50px, 50px);
+    transform-origin: left bottom;
+}
+
+._real_marque_content_ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+._real_marque_content_li {
+    margin: 5px 15px;
+}
+
+/* Marque */
+/* testimonial css --*/
+._rylic_testimonial_wrapper {
+    padding: 100px 0 160px;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+._rylic_testimonial_shape {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+._rylic_testimonial_duck_shape {
+    position: absolute;
+    bottom: 0;
+    right: 400px;
+}
+
+._rylic_testimonial_top {
+    margin: 0 0 50px;
+    position: relative;
+}
+
+._rylic_testimonial_chat_shape {
+    position: absolute;
+    top: 50%;
+    transform: translate(100px, -50%);
+}
+
+._rylic_testimonial_top_text {
+    text-align: center;
+}
+
+._rylic_testimonial_text_para {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7D67FF;
+    margin: 0 0 18px;
+}
+
+._rylic_testimonial_text_title {
+    font-family: universo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+._rylic_testimonial_text_title span {
+    color: #F8CE68;
+}
+
+._rylic_testimonial_slider {
+    /* margin-right: -100%; */
+}
+
+.splide__slide {
+    padding: 0 15px;
+}
+
+._rylic_testimonial_card {
+    border: 1px solid rgb(255 255 255 / 16%);
+    padding: 25px;
+    margin: 0 0 20px;
+    height: 100%;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._rylic_testimonial_card_para {
+    font-family: 'GT Walsheim';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    color: #FFFFFF;
+    /* max-width: 84%; */
+    margin: 0 0 33px;
+}
+
+._rylic_testimonial_card_bottom {
+    display: flex;
+    align-items: center;
+}
+
+._rylic_testimonial_card_bottom_image {
+    background: #D9D9D9;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0 16px 0 0;
+}
+
+._rylic_testimonial_bottom_text_para {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #F8CE68;
+    margin: 0 0 8px;
+}
+
+._rylic_testimonial_bottom_text_title {
+    font-family: 'GT Walsheim';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+
+._rylic_testimonial_slider_wrap .splide__pagination {
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+    /* gap: 0 5px; */
+}
+
+._rylic_testimonial_slider_wrap .splide__pagination__page {
+    background: #464465;
+    opacity: 0.6;
+    border-radius: 300px;
+    width: 16px;
+    height: 8px;
+    transition: .2s all ease;
+}
+
+._rylic_testimonial_slider_wrap .splide__pagination__page.is-active {
+    opacity: 1;
+    width: 65px;
+    height: 8px;
+    transform: scale(1);
+    transition: .2s all ease;
+}
+
+.slide_list {
+    position: relative;
+}
+
+.slide_list .slick-dots {
+    bottom: -50px;
+}
+
+.slide_list .slick-dots li button {
+    background: #464465;
+    opacity: 0.6;
+    border-radius: 300px;
+    width: 20px;
+    height: 8px;
+    transition: .2s all ease;
+}
+
+.slide_list .slick-dots li button::before,
+.slide_list .slick-dots li button::after {
+    display: none;
+}
+
+.slide_list .slick-dots .slick-active button {
+    background: #fff;
+    opacity: 1;
+    transition: .2s all ease;
+}
+
+/* testimonial css --*/
+
+/* Instagram */
+._rylic_instagram_wrapper {
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+._rylic_instagram_shape {
+    position: absolute;
+    top: -58px;
+    left: 200px;
+}
+
+._rylic_instagram_bg {
+    position: absolute;
+    background: linear-gradient(124.71deg, #EAD5C1 2.12%, #CFCFCF 58.09%, #C7CFE2 108.23%);
+    width: 100%;
+    height: calc(60% - 50px);
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+._rylic_instagram_header_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+._rylic_instagram_header_img {
+    width: 65px;
+}
+
+._rylic_instagram_header_title_txt {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #121212;
+}
+
+._rylic_instagram_content_wrap {
+    margin: 60px 0 0;
+}
+
+._rylic_instagram_content_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 24px;
+    margin: 0 0 24px;
+    overflow: auto;
+}
+
+._rylic_instagram_content_ul::-webkit-scrollbar {
+    display: none;
+}
+
+._rylic_instagram_content_ul::-webkit-scrollbar-thumb {
+    /* Foreground */
+    background: #999;
+}
+
+._rylic_instagram_content_ul::-webkit-scrollbar-track {
+    /* Background */
+    background: #333;
+}
+
+._rylic_instagram_content_ul1 {
+    overflow: auto;
+}
+
+._rylic_instagram_content_li {
+    width: 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    margin: 0 12px;
+    padding: 10px;
+    background: #FFFFFF;
+    filter: grayscale(.8) brightness(0.9);
+    transition: .8s all ease;
+    box-shadow: 16px 30px 40px rgba(4, 2, 41, 0.08);
+}
+
+._rylic_instagram_content_li_img_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._rylic_instagram_content_li:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+._rylic_instagram_content_li_img {
+    width: 100%;
+}
+
+/* Instagram */
+/* Trusted */
+._rylic_trusted_wrapper {
+    padding: 0px 0 50px;
+}
+
+._rylic_trusted_heading_title {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+._rylic_trusted_content_wrap {
+    margin: 50px 0 0;
+    overflow: hidden;
+}
+
+._rylic_trusted_content {
+    margin: 30px 0;
+    display: flex;
+    gap: 0 70px;
+}
+
+._rylic_trusted_content1 {
+    justify-content: center;
+}
+
+._rylic_trusted_content2 {
+    justify-content: flex-end;
+}
+
+/* ._rylic_trusted_content_img {
+    width: 164px;
+    max-width: 164px;
+    margin: 0 auto;
+} */
+._rylic_trusted_content_img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Trusted */
+/* Cta */
+._rylic_cta_wrapper {
+    position: relative;
+}
+
+._rylic_cta_img_wrap {
+    position: relative;
+}
+
+._rylic_cta_shape {
+    position: absolute;
+    left: calc(50% + 100px);
+    top: 32px;
+    transform: rotate(-20deg);
+}
+
+._rylic_cta_img {
+    width: 140px;
+    max-width: 140px;
+    margin-bottom: -20px;
+}
+
+._rylic_cta_content_wrap {
+    border-top: 2px solid rgba(255, 255, 255, .24);
+    border-bottom: 2px solid rgba(255, 255, 255, .24);
+    padding: 40px 0;
+}
+
+._rylic_cta_content_title {
+    font-family: 'Universo';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    max-width: 80%;
+}
+
+._rylic_cta_content_btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+._cta_btn {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 32.81%, rgba(0, 0, 0, 0.02) 100%), #F8C768;
+    background-blend-mode: soft-light, normal;
+    box-shadow: inset -2.0348px -2.0348px 2.0348px rgba(0, 0, 0, 0.05), inset 2.0348px 2.0348px 2.0348px rgba(255, 255, 255, 0.2);
+    border-radius: 56.6803px;
+    padding: 21px 35px;
+    display: flex;
+    align-items: baseline;
+    gap: 0 16px;
+    animation: hueAnimation 8s ease-in-out infinite;
+    transition: .2s all ease;
+}
+
+._cta_btn:hover {
+    animation-play-state: paused;
+    filter: hue-rotate(0) !important;
+}
+
+@keyframes hueAnimation {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+._cta_btn ._rylic_cta_content_btn_txt {
+    font-family: 'GT Walsheim';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+/* Cta */
+/* Footer */
+._rylic_footer_wrapper {
+    padding: 70px 0 34px;
+}
+
+._rylic_footer_content_txt {
+    margin: 24px 0;
+}
+
+._rylic_footer_content_title {
+    font-family: universo;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+}
+
+._rylic_footer_content_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 20px;
+}
+
+._rylic_footer_content_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    transition: .2s all ease;
+}
+
+._rylic_footer_content_li:hover {
+    border-color: transparent;
+}
+
+._rylic_footer_content_li._dribbble:hover {
+    background-color: #EA4C89;
+}
+
+._rylic_footer_content_li._instagram {
+    position: relative;
+    z-index: 1;
+}
+
+._rylic_footer_content_li._instagram::before {
+    background: linear-gradient(262.99deg, #e32e37, #ee27a3), #e04583;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .2s all ease;
+}
+
+._rylic_footer_content_li._instagram:hover::before {
+    opacity: 1;
+}
+
+._rylic_footer_content_li._fb:hover {
+    background-color: #4267B2;
+}
+
+._rylic_footer_content_li._be:hover {
+    background-color: #053eff;
+}
+
+._rylic_footer_content_li._linkd:hover {
+    background-color: #0e76a8;
+}
+
+._rylic_footer_content_li_ic {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._rylic_footer_content_copy {
+    margin: 38px 0;
+}
+
+._rylic_footer_content_copy_title {
+    font-family: 'GT Walsheim';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Footer */
+/* Alpine */
+
+/* Alpine */
+/* Responsive */
+@media only screen and (min-width: 1680px) {
+    .container {
+        max-width: 1365px;
+    }
+
+    ._rylic_header_txt_title {
+        max-width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        max-width: 1560px;
+    }
+
+    ._rylic_header_wrap {
+        padding: 38px 0 50px;
+        min-height: 600px;
+    }
+}
+
+/* Responsive */
+/* Variables */
+:root {
+    --white: #fff;
+    --black: #000;
+    --bg: #040229;
+    --color-br: #310000;
+    --color-or1: #FE5100;
+    --color-or2: #FF5E3B;
+    --color-btn: #FF5E3A;
+    --color-yl: #FFDA58;
+    /* Fonts */
+    --gtRg: 'GT Walsheim';
+    --gtMd: 'GT Walsheim';
+    --gtBd: 'GT Walsheim';
+}
+
+/* Variables */
