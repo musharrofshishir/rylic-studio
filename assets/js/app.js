@@ -256,8 +256,9 @@ gsap.delayedCall(1, () => {
     let cursor1tl = gsap.timeline();
     let cursor2tl = gsap.timeline();
     let cursor3tl = gsap.timeline();
+
+    var random ;
     
-    var random 
     setInterval(function() {
       random = Math.floor(Math.random() * 3);
     },12000);
