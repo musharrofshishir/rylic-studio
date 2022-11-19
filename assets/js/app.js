@@ -261,7 +261,6 @@ gsap.delayedCall(1, () => {
     setInterval(function() {
       random = Math.floor(Math.random() * 3);
     },12000);
-    alert(random);
     function headerAnim(){
       if(random == 0){
         console.log(random)
