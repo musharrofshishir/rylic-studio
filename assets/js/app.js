@@ -133,7 +133,7 @@ gsap.delayedCall(1, () => {
       ease:'Power3.out',
       innerHTML: "<img src='https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313555/rylic-assets/images/logo_x7z1v0.svg' class='_rylic_logo_link_img' alt=''>",
       // innerHTML: "X",
-      scale: 1.8,
+      scale: 1.6,
       delay: .5
     })
     textTimeline.to("._preloader_txt", {
