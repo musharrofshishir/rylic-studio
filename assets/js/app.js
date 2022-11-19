@@ -355,7 +355,6 @@ gsap.delayedCall(1, () => {
         })
       }
     }
-
     gsap.set(headerAnim, {delay: 13, onRepeat: headerAnim, repeat: -1, repeatDelay: 13});
     
   }
