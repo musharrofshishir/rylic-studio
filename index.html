@@ -26,6 +26,7 @@
     <div id="smooth-wrapper">
         <div id="smooth-content" class="viewport">
             <div class="_rylic_header_wrapper">
+                <canvas class="head"></canvas>
                 <div class="_rylic_header_shape1">
                     <img class="_rylic_header_shape_img"
                         src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313553/rylic-assets/images/header-shape1_uganlc.svg"
@@ -406,13 +407,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="_rylic_process_content_wrap">
+                            <div x-data="selectedNumber" class="_rylic_process_content_wrap">
                                 <div class="row">
                                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                 <div class="_rylic_process_content _rylic_process_content1">
-                                                    <div class="_rylic_process_content_num">
+                                                    <div class="_rylic_process_content_num"
+                                                        :class="number == 1 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt">
                                                             1
                                                         </p>
@@ -432,7 +434,8 @@
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                 <div class="_rylic_process_content _rylic_process_content3">
-                                                    <div class="_rylic_process_content_num">
+                                                    <div class="_rylic_process_content_num"
+                                                        :class="number == 3 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt">
                                                             3
                                                         </p>
@@ -452,19 +455,19 @@
                                     <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 mx-auto">
                                         <div class="_rylic_process_content _rylic_process_content_mid">
                                             <ul class="_rylic_process_content_mid_ul">
-                                                <li class="_rylic_process_content_mid_li">
+                                                <li @click="number = 1" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313557/rylic-assets/images/process1_vj7jxx.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
-                                                <li class="_rylic_process_content_mid_li">
+                                                <li @click="number = 2" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313561/rylic-assets/images/process2_phbnvn.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
-                                                <li class="_rylic_process_content_mid_li">
+                                                <li @click="number = 3" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313557/rylic-assets/images/process3_wpydeq.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
-                                                <li class="_rylic_process_content_mid_li">
+                                                <li @click="number = 4" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313557/rylic-assets/images/process4_npfsjn.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
@@ -476,8 +479,9 @@
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                 <div class="_rylic_process_content _rylic_process_content1">
-                                                    <div class="_rylic_process_content_num">
-                                                        <p class="_rylic_process_content_num_txt">
+                                                    <div class="_rylic_process_content_num"
+                                                        :class="number == 2 ? '_wiggle':''">
+                                                        <p class="_rylic_process_content_num_txt _wiggle">
                                                             2
                                                         </p>
                                                     </div>
@@ -494,7 +498,8 @@
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                 <div class="_rylic_process_content _rylic_process_content3">
-                                                    <div class="_rylic_process_content_num">
+                                                    <div class="_rylic_process_content_num"
+                                                        :class="number == 4 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt">
                                                             4
                                                         </p>
@@ -616,7 +621,9 @@
                             <ul x-data class="_real_marque_content_ul">
                                 <template x-for="i in 2">
                                     <li class="_real_marque_content_li">
-                                        <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313555/rylic-assets/images/marquee-logo_ctyhfa.svg"
+                                        <!-- <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313555/rylic-assets/images/marquee-logo_ctyhfa.svg"
+                                            alt="logo"> -->
+                                        <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668889789/rylic-assets/images/marque_dtso7w.svg"
                                             alt="logo">
                                     </li>
                                 </template>
@@ -1229,9 +1236,10 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <div class="_rylic_footer_content_copy">
+                                    <div x-data="date" class="_rylic_footer_content_copy">
                                         <h3 class="_rylic_footer_content_copy_title">
-                                            © 2022 Rylic Studio. All Rights Reserved.
+                                            © <span x-text="year" x-init="()=>{getDate()}"></span> Rylic Studio. All
+                                            Rights Reserved.
                                         </h3>
                                     </div>
                                 </div>

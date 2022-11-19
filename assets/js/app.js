@@ -22,7 +22,7 @@ document.querySelector("#processClick").addEventListener("click", e => {
   $('._rylic_port_slider').slick({
       autoplay:true,
       arrows: false,
-      slidesToShow:4,
+      slidesToShow:5,
       adaptiveHeight: true
   });
   $('.slide_list').slick({
@@ -40,8 +40,8 @@ document.querySelector("#processClick").addEventListener("click", e => {
       // slidesToShow:3,
       // slidesToScroll:1,
       // adaptiveHeight: true,
-      pauseOnHover:false,
-      speed: 6000,
+      pauseOnHover:true,
+      speed: 5000,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: true,
@@ -60,8 +60,8 @@ document.querySelector("#processClick").addEventListener("click", e => {
       // slidesToShow:3,
       // slidesToScroll:1,
       // adaptiveHeight: true,
-      pauseOnHover:false,
-      speed: 6000,
+      pauseOnHover:true,
+      speed: 5000,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: true,
@@ -81,8 +81,8 @@ document.querySelector("#processClick").addEventListener("click", e => {
       // slidesToShow:3,
       // slidesToScroll:1,
       // adaptiveHeight: true,
-      pauseOnHover:false,
-      speed: 6000,
+      pauseOnHover:true,
+      speed: 5000,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: true,
@@ -133,39 +133,35 @@ gsap.delayedCall(1, () => {
       ease:'Power3.out',
       innerHTML: "<img src='https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313555/rylic-assets/images/logo_x7z1v0.svg' class='_rylic_logo_link_img' alt=''>",
       // innerHTML: "X",
-      scale: 1.5,
-      delay: .8
+      scale: 1.8,
+      delay: .5
     })
     textTimeline.to("._preloader_txt", {
-      duration: 0.3,
+      duration: 0.2,
       ease:'Power3.out',
       opacity:0,
-      delay: 1.2
+      delay: 1
     })
     textTimeline.to("._preloader_txt", {
       display: "none"
-    })
-    .to("._preloader_wrap",{
-      backgroundColor:'#040229',
-      duration: .4,
-      ease:'Power2.out',
-    },2.4)
+    },">")
     .to("._preloader_wrap",{
       height: 0,
-      duration: 1,
+      duration: .5,
       ease:'Power4.out',
-      delay:.5,
-      y:-100
-    })
+      y:-100,
+      opacity:0
+    },"<")
     .to("._preloader_wrap",{
-      display: "none"
+      display: "none",
+      duration: .01,
     },">")
     .from('.word',{
       y:60,
       rotate: '5deg',
       ease:'Power4.out',
       transformOrigin:'left',
-      duration: .5,
+      duration: .2,
       stagger: .01,
     },"<")
     // tl.from('.word',{
@@ -184,7 +180,7 @@ gsap.delayedCall(1, () => {
     .from('._rylic_header_txt_title2',{
       y:-1000,
       ease:'power3.out',
-      duration: .2,
+      duration: .15,
     })
     .from('._rylic_header_txt_p',{
       y:50,
@@ -225,32 +221,144 @@ gsap.delayedCall(1, () => {
     .from('._rylic_header_shape1',{
       x:-100,
       ease:'power3.out',
-      duration: .5,
+      duration: .3,
     },">")
     .from('._rylic_header_shape2',{
       x:100,
       ease:'power3.out',
-      duration: .5,
+      duration: .3,
     },"<")
     .from('._rylic_header_circular_txt_wrap',{
       ease:'power3.out',
-      duration: .8,
+      duration: .6,
       scale:0,
       y:20,
       rotate:-800
     },"<")
     .from('._rylic_header_shape_r_wrap',{
       ease:'power3.out',
-      duration: .8,
+      duration: .6,
       opacity:0,
       rotate:10,
       y:-20,
     },"<")
     .from('._arrow',{
       ease:'power3.out',
-      duration: .8,
+      duration: .6,
       opacity:0,
-    },">")
+    },">");
+
+    
+    let cursor1 = document.querySelector(("._rylic_header_cursor1"))
+    let cursor2 = document.querySelector(("._rylic_header_cursor2"))
+    let cursor3 = document.querySelector(("._rylic_header_cursor3"))
+    let box = document.querySelector(("._rylic_header_txt_title2"))
+    let cursor1tl = gsap.timeline();
+    let cursor2tl = gsap.timeline();
+    let cursor3tl = gsap.timeline();
+    
+    var random 
+    setInterval(function() {
+      random = Math.floor(Math.random() * 3);
+    },12000);
+    alert(random);
+    function headerAnim(){
+      if(random == 0){
+        console.log(random)
+        cursor1tl.to(box,{
+          ease:'power3.out',
+          duration: 1,
+          rotation:'0'
+        })
+        .to(cursor1,{
+          x:810,
+          y:-0,
+          ease:'power3.out',
+          duration: .7,
+          zIndex:20
+        })
+        .to(cursor1,{
+          y:-20,
+          ease:'power3.out',
+          duration: .7,
+        },">")
+        .from(box,{
+          ease:'power3.out',
+          duration: .7,
+          rotation:'0'
+        },"<")
+        .to(cursor1,{
+          x:0,
+          y:0,
+          ease:'power3.out',
+          duration: .7,
+        })
+      }
+      else if(random == 1){
+        cursor2tl.to(box,{
+          ease:'power3.out',
+          duration: .8,
+          rotation:'0'
+        })
+        .to(cursor2,{
+          x:-324,
+          y:-0,
+          ease:'power3.out',
+          duration: .5,
+          zIndex:20
+        })
+        .to(cursor2,{
+          y:-20,
+          ease:'power3.out',
+          duration: .5,
+        },">")
+        .from(box,{
+          ease:'power3.out',
+          duration: .5,
+          rotation:'0'
+        },"<")
+        .to(cursor2,{
+          x:0,
+          y:0,
+          ease:'power3.out',
+          duration: .5,
+        })
+      }
+      else{
+        console.log(random)
+        cursor3tl.to(box,{
+          ease:'power3.out',
+          duration: .8,
+          rotation:'0'
+        })
+        .to(cursor3,{
+          x:257,
+          y:-154,
+          ease:'power3.out',
+          duration: .6,
+          zIndex:20
+        })
+        .to(cursor3,{
+          y:-174,
+          ease:'power3.out',
+          duration: .6,
+        },">")
+        .from(box,{
+          ease:'power3.out',
+          duration: .6,
+          rotation:'0'
+        },"<")
+        .to(cursor3,{
+          x:0,
+          y:0,
+          ease:'power3.out',
+          duration: .6,
+        })
+      }
+    }
+
+    gsap.set(headerAnim, {delay: 13, onRepeat: headerAnim, repeat: -1, repeatDelay: 13});
+    
   }
   else {
     textTimeline.repeat(-1);
@@ -264,11 +372,11 @@ gsap.delayedCall(1, () => {
 
   // marque animation
   gsap.fromTo('._real_marque_content_ul',{
-    x: -2860,
+    x: -2954,
     duration:25,
     ease: "linear",
   },{
-    x: 40,
+    x: -9,
     duration:25,
     ease: "linear",
     repeat: -1
@@ -282,7 +390,7 @@ gsap.delayedCall(1, () => {
     x: -2540,
     duration:35,
     ease: "linear",
-    repeat: -1
+    repeat: -1,
   });
   gsap.fromTo('._rylic_trusted_content2',{
     x: -15,
@@ -322,8 +430,9 @@ gsap.delayedCall(1, () => {
   })
   gsap.from('._rylic_service_wrap',{
     y:60,
+    duration: .2,
     ease:"Power3.out",
-    opacity:0,
+    opacity:0.01,
     scrollTrigger:{
       trigger: '._rylic_service_wrapper',
       start: `120px 650px`
@@ -419,6 +528,10 @@ gsap.delayedCall(1, () => {
       scrub:1
     }
   })
+  // gsap.from("._rylic_testimonial_duck_shape",{
+  //   y:100,
+  //   ease:"Power3.out",
+  // })
   
   // Skew on scroll
   let proxy = { skew: 0 },
@@ -447,6 +560,10 @@ gsap.delayedCall(1, () => {
     year: '',
     getDate(){
       const getDate = new Date;
-      return getDate.getFullYear()
+      this.year = getDate.getFullYear();
     }
+  }
+
+  const selectedNumber = {
+    number: 0
   }

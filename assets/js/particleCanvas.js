@@ -3,6 +3,7 @@
  */
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
+const canvas2 = document.querySelector('canvas.head')
 const canvasWrap = document.querySelector('._rylic_big_2_wrap')
 
 // Scene
@@ -61,7 +62,7 @@ particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 
 
 // Material
 const particlesMaterial = new THREE.PointsMaterial({
-    color: '#2C2A4B',
+    color: '#403F5C',
     // color: '#fff',
     sizeAttenuation: true,
     size: 0.007
@@ -84,6 +85,11 @@ const sizes = {
     width: window.innerWidth,
     // height: window.innerHeight
     height: 2600
+}
+const sizes2 = {
+    width: window.innerWidth,
+    // height: window.innerHeight
+    height: 1800
 }
 
 window.addEventListener('resize', () => {
@@ -145,8 +151,11 @@ scene.add(cameraGroup)
 
 // Base camera
 const camera = new THREE.PerspectiveCamera(30, sizes.width / sizes.height, 0.1, 100)
+const camera2 = new THREE.PerspectiveCamera(30, sizes.width / sizes.height, 0.1, 100)
 camera.position.z = 6
+camera2.position.z = 6
 cameraGroup.add(camera)
+cameraGroup.add(camera2)
 
 /**
  * Renderer
@@ -157,6 +166,13 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+const renderer2 = new THREE.WebGLRenderer({
+    canvas: canvas2,
+    alpha: true
+})
+renderer2.setSize(sizes2.width, sizes2.height)
+renderer2.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 /**
  * Animate
@@ -179,7 +195,7 @@ const tick = () => {
     // Animate camera
     // camera.position.y = - scrollY / sizes.height * objectsDistance
     camera.position.y = - scrollY*.09 / sizes.height * objectsDistance
-
+    
     const parallaxX = cursor.x * 0.5
     const parallaxY = - cursor.y * 0.5
 
@@ -188,6 +204,7 @@ const tick = () => {
 
     // Render
     renderer.render(scene, camera)
+    renderer2.render(scene, camera2)
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
@@ -195,3 +212,12 @@ const tick = () => {
 
 tick();
 
+window.addEventListener('load',function() {
+    gsap.to(camera2.position,{
+        y:-5,
+        x:-15,
+        duration:1000,
+        yoyo:true,
+        ease: "Power3.out"
+    })
+})
