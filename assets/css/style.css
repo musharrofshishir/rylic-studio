@@ -410,6 +410,8 @@ ul {
 
 ._service1_top ._rylic_service_content_top_img {
     margin-top: -28px;
+    width: 106px;
+    max-width: 106px;
 }
 
 ._service2_top ._rylic_service_content_top_img_wrap {
@@ -421,6 +423,8 @@ ul {
 
 ._service2_top ._rylic_service_content_top_img {
     margin-top: 0px;
+    width: 116px;
+    max-width: 116px;
 }
 
 ._service3_top ._rylic_service_content_top_img_wrap {
@@ -432,6 +436,8 @@ ul {
 
 ._service3_top ._rylic_service_content_top_img {
     margin-top: -28px;
+    width: 92px;
+    max-width: 92px;
 }
 
 
@@ -490,6 +496,11 @@ ul {
     position: absolute;
     top: -30px;
     right: 240px;
+}
+
+._rylic_port_shape_ball img {
+    width: 170px;
+    max-width: 170px;
 }
 
 ._rylic_port_wrap {
@@ -624,6 +635,10 @@ ul {
     position: absolute;
     top: -100px;
     left: 300px;
+}
+
+._rylic_process_shape1 img {
+    width: 115px;
 }
 
 ._rylic_process_shape2 {

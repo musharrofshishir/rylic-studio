@@ -18,26 +18,15 @@ const objectsDistance = 4
 const material = new THREE.MeshToonMaterial({ color: '#fff' })
 
 // Meshes
-const mesh1 = new THREE.Mesh(
-    new THREE.TorusGeometry(1, 0.4, 16, 60),
-    material
-)
-const mesh2 = new THREE.Mesh(
-    new THREE.ConeGeometry(1, 2, 32),
-    material
-)
-const mesh3 = new THREE.Mesh(
-    new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16),
-    material
-)
 
-mesh1.position.y = - objectsDistance * 0
-mesh2.position.y = - objectsDistance * 1
-mesh3.position.y = - objectsDistance * 2
 
-mesh1.position.x = 2
-mesh2.position.x = - 2
-mesh3.position.x = 2
+// mesh1.position.y = - objectsDistance * 0
+// mesh2.position.y = - objectsDistance * 1
+// mesh3.position.y = - objectsDistance * 2
+
+// mesh1.position.x = 2
+// mesh2.position.x = - 2
+// mesh3.position.x = 2
 
 const sectionMeshes = ['section1', 'section2', 'section3', 'section4']
 
@@ -65,7 +54,7 @@ const particlesMaterial = new THREE.PointsMaterial({
     color: '#403F5C',
     // color: '#fff',
     sizeAttenuation: true,
-    size: 0.007
+    size: 0.01
 })
 
 // Points
@@ -88,8 +77,8 @@ const sizes = {
 }
 const sizes2 = {
     width: window.innerWidth,
-    // height: window.innerHeight
-    height: 1800
+    height: window.innerHeight
+    // height: 1800
 }
 
 window.addEventListener('resize', () => {
@@ -203,7 +192,7 @@ const tick = () => {
     cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 5 * deltaTime
 
     // Render
-    renderer.render(scene, camera)
+    // renderer.render(scene, camera)
     renderer2.render(scene, camera2)
 
     // Call tick again on the next frame

@@ -3,7 +3,7 @@ $( document ).ready(function() {
   // gsap.registerPlugin(ScrollTrigger);
 
   let smoother = ScrollSmoother.create({
-  smooth: 1,   // seconds it takes to "catch up" to native scroll position
+  smooth: .8,   // seconds it takes to "catch up" to native scroll position
   effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
 });
 
@@ -32,67 +32,67 @@ document.querySelector("#processClick").addEventListener("click", e => {
       slidesToShow:3,
       adaptiveHeight: true
   });
-  // $('._rylic_instagram_content_ul1').slick({
-  //     // autoplay:true,
-  //     // autoplaySpeed:.001,
-  //     arrows: false,
-  //     // dots: false,
-  //     // slidesToShow:3,
-  //     // slidesToScroll:1,
-  //     // adaptiveHeight: true,
-  //     pauseOnHover:true,
-  //     speed: 5000,
-  //   autoplay: true,
-  //   autoplaySpeed: 0,
-  //   centerMode: true,
-  //   cssEase: 'linear',
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   initialSlide: 1,
-  // });
-  // $('._rylic_instagram_content_ul2').slick({
-  //     // autoplay:true,
-  //     // autoplaySpeed:.001,
-  //     arrows: false,
-  //     // dots: false,
-  //     // slidesToShow:3,
-  //     // slidesToScroll:1,
-  //     // adaptiveHeight: true,
-  //     pauseOnHover:true,
-  //     speed: 5000,
-  //   autoplay: true,
-  //   autoplaySpeed: 0,
-  //   centerMode: true,
-  //   cssEase: 'linear',
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   initialSlide: 1,
-  //   rtl: true,
-  // });
-  // $('._rylic_instagram_content_ul3').slick({
-  //     // autoplay:true,
-  //     // autoplaySpeed:.001,
-  //     arrows: false,
-  //     // dots: false,
-  //     // slidesToShow:3,
-  //     // slidesToScroll:1,
-  //     // adaptiveHeight: true,
-  //     pauseOnHover:true,
-  //     speed: 5000,
-  //   autoplay: true,
-  //   autoplaySpeed: 0,
-  //   centerMode: true,
-  //   cssEase: 'linear',
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   initialSlide: 1,
-  // });
+  $('._rylic_instagram_content_ul1').slick({
+      // autoplay:true,
+      // autoplaySpeed:.001,
+      arrows: false,
+      // dots: false,
+      // slidesToShow:3,
+      // slidesToScroll:1,
+      // adaptiveHeight: true,
+      pauseOnHover:true,
+      speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+  });
+  $('._rylic_instagram_content_ul2').slick({
+      // autoplay:true,
+      // autoplaySpeed:.001,
+      arrows: false,
+      // dots: false,
+      // slidesToShow:3,
+      // slidesToScroll:1,
+      // adaptiveHeight: true,
+      pauseOnHover:true,
+      speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    rtl: true,
+  });
+  $('._rylic_instagram_content_ul3').slick({
+      // autoplay:true,
+      // autoplaySpeed:.001,
+      arrows: false,
+      // dots: false,
+      // slidesToShow:3,
+      // slidesToScroll:1,
+      // adaptiveHeight: true,
+      pauseOnHover:true,
+      speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+  });
   
     // Preloader
     const header = new SplitType("#heading");
@@ -249,114 +249,114 @@ gsap.delayedCall(1, () => {
     },">");
 
     
-    let cursor1 = document.querySelector(("._rylic_header_cursor1"))
-    let cursor2 = document.querySelector(("._rylic_header_cursor2"))
-    let cursor3 = document.querySelector(("._rylic_header_cursor3"))
-    let box = document.querySelector(("._rylic_header_txt_title2"))
-    let cursor1tl = gsap.timeline();
-    let cursor2tl = gsap.timeline();
-    let cursor3tl = gsap.timeline();
+    // let cursor1 = document.querySelector(("._rylic_header_cursor1"))
+    // let cursor2 = document.querySelector(("._rylic_header_cursor2"))
+    // let cursor3 = document.querySelector(("._rylic_header_cursor3"))
+    // let box = document.querySelector(("._rylic_header_txt_title2"))
+    // let cursor1tl = gsap.timeline();
+    // let cursor2tl = gsap.timeline();
+    // let cursor3tl = gsap.timeline();
 
-    var random ;
+    // var random ;
     
-    setInterval(function() {
-      random = Math.floor(Math.random() * 3);
-    },12000);
-    function headerAnim(){
-      if(random == 0){
-        console.log(random)
-        cursor1tl.to(box,{
-          ease:'power3.out',
-          duration: 1,
-          rotation:'0'
-        })
-        .to(cursor1,{
-          x:810,
-          y:-0,
-          ease:'power3.out',
-          duration: .7,
-          zIndex:20
-        })
-        .to(cursor1,{
-          y:-20,
-          ease:'power3.out',
-          duration: .7,
-        },">")
-        .from(box,{
-          ease:'power3.out',
-          duration: .7,
-          rotation:'0'
-        },"<")
-        .to(cursor1,{
-          x:0,
-          y:0,
-          ease:'power3.out',
-          duration: .7,
-        })
-      }
-      else if(random == 1){
-        cursor2tl.to(box,{
-          ease:'power3.out',
-          duration: .8,
-          rotation:'0'
-        })
-        .to(cursor2,{
-          x:-324,
-          y:-0,
-          ease:'power3.out',
-          duration: .5,
-          zIndex:20
-        })
-        .to(cursor2,{
-          y:-20,
-          ease:'power3.out',
-          duration: .5,
-        },">")
-        .from(box,{
-          ease:'power3.out',
-          duration: .5,
-          rotation:'0'
-        },"<")
-        .to(cursor2,{
-          x:0,
-          y:0,
-          ease:'power3.out',
-          duration: .5,
-        })
-      }
-      else{
-        console.log(random)
-        cursor3tl.to(box,{
-          ease:'power3.out',
-          duration: .8,
-          rotation:'0'
-        })
-        .to(cursor3,{
-          x:257,
-          y:-154,
-          ease:'power3.out',
-          duration: .6,
-          zIndex:20
-        })
-        .to(cursor3,{
-          y:-174,
-          ease:'power3.out',
-          duration: .6,
-        },">")
-        .from(box,{
-          ease:'power3.out',
-          duration: .6,
-          rotation:'0'
-        },"<")
-        .to(cursor3,{
-          x:0,
-          y:0,
-          ease:'power3.out',
-          duration: .6,
-        })
-      }
-    }
-    gsap.set(headerAnim, {delay: 13, onRepeat: headerAnim, repeat: -1, repeatDelay: 13});
+    // setInterval(function() {
+    //   random = Math.floor(Math.random() * 3);
+    // },12000);
+    // function headerAnim(){
+    //   if(random == 0){
+    //     console.log(random)
+    //     cursor1tl.to(box,{
+    //       ease:'power3.out',
+    //       duration: 1,
+    //       rotation:'0'
+    //     })
+    //     .to(cursor1,{
+    //       x:810,
+    //       y:-0,
+    //       ease:'power3.out',
+    //       duration: .7,
+    //       zIndex:20
+    //     })
+    //     .to(cursor1,{
+    //       y:-20,
+    //       ease:'power3.out',
+    //       duration: .7,
+    //     },">")
+    //     .from(box,{
+    //       ease:'power3.out',
+    //       duration: .7,
+    //       rotation:'0'
+    //     },"<")
+    //     .to(cursor1,{
+    //       x:0,
+    //       y:0,
+    //       ease:'power3.out',
+    //       duration: .7,
+    //     })
+    //   }
+    //   else if(random == 1){
+    //     cursor2tl.to(box,{
+    //       ease:'power3.out',
+    //       duration: .8,
+    //       rotation:'0'
+    //     })
+    //     .to(cursor2,{
+    //       x:-324,
+    //       y:-0,
+    //       ease:'power3.out',
+    //       duration: .5,
+    //       zIndex:20
+    //     })
+    //     .to(cursor2,{
+    //       y:-20,
+    //       ease:'power3.out',
+    //       duration: .5,
+    //     },">")
+    //     .from(box,{
+    //       ease:'power3.out',
+    //       duration: .5,
+    //       rotation:'0'
+    //     },"<")
+    //     .to(cursor2,{
+    //       x:0,
+    //       y:0,
+    //       ease:'power3.out',
+    //       duration: .5,
+    //     })
+    //   }
+    //   else{
+    //     console.log(random)
+    //     cursor3tl.to(box,{
+    //       ease:'power3.out',
+    //       duration: .8,
+    //       rotation:'0'
+    //     })
+    //     .to(cursor3,{
+    //       x:257,
+    //       y:-154,
+    //       ease:'power3.out',
+    //       duration: .6,
+    //       zIndex:20
+    //     })
+    //     .to(cursor3,{
+    //       y:-174,
+    //       ease:'power3.out',
+    //       duration: .6,
+    //     },">")
+    //     .from(box,{
+    //       ease:'power3.out',
+    //       duration: .6,
+    //       rotation:'0'
+    //     },"<")
+    //     .to(cursor3,{
+    //       x:0,
+    //       y:0,
+    //       ease:'power3.out',
+    //       duration: .6,
+    //     })
+    //   }
+    // }
+    // gsap.set(headerAnim, {delay: 13, onRepeat: headerAnim, repeat: -1, repeatDelay: 13});
     
   }
   else {
