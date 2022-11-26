@@ -192,7 +192,9 @@ const tick = () => {
     cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 5 * deltaTime
 
     // Render
-    // renderer.render(scene, camera)
+    // process
+    renderer.render(scene, camera)
+    // header
     renderer2.render(scene, camera2)
 
     // Call tick again on the next frame
