@@ -65,7 +65,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light _rylic_navbar_wrap">
                     <div class="container">
                         <a class="navbar-brand _rylic_logo_link_wrap" href="#0">
-                            <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313555/rylic-assets/images/logo_x7z1v0.svg"
+                            <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1669690761/new-images/logo_syalzn.svg"
                                 class="_rylic_logo_link_img" alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -74,6 +74,23 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav _nav_ul2 mx-auto">
+                                <li class="nav-item _nav_li">
+                                    <a id="serviceClick" class="_nav_link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-item _nav_li">
+                                    <a id="projectClick" class="_nav_link">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li class="nav-item _nav_li">
+                                    <a href="#0" class="_nav_link">
+                                        UI Shop
+                                    </a>
+                                </li>
+                            </ul>
                             <ul class="navbar-nav _nav_ul ms-auto">
                                 <li class="nav-item _nav_li">
                                     <div class="_rylic_process_bottom_btn_wrap">
@@ -94,7 +111,6 @@
                                         </button>
                                     </div>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -382,9 +398,9 @@
             </div>
             <!-- Big -->
             <div class="_rylic_big_2_wrap">
-                <canvas class="webgl"></canvas>
                 <!-- Process -->
                 <div id="process" class="_rylic_process_wrapper">
+                    <canvas class="webgl"></canvas>
                     <div class="_rylic_process_shape1">
                         <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1669354655/new-images/book_h8ksgt.png"
                             alt="">
@@ -455,19 +471,19 @@
                                     <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 mx-auto">
                                         <div class="_rylic_process_content _rylic_process_content_mid">
                                             <ul class="_rylic_process_content_mid_ul">
-                                                <li @click="number = 1" class="_rylic_process_content_mid_li">
+                                                <li @mouseover="number = 1" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313557/rylic-assets/images/process1_vj7jxx.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
-                                                <li @click="number = 2" class="_rylic_process_content_mid_li">
+                                                <li @mouseover="number = 2" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313561/rylic-assets/images/process2_phbnvn.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
-                                                <li @click="number = 3" class="_rylic_process_content_mid_li">
+                                                <li @mouseover="number = 3" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313557/rylic-assets/images/process3_wpydeq.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
-                                                <li @click="number = 4" class="_rylic_process_content_mid_li">
+                                                <li @mouseover="number = 4" class="_rylic_process_content_mid_li">
                                                     <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313557/rylic-assets/images/process4_npfsjn.svg"
                                                         alt="process" class="_rylic_process_content_mid_img">
                                                 </li>
@@ -549,14 +565,14 @@
                 </div>
                 <!-- Process -->
                 <!--project section start-->
-                <div class="_rylic_project_wrapper">
+                <div id="project" class="_rylic_project_wrapper">
                     <div class="_rylic_project_wrap">
                         <div class="container">
                             <div class="_rylic_project_top">
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <div class="_rylic_project_top_text">
-                                            <h4 class="_rylic_project_top_text_para">Live projects</h4>
+                                            <h4 class="_rylic_project_top_text_para">Recent projects</h4>
                                             <h2 class="_rylic_project_top_text_title">Recent <span>Projects</span></h2>
                                         </div>
                                     </div>
@@ -669,12 +685,11 @@
                                             <ul class="slide_list">
                                                 <li class="splide__slide">
                                                     <div class="_rylic_testimonial_card">
-                                                        <p class="_rylic_testimonial_card_para">Rylic Team created an
-                                                            entirely
-                                                            new
-                                                            landing page
-                                                            dedicated for our high performing mobile app and its special
-                                                            features.
+                                                        <p class="_rylic_testimonial_card_para">
+                                                            Rylic Team did a great
+                                                            job turning our product idea into a reality. They perfectly
+                                                            understood the requirements, delivered on time and the
+                                                            communication was easy.
                                                         </p>
                                                         <div class="_rylic_testimonial_card_bottom">
                                                             <div class="_rylic_testimonial_bottom_text">
@@ -690,18 +705,12 @@
                                                 </li>
                                                 <li class="splide__slide">
                                                     <div class="_rylic_testimonial_card">
-                                                        <p class="_rylic_testimonial_card_para">Rylic has been a great
-                                                            help
-                                                            to
-                                                            my
-                                                            web development company, I have been working with them for
-                                                            over
-                                                            2
-                                                            years
+                                                        <p class="_rylic_testimonial_card_para">
+                                                            Rylic studio has been a great help to my web development
+                                                            company, I have been working with them for over 2 years and
                                                             I'm looking forward to continuing working with them for many
-                                                            years
-                                                            to
-                                                            come.</p>
+                                                            years to come.
+                                                        </p>
                                                         <div class="_rylic_testimonial_card_bottom">
                                                             <div class="_rylic_testimonial_bottom_text">
                                                                 <h4 class="_rylic_testimonial_bottom_text_para">Aadam
@@ -716,16 +725,11 @@
                                                 </li>
                                                 <li class="splide__slide">
                                                     <div class="_rylic_testimonial_card">
-                                                        <p class="_rylic_testimonial_card_para">Overall the process was
-                                                            very
-                                                            smooth.
-                                                            You gave us updates on a daily basis and whenever we gave
-                                                            you
-                                                            feedback
-                                                            on adjustments you finished it as soon as you can and
-                                                            respected
-                                                            our
-                                                            deadline.
+                                                        <p class="_rylic_testimonial_card_para">
+                                                            The thing that makes Rylic Studio a cut above the rest is
+                                                            their ability to intuitively understand our product concepts
+                                                            and convey them into designs that speak a thousand words. I
+                                                            look forward to working with them again.
                                                         </p>
                                                         <div class="_rylic_testimonial_card_bottom">
                                                             <div class="_rylic_testimonial_bottom_text">
@@ -1173,11 +1177,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                                 <div class="_rylic_footer_content">
                                     <div class="_rylic_footer_content_logo_wrap">
-                                        <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313552/rylic-assets/images/ft-logo_yfdqjs.svg"
+                                        <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1669691915/new-images/logo-ft_xb9jay.svg"
                                             alt="footer-logo-rylic" class="_rylic_footer_logo">
-                                    </div>
-                                    <div class="_rylic_footer_content_txt">
-                                        <h3 class="_rylic_footer_content_title">Rylic Studios</h3>
                                     </div>
                                 </div>
                             </div>

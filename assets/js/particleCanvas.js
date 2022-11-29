@@ -72,8 +72,8 @@ scene.add(directionalLight)
  */
 const sizes = {
     width: window.innerWidth,
-    // height: window.innerHeight
-    height: 2600
+    height: window.innerHeight
+    // height: 2600
 }
 const sizes2 = {
     width: window.innerWidth,

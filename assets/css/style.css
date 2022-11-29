@@ -60,7 +60,7 @@ ul {
 }
 
 @font-face {
-    font-family: 'GT Walsheim';
+    font-family: 'GT Walsheim-md';
     src: url('/assets/fonts/GT-Walsheim-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -68,7 +68,7 @@ ul {
 
 
 @font-face {
-    font-family: 'GT Walsheim';
+    font-family: 'GT Walsheim-rg';
     src: url('/assets/fonts/GT-Walsheim-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -171,11 +171,47 @@ ul {
     background-color: transparent !important;
 }
 
+#processClick {
+    cursor: pointer;
+}
+
+#serviceClick {
+    cursor: pointer;
+}
+
+#projectClick {
+    cursor: pointer;
+}
+
+._rylic_logo_link_wrap {
+    margin: 0 220px 0 0;
+}
+
+._nav_ul2 ._nav_li {
+    margin: 0 20px;
+}
+
+._nav_link {
+    font-family: 'GT Walsheim';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
 ._rylic_nav_btn {
     display: flex;
     align-items: center !important;
     justify-content: center;
     padding: 12px 20px !important;
+}
+
+._rylic_nav_btn:hover ._rylic_cta_content_btn_ic {
+    transform: rotate(0) !important;
 }
 
 ._rylic_nav_btn ._rylic_cta_content_btn_ic {
@@ -255,18 +291,18 @@ ul {
 ._rylic_header_wrap {
     /* padding: 100px 0 50px; */
     padding: 18px 0 50px;
-    min-height: 560px;
+    min-height: 580px;
 }
 
 ._rylic_header_txt_title {
     font-family: 'Universo';
-    font-weight: 400;
+    font-weight: bold;
     font-size: 52px;
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin: 0 auto 18px;
+    margin: 20px auto 18px;
     max-width: 50%;
 }
 
@@ -300,7 +336,7 @@ ul {
     text-align: center;
     color: #FFFFFF;
     opacity: 0.72;
-    max-width: 45%;
+    max-width: 40%;
     margin: 48px auto 0;
 }
 
@@ -337,7 +373,7 @@ ul {
 /* Header */
 /* Service */
 ._rylic_service_wrapper {
-    padding: 130px 0 78px;
+    padding: 104px 0 78px;
     position: relative;
 }
 
@@ -406,6 +442,10 @@ ul {
 
 ._service3_top {
     background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313559/rylic-assets/images/service3_hmiid0.png");
+    background-color: #ff6813;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -9px;
 }
 
 ._service1_top ._rylic_service_content_top_img {
@@ -431,7 +471,7 @@ ul {
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50%, 0);
+    transform: translate(calc(-50% - 3px), 0);
 }
 
 ._service3_top ._rylic_service_content_top_img {
@@ -791,7 +831,7 @@ ul {
     width: 100%;
     height: 2px;
     background-color: #fff;
-    opacity: .2;
+    opacity: .15;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
@@ -1123,15 +1163,15 @@ ul {
     padding: 25px;
     margin: 0 0 20px;
     height: 100%;
-    min-height: 315px;
+    min-height: 325px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 ._rylic_testimonial_card_para {
-    font-family: 'GT Walsheim';
-    font-weight: 500;
+    font-family: 'GT Walsheim-rg';
+    /* font-weight: 500; */
     font-size: 20px;
     line-height: 31px;
     color: #FFFFFF;
@@ -1153,8 +1193,8 @@ ul {
 }
 
 ._rylic_testimonial_bottom_text_para {
-    font-family: 'GT Walsheim';
-    font-weight: 700;
+    font-family: 'GT Walsheim-md';
+    /* font-weight: 700; */
     font-size: 16px;
     line-height: 18px;
     color: #F8CE68;
@@ -1391,8 +1431,8 @@ ul {
 }
 
 ._rylic_cta_content_wrap {
-    border-top: 2px solid rgba(255, 255, 255, .24);
-    border-bottom: 2px solid rgba(255, 255, 255, .24);
+    border-top: 2px solid rgba(255, 255, 255, .15);
+    border-bottom: 2px solid rgba(255, 255, 255, .15);
     padding: 40px 0;
 }
 
@@ -1421,23 +1461,19 @@ ul {
     display: flex;
     align-items: baseline;
     gap: 0 16px;
-    animation: hueAnimation 8s ease-in-out infinite;
     transition: .2s all ease;
 }
 
 ._cta_btn:hover {
-    animation-play-state: paused;
-    filter: hue-rotate(0) !important;
+    background: #eeba55;
 }
 
-@keyframes hueAnimation {
-    from {
-        filter: hue-rotate(0deg);
-    }
+._rylic_cta_content_btn_ic {
+    transition: .2s all ease;
+}
 
-    to {
-        filter: hue-rotate(360deg);
-    }
+._cta_btn:hover ._rylic_cta_content_btn_ic {
+    transform: rotate(50deg);
 }
 
 ._cta_btn ._rylic_cta_content_btn_txt {
