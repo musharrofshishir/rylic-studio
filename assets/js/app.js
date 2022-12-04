@@ -167,7 +167,7 @@ $(document).ready(function () {
       textTimeline.to("._preloader_txt", {
         duration: 0.1,
         ease: 'Power3.out',
-        innerHTML: "<img src='https://res.cloudinary.com/dmnwzu0xb/image/upload/v1669690761/new-images/logo_syalzn.svg' class='_rylic_logo_link_img' alt=''>",
+        innerHTML: "<img src='https://res.cloudinary.com/dmnwzu0xb/image/upload/v1670118902/new-images/logo_pd3pd9.svg' class='_rylic_logo_link_img' alt=''>",
         // innerHTML: "X",
         scale: 1.6,
         delay: .5
@@ -501,7 +501,7 @@ $(document).ready(function () {
     delay: 1.5
   })
   gsap.from('._rylic_service_content_top_img2', {
-    y: 20,
+    y: 40,
     ease: "Power3.out",
     scrollTrigger: {
       trigger: '._rylic_service_content_wrap',
