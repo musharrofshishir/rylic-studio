@@ -1,7 +1,6 @@
 $(document).ready(function () {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   // gsap.registerPlugin(ScrollTrigger);
-
   let smoother = ScrollSmoother.create({
     smooth: 1,   // seconds it takes to "catch up" to native scroll position
     effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
@@ -68,67 +67,72 @@ $(document).ready(function () {
     slidesToShow: 3,
     adaptiveHeight: true
   });
-  $('._rylic_instagram_content_ul1').slick({
-    // autoplay:true,
-    // autoplaySpeed:.001,
-    arrows: false,
-    // dots: false,
-    // slidesToShow:3,
-    // slidesToScroll:1,
-    // adaptiveHeight: true,
-    pauseOnHover: true,
-    speed: 5000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    centerMode: true,
-    cssEase: 'linear',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    infinite: true,
-    initialSlide: 1,
-  });
-  $('._rylic_instagram_content_ul2').slick({
-    // autoplay:true,
-    // autoplaySpeed:.001,
-    arrows: false,
-    // dots: false,
-    // slidesToShow:3,
-    // slidesToScroll:1,
-    // adaptiveHeight: true,
-    pauseOnHover: true,
-    speed: 5000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    centerMode: true,
-    cssEase: 'linear',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    infinite: true,
-    initialSlide: 1,
-    rtl: true,
-  });
-  $('._rylic_instagram_content_ul3').slick({
-    // autoplay:true,
-    // autoplaySpeed:.001,
-    arrows: false,
-    // dots: false,
-    // slidesToShow:3,
-    // slidesToScroll:1,
-    // adaptiveHeight: true,
-    pauseOnHover: true,
-    speed: 5000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    centerMode: true,
-    cssEase: 'linear',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    infinite: true,
-    initialSlide: 1,
-  });
+
+  // instagram scroll
+  // $('._rylic_instagram_content_ul1').slick({
+  //   // autoplay:true,
+  //   // autoplaySpeed:.001,
+  //   arrows: false,
+  //   // dots: false,
+  //   // slidesToShow:3,
+  //   // slidesToScroll:1,
+  //   // adaptiveHeight: true,
+  //   speed: 5000,
+  //   autoplay: true,
+  //   autoplaySpeed: 0,
+  //   centerMode: true,
+  //   cssEase: 'linear',
+  //   // slidesToShow: 1,
+  //   // slidesToScroll: 1,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 0.1,
+  //   variableWidth: true,
+  //   pauseOnHover: true,
+  //   infinite: true,
+  //   initialSlide: 1,
+  // });
+  // $('._rylic_instagram_content_ul2').slick({
+  //   // autoplay:true,
+  //   // autoplaySpeed:.001,
+  //   arrows: false,
+  //   // dots: false,
+  //   // slidesToShow:3,
+  //   // slidesToScroll:1,
+  //   // adaptiveHeight: true,
+  //   pauseOnHover: true,
+  //   speed: 5000,
+  //   autoplay: true,
+  //   autoplaySpeed: 0,
+  //   centerMode: true,
+  //   cssEase: 'linear',
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   variableWidth: true,
+  //   infinite: true,
+  //   initialSlide: 1,
+  //   rtl: true,
+  // });
+  // $('._rylic_instagram_content_ul3').slick({
+  //   // autoplay:true,
+  //   // autoplaySpeed:.001,
+  //   arrows: false,
+  //   // dots: false,
+  //   // slidesToShow:3,
+  //   // slidesToScroll:1,
+  //   // adaptiveHeight: true,
+  //   pauseOnHover: true,
+  //   speed: 5000,
+  //   autoplay: true,
+  //   autoplaySpeed: 0,
+  //   centerMode: true,
+  //   cssEase: 'linear',
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   variableWidth: true,
+  //   infinite: true,
+  //   initialSlide: 1,
+  // });
+  // instagram scroll
 
   // Preloader
   const header = new SplitType("#heading");
