@@ -160,7 +160,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 /* Header */
@@ -184,11 +184,16 @@ ul {
 }
 
 ._rylic_logo_link_wrap {
-    margin: 0 270px 0 0;
+    margin: 0 250px 0 0;
 }
 
 ._nav_ul2 ._nav_li {
     margin: 0 25px;
+}
+
+._nav_li ._rylic_process_bottom_btn_wrap {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 ._nav_link {
@@ -310,7 +315,7 @@ ul {
 ._rylic_header_txt_title2 {
     background: #F8CE68;
     width: fit-content;
-    color: #040229;
+    color: #121212;
     text-transform: uppercase;
     padding: 8px 18px 4px;
     font-weight: 500;
@@ -338,7 +343,7 @@ ul {
     text-align: center;
     color: #FFFFFF;
     opacity: 0.72;
-    max-width: 40%;
+    max-width: 526px;
     margin: 40px auto 0;
 }
 
@@ -413,7 +418,7 @@ ul {
 }
 
 ._rylic_service_content_top {
-    background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313559/rylic-assets/images/service1_umohhq.png");
+    background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1670811766/new-images/service1_e64oag.png");
     background-size: cover;
     border-radius: 15px;
     min-height: 240px;
@@ -656,7 +661,7 @@ ul {
 }
 
 ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
-    bottom: -25px;
+    bottom: -40px;
     opacity: 1;
     transform: translate(-50%, 0) scale(1);
 }
@@ -674,14 +679,16 @@ ul {
     z-index: 2;
 }
 
-/* ._process_overlay {
+._process_overlay {
     position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(180.06deg, #040229 0.05%, #040229 89.91%);
-} */
+    transform: rotate(180deg);
+    background: linear-gradient(180deg, #040229 0%, rgba(4, 2, 41, 0.2) 38.95%, rgba(4, 2, 41, 0) 84.01%);
+}
 
 ._rylic_process_shape1 {
     position: absolute;
@@ -862,6 +869,9 @@ ul {
 /*Project css start*/
 ._rylic_project_wrapper {
     padding: 20px 0 36px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--bg);
 }
 
 ._rylic_project_top {
@@ -1175,7 +1185,7 @@ ul {
     padding: 25px;
     margin: 0 0 20px;
     height: 100%;
-    min-height: 260px;
+    min-height: 272px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1441,7 +1451,7 @@ ul {
 ._rylic_cta_shape {
     position: absolute;
     left: calc(50% + 100px);
-    top: 32px;
+    top: 54px;
     transform: rotate(-20deg);
 }
 
@@ -1449,7 +1459,10 @@ ul {
     width: 140px;
     max-width: 140px;
     margin-bottom: -20px;
-    animation: tilt-shaking .1s ease-in-out infinite;
+}
+
+._rylic_cta_img_anim {
+    animation: tilt-shaking .1s linear infinite;
 }
 
 @keyframes tilt-shaking {
@@ -1462,7 +1475,7 @@ ul {
     }
 
     50% {
-        transform: rotate(0eg);
+        transform: rotate(0deg);
     }
 
     75% {
@@ -1670,3 +1683,42 @@ ul {
 }
 
 /* Variables */
+.menu {
+    overflow: hidden;
+    cursor: grab;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 230px;
+}
+
+.menu.is-dragging {
+    cursor: grabbing;
+}
+
+.menu--wrapper {
+    counter-reset: count;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu--item {
+    counter-increment: count;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 0 12px;
+    overflow: hidden;
+}
+
+.menu--item figure {}
+
+.menu--item figure img {}

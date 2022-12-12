@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  setInterval(()=>{
+    if($('._rylic_cta_img').hasClass('_rylic_cta_img_anim')){
+      $('._rylic_cta_img').removeClass('_rylic_cta_img_anim')
+    }
+    else {
+      $('._rylic_cta_img').addClass('_rylic_cta_img_anim')
+    }
+  },4000);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   // gsap.registerPlugin(ScrollTrigger);
   let smoother = ScrollSmoother.create({
@@ -591,6 +599,15 @@ $(document).ready(function () {
     ease: 'Power3.out',
     scrollTrigger: {
       trigger: '._rylic_testimonial_wrapper',
+      scrub: 1
+    }
+  })
+  gsap.to('._rylic_cta_shape', {
+    y: 10,
+    rotation: 8,
+    ease: 'Power3.out',
+    scrollTrigger: {
+      trigger: '._rylic_cta_wrapper',
       scrub: 1
     }
   })
