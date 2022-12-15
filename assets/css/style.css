@@ -1313,6 +1313,10 @@ ul {
     left: 200px;
 }
 
+._rylic_instagram_shape img {
+    margin: 1px 0 0 0;
+}
+
 ._rylic_instagram_bg {
     position: absolute;
     background: linear-gradient(124.71deg, #EAD5C1 2.12%, #CFCFCF 58.09%, #C7CFE2 108.23%);
