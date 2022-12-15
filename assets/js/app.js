@@ -640,6 +640,15 @@ $(document).ready(function () {
       scrub: 1
     },
   })
+  gsap.from('._rylic_port_slider', {
+    x:300,
+    opacity:0,
+    ease: 'Power3.out',
+    scrollTrigger: {
+      trigger: '._rylic_port_slider_wrap',
+    },
+    duration:1
+  })
   // gsap.from("._rylic_testimonial_duck_shape",{
   //   y:100,
   //   ease:"Power3.out",
