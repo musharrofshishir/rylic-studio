@@ -518,9 +518,9 @@ ul {
 }
 
 ._rylic_service_content_p {
-    font-family: 'GT Walsheim';
+    font-family: 'GT Walsheim-md';
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 26px;
     color: #121212;
     max-width: 95%;
@@ -571,6 +571,7 @@ ul {
 
 ._rylic_port_slider {
     list-style: none;
+    height: 370px;
 }
 
 ._rylic_port_slider_wrap {
@@ -583,6 +584,13 @@ ul {
 
 ._rylic_port_slider_item {
     padding: 0 15px;
+    width: 370px;
+    max-width: 370px;
+    height: 364px;
+}
+
+._rylic_port_slider_content2 {
+    margin: 0 -18px 0 0;
 }
 
 ._port_btn {
@@ -950,8 +958,8 @@ ul {
 }
 
 ._rylic_project_card_title {
-    font-family: 'GT Walsheim';
-    font-weight: 700;
+    font-family: 'GT Walsheim-md';
+    font-weight: 500;
     font-size: 24px;
     line-height: 27px;
     color: #FFFFFF;
@@ -1221,7 +1229,7 @@ ul {
 
 ._rylic_testimonial_bottom_text_para {
     font-family: 'GT Walsheim-md';
-    /* font-weight: 700; */
+    font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     color: #F8CE68;
@@ -1229,7 +1237,7 @@ ul {
 }
 
 ._rylic_testimonial_bottom_text_title {
-    font-family: 'GT Walsheim';
+    font-family: 'GT Walsheim-rg';
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
@@ -1348,6 +1356,7 @@ ul {
     gap: 24px 24px;
     margin: 0 0 24px;
     overflow: auto;
+    pointer-events: none !important;
 }
 
 ._rylic_instagram_content_ul::-webkit-scrollbar {
@@ -1376,8 +1385,8 @@ ul {
     margin: 0 12px;
     padding: 10px;
     background: #FFFFFF;
-    filter: brightness(0.9);
-    transition: .8s all ease;
+    /* filter: brightness(0.9); */
+    /* transition: .8s all ease; */
     box-shadow: 16px 30px 40px rgba(4, 2, 41, 0.08);
 }
 

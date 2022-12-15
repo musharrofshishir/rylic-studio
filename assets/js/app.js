@@ -6,7 +6,7 @@ $(document).ready(function () {
     else {
       $('._rylic_cta_img').addClass('_rylic_cta_img_anim')
     }
-  },4000);
+  },2000);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   // gsap.registerPlugin(ScrollTrigger);
   let smoother = ScrollSmoother.create({
@@ -58,16 +58,29 @@ $(document).ready(function () {
       duration: 1
     });
   });
-
-  $('._rylic_port_slider').slick({
-    autoplay: true,
-    pauseOnHover: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    slidesToShow: 5,
-    adaptiveHeight: true,
-    swipeToSlide: true
+  var elem = document.querySelector('._rylic_port_slider');
+  var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'center',
+    contain: true,
+    pageDots: false,
+    draggable: true,
+    wrapAround: true,
+    dragThreshold: 0,
+    freeScroll: true,
+    pauseAutoPlayOnHover: false,
+    selectedAttraction: 0.01,
+    friction: 0.15
   });
+  // $('._rylic_port_slider').slick({
+  //   autoplay: false,
+  //   pauseOnHover: true,
+  //   autoplaySpeed: 1500,
+  //   arrows: false,
+  //   slidesToShow: 5,
+  //   adaptiveHeight: true,
+  //   swipeToSlide: true
+  // });
   $('.slide_list').slick({
     autoplay: true,
     arrows: false,
@@ -77,69 +90,69 @@ $(document).ready(function () {
   });
 
   // instagram scroll
-  // $('._rylic_instagram_content_ul1').slick({
-  //   // autoplay:true,
-  //   // autoplaySpeed:.001,
-  //   arrows: false,
-  //   // dots: false,
-  //   // slidesToShow:3,
-  //   // slidesToScroll:1,
-  //   // adaptiveHeight: true,
-  //   speed: 5000,
-  //   autoplay: true,
-  //   autoplaySpeed: 0,
-  //   centerMode: true,
-  //   cssEase: 'linear',
-  //   // slidesToShow: 1,
-  //   // slidesToScroll: 1,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 0.1,
-  //   variableWidth: true,
-  //   pauseOnHover: true,
-  //   infinite: true,
-  //   initialSlide: 1,
-  // });
-  // $('._rylic_instagram_content_ul2').slick({
-  //   // autoplay:true,
-  //   // autoplaySpeed:.001,
-  //   arrows: false,
-  //   // dots: false,
-  //   // slidesToShow:3,
-  //   // slidesToScroll:1,
-  //   // adaptiveHeight: true,
-  //   pauseOnHover: true,
-  //   speed: 5000,
-  //   autoplay: true,
-  //   autoplaySpeed: 0,
-  //   centerMode: true,
-  //   cssEase: 'linear',
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   initialSlide: 1,
-  //   rtl: true,
-  // });
-  // $('._rylic_instagram_content_ul3').slick({
-  //   // autoplay:true,
-  //   // autoplaySpeed:.001,
-  //   arrows: false,
-  //   // dots: false,
-  //   // slidesToShow:3,
-  //   // slidesToScroll:1,
-  //   // adaptiveHeight: true,
-  //   pauseOnHover: true,
-  //   speed: 5000,
-  //   autoplay: true,
-  //   autoplaySpeed: 0,
-  //   centerMode: true,
-  //   cssEase: 'linear',
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   initialSlide: 1,
-  // });
+  $('._rylic_instagram_content_ul1').slick({
+    // autoplay:true,
+    // autoplaySpeed:.001,
+    arrows: false,
+    // dots: false,
+    // slidesToShow:3,
+    // slidesToScroll:1,
+    // adaptiveHeight: true,
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 0.1,
+    variableWidth: true,
+    pauseOnHover: true,
+    infinite: true,
+    initialSlide: 1,
+  });
+  $('._rylic_instagram_content_ul2').slick({
+    // autoplay:true,
+    // autoplaySpeed:.001,
+    arrows: false,
+    // dots: false,
+    // slidesToShow:3,
+    // slidesToScroll:1,
+    // adaptiveHeight: true,
+    pauseOnHover: true,
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    rtl: true,
+  });
+  $('._rylic_instagram_content_ul3').slick({
+    // autoplay:true,
+    // autoplaySpeed:.001,
+    arrows: false,
+    // dots: false,
+    // slidesToShow:3,
+    // slidesToScroll:1,
+    // adaptiveHeight: true,
+    pauseOnHover: true,
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+  });
   // instagram scroll
 
   // Preloader
@@ -244,8 +257,8 @@ $(document).ready(function () {
           stagger: .1
         })
         .to('._rylic_header_cursor2', {
-          x: -324,
-          y: -0,
+          x: -322,
+          y: 15,
           ease: 'power3.out',
           duration: .5,
           zIndex: 20
@@ -253,7 +266,7 @@ $(document).ready(function () {
         .to('._rylic_header_cursor2', {
           y: -20,
           ease: 'power3.out',
-          duration: .5,
+          duration: .6,
         }, ">")
         .from('._rylic_header_txt_title2', {
           ease: 'power3.out',
@@ -610,6 +623,22 @@ $(document).ready(function () {
       trigger: '._rylic_cta_wrapper',
       scrub: 1
     }
+  })
+  gsap.from('._rylic_instagram_content_ul_wrap', {
+    opacity:0,
+    ease: 'Power3.out',
+    scrollTrigger: {
+      trigger: '._rylic_instagram_content_wrap',
+    },
+  })
+  gsap.from('._rylic_trusted_content', {
+    y:20,
+    opacity:0,
+    ease: 'Power3.out',
+    scrollTrigger: {
+      trigger: '._rylic_trusted_content_wrap',
+      scrub: 1
+    },
   })
   // gsap.from("._rylic_testimonial_duck_shape",{
   //   y:100,
