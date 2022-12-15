@@ -64,6 +64,7 @@ $(document).ready(function () {
     cellAlign: 'center',
     contain: true,
     pageDots: false,
+    autoPlay:false,
     draggable: true,
     wrapAround: true,
     dragThreshold: 0,
