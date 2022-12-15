@@ -163,7 +163,7 @@ $(document).ready(function () {
 
   // Array to Loop
   const array = [
-    "Website",
+    "Web App",
     "Branding",
     "Landing Page",
     "UI/UX",
@@ -172,7 +172,7 @@ $(document).ready(function () {
     "SaaS",
     "Mobile App",
     "Logo Design",
-    "Web App",
+    "Website",
   ];
   var item = 1;
 
