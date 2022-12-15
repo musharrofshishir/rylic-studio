@@ -71,7 +71,6 @@ $(document).ready(function () {
     pauseAutoPlayOnHover: false,
     selectedAttraction: 0.01,
     friction: 0.15,
-    autoPlay:3000,
   });
   // $('._rylic_port_slider').slick({
   //   autoplay: false,
