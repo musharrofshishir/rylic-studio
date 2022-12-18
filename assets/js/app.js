@@ -1,12 +1,12 @@
 $(document).ready(function () {
-  setInterval(()=>{
-    if($('._rylic_cta_img').hasClass('_rylic_cta_img_anim')){
+  setInterval(() => {
+    if ($('._rylic_cta_img').hasClass('_rylic_cta_img_anim')) {
       $('._rylic_cta_img').removeClass('_rylic_cta_img_anim')
     }
     else {
       $('._rylic_cta_img').addClass('_rylic_cta_img_anim')
     }
-  },2000);
+  }, 2000);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   // gsap.registerPlugin(ScrollTrigger);
   let smoother = ScrollSmoother.create({
@@ -59,12 +59,12 @@ $(document).ready(function () {
     });
   });
   var elem = document.querySelector('._rylic_port_slider');
-  var flkty = new Flickity( elem, {
+  var flkty = new Flickity(elem, {
     // options
     cellAlign: 'center',
     contain: true,
     pageDots: false,
-    autoPlay:false,
+    autoPlay: false,
     draggable: true,
     wrapAround: true,
     dragThreshold: 0,
@@ -87,7 +87,16 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     slidesToShow: 3,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   // instagram scroll
@@ -626,15 +635,15 @@ $(document).ready(function () {
     }
   })
   gsap.from('._rylic_instagram_content_ul_wrap', {
-    opacity:0,
+    opacity: 0,
     ease: 'Power3.out',
     scrollTrigger: {
       trigger: '._rylic_instagram_content_wrap',
     },
   })
   gsap.from('._rylic_trusted_content', {
-    y:20,
-    opacity:0,
+    y: 20,
+    opacity: 0,
     ease: 'Power3.out',
     scrollTrigger: {
       trigger: '._rylic_trusted_content_wrap',
@@ -642,13 +651,13 @@ $(document).ready(function () {
     },
   })
   gsap.from('._rylic_port_slider', {
-    x:300,
-    opacity:0,
+    x: 300,
+    opacity: 0,
     ease: 'Power3.out',
     scrollTrigger: {
       trigger: '._rylic_port_slider_wrap',
     },
-    duration:1
+    duration: 1
   })
   // gsap.from("._rylic_testimonial_duck_shape",{
   //   y:100,
