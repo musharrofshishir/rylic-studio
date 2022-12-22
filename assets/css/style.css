@@ -398,6 +398,10 @@ ul {
     right: 0;
 }
 
+._rylic_service_shape2 {
+    display: none;
+}
+
 ._rylic_service_heading_title {
     font-family: universo;
     font-weight: 400;
@@ -431,6 +435,7 @@ ul {
     border-radius: 15px;
     min-height: 240px;
     max-width: 270px;
+    width: 100%;
     position: relative;
 }
 
@@ -1870,6 +1875,37 @@ ul {
     }
 
     ._rylic_service_shape img {
+        width: 80px;
+    }
+
+    ._rylic_service_shape2 {
+        display: block;
+        position: absolute;
+        left: -24px;
+        bottom: 30%;
+        transform: translate(0, -70px);
+    }
+
+    ._rylic_service_shape2 img {
+        width: 60px;
+    }
+
+    ._rylic_port_shape {
+        display: none;
+    }
+
+    ._rylic_port_divider {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    ._rylic_port_shape_ball {
+        position: absolute;
+        top: -25px;
+        right: 12px;
+    }
+
+    ._rylic_port_shape_ball img {
         width: 80px;
     }
 
