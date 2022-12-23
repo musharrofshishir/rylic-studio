@@ -1888,7 +1888,7 @@ ul {
     }
 
     ._rylic_service_wrapper {
-        padding: 55px 0 78px;
+        padding: 55px 0 20px;
     }
 
     ._rylic_header_shape1 {
@@ -1986,11 +1986,15 @@ ul {
     }
 
     ._rylic_service_heading_title2 {
-        margin: 0 0 11px;
+        margin: 0 0 11px !important;
     }
 
     ._rylic_service_content_top {
         margin: 0 auto;
+    }
+
+    ._service1_top ._rylic_service_content_top_img_wrap {
+        top: -30px;
     }
 
     ._rylic_service_content_p {
@@ -2049,7 +2053,7 @@ ul {
     }
 
     ._rylic_port_shape_ball img {
-        width: 80px;
+        width: 100px;
     }
 
     ._rylic_service_heading_title2 {
@@ -2063,7 +2067,7 @@ ul {
     }
 
     ._rylic_port_wrapper {
-        padding: 58px 0 10px;
+        padding: 58px 0 25px;
     }
 
     ._rylic_port_slider_item {
@@ -2073,6 +2077,10 @@ ul {
 
     ._rylic_port_slider_wrap {
         padding: 30px 0 20px;
+    }
+
+    .webgl {
+        display: none;
     }
 
     ._rylic_process_content_wrap {
@@ -2094,11 +2102,11 @@ ul {
     }
 
     ._rylic_process_shape1 {
-        top: -50px;
+        top: -62px;
     }
 
     ._rylic_process_shape1 img {
-        width: 70px;
+        width: 82px;
     }
 
     ._rylic_process_heading_title {
@@ -2147,8 +2155,13 @@ ul {
         font-size: 24px;
     }
 
+    ._rylic_project_card {
+        margin: 0 0 50px;
+    }
+
     ._rylic_project_card_image {
         border: 6px solid #fff;
+        margin: 0 0 24px;
     }
 
     ._rylic_instagram_wrapper {
@@ -2182,16 +2195,18 @@ ul {
     }
 
     ._rylic_testimonial_shape {
-        right: 0;
+        right: 10px;
     }
 
     ._rylic_testimonial_shape img {
         /* width: 44px;
         height: 40px; */
+        width: 80px;
     }
 
     ._rylic_testimonial_chat_shape {
         top: 0;
+        left: 10px;
         transform: translate(0px, -50%);
     }
 
@@ -2217,8 +2232,16 @@ ul {
         display: none;
     }
 
+    ._rylic_testimonial_wrapper {
+        padding: 100px 0 70px;
+    }
+
     ._rylic_testimonial_duck_shape {
         right: 0;
+    }
+
+    ._rylic_testimonial_duck_shape img {
+        width: 55px;
     }
 
     ._rylic_instagram_header_title {
