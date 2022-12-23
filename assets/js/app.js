@@ -259,6 +259,19 @@ $(document).ready(function () {
           duration: .5,
           opacity: 0
         })
+        .from('._rylic_header_cursor_txt_li', {
+          y: 20,
+          ease: 'power3.out',
+          duration: .2,
+          opacity: 0,
+          stagger: .1
+        },"<")
+        .from('._rylic_process_bottom_btn_mob', {
+          y: 30,
+          ease: 'power3.out',
+          duration: .3,
+          opacity: 0,
+        },"<")
         .from('._rylic_header_cursor', {
           y: 50,
           ease: 'power3.out',
@@ -293,26 +306,26 @@ $(document).ready(function () {
           x: -100,
           ease: 'power3.out',
           duration: .3,
-        }, 6.5)
+        }, 6.3)
         .from('._rylic_header_shape2', {
           x: 100,
           ease: 'power3.out',
           duration: .3,
-        }, 6.5)
+        }, 6.3)
         .from('._rylic_header_circular_txt_wrap', {
           ease: 'power3.out',
           duration: .6,
           scale: 0,
           y: 20,
           rotate: -800
-        }, 6.5)
+        }, 6.3)
         .from('._rylic_header_shape_r_wrap', {
           ease: 'power3.out',
           duration: .6,
           opacity: 0,
           rotate: 10,
           y: -20,
-        }, 6.5)
+        }, 6.3)
         .from('._arrow', {
           ease: 'power3.out',
           duration: .6,
@@ -327,7 +340,7 @@ $(document).ready(function () {
           //   trigger: '._rylic_service_wrapper',
           //   start: `120px 650px`
           // },
-        }, 6.5)
+        }, 6.3)
 
       // let cursor1 = document.querySelector(("._rylic_header_cursor1"))
       // let cursor2 = document.querySelector(("._rylic_header_cursor2"))
@@ -685,6 +698,12 @@ $(document).ready(function () {
 
 
 });
+$("._navbar_menu_btn").click(()=>{
+    $("._navbar_menu_btn").toggleClass('_open');
+    $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
+})
+
+
 
 // Alpine
 const date = {
@@ -698,3 +717,20 @@ const date = {
 const selectedNumber = {
   number: 0
 }
+const selectedNumber2 = {
+  number: 0
+}
+
+// // mobile nav
+// gsap.set('._mobile_menu_wrap', {yPercent:120, autoAlpha:1})
+
+// var menu = gsap.timeline({paused:true, reversed: true});
+// menu.from("._mobile_menu_wrap", {yPercent:0, duration:1, ease:'power2.inOut'})
+// .from("._mobile_nav_li", {autoAlpha:0, x:-25, duration:0.2,stagger:0.1})
+
+// // toggle the animation / diff speed = timeScale(2) faster
+
+// function toggleMenu() {
+//   menu.reversed() ? menu.timeScale(1).play() : menu.timeScale(2).reverse(); 
+// }
+// document.querySelector("._navbar_menu_btn").addEventListener("click", toggleMenu);

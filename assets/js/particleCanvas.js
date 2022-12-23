@@ -4,6 +4,7 @@
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 const canvas2 = document.querySelector('canvas.head')
+const canvas3 = document.querySelector('canvas._nav')
 const canvasWrap = document.querySelector('._rylic_big_2_wrap')
 
 // Scene
@@ -80,6 +81,11 @@ const sizes2 = {
     height: window.innerHeight
     // height: 1800
 }
+const sizes3 = {
+    width: window.innerWidth,
+    height: window.innerHeight
+    // height: 1800
+}
 
 window.addEventListener('resize', () => {
     // Update sizes
@@ -141,8 +147,10 @@ scene.add(cameraGroup)
 // Base camera
 const camera = new THREE.PerspectiveCamera(30, sizes.width / sizes.height, 0.1, 100)
 const camera2 = new THREE.PerspectiveCamera(30, sizes.width / sizes.height, 0.1, 100)
+const camera3 = new THREE.PerspectiveCamera(30, sizes.width / sizes.height, 0.1, 100)
 camera.position.z = 6
 camera2.position.z = 6
+camera3.position.z = 6
 cameraGroup.add(camera)
 cameraGroup.add(camera2)
 
@@ -162,6 +170,12 @@ const renderer2 = new THREE.WebGLRenderer({
 })
 renderer2.setSize(sizes2.width, sizes2.height)
 renderer2.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+const renderer3 = new THREE.WebGLRenderer({
+    canvas: canvas3,
+    alpha: true
+})
+renderer3.setSize(sizes3.width, sizes3.height)
+renderer3.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 /**
  * Animate
@@ -196,6 +210,7 @@ const tick = () => {
     renderer.render(scene, camera)
     // header
     renderer2.render(scene, camera2)
+    renderer3.render(scene, camera2)
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
