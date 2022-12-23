@@ -669,8 +669,6 @@ $(document).ready(function () {
     ease: 'Power3.easeOut',
     scrollTrigger: {
       trigger: '._rylic_port_slider_wrap',
-      markers: true,
-      start: "0 95%"
     },
     duration: 1.2,
   })
