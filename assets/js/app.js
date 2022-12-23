@@ -580,7 +580,7 @@ $(document).ready(function () {
     y: -50,
     x: -30,
     duration: .5,
-    opacity: .7,
+    // opacity: .7,
     ease: 'Power3.out',
     scrollTrigger: {
       trigger: '._rylic_port_wrapper',
