@@ -664,15 +664,15 @@ $(document).ready(function () {
     },
   })
   gsap.from('._rylic_port_slider', {
-    x: 600,
-    // opacity: 0,
-    ease: 'Bounce.easeOut',
+    x: 300,
+    opacity: 0,
+    ease: 'Power3.easeOut',
     scrollTrigger: {
       trigger: '._rylic_port_slider_wrap',
       markers: true,
       start: "0 95%"
     },
-    duration: 1.5
+    duration: 1.2,
   })
   // gsap.from("._rylic_testimonial_duck_shape",{
   //   y:100,
