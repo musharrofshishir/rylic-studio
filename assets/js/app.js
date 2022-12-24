@@ -84,6 +84,7 @@ $(document).ready(function () {
   // });
   $('.slide_list').slick({
     autoplay: true,
+    autoplaySpeed:6000,
     arrows: false,
     dots: true,
     slidesToShow: 3,
@@ -722,7 +723,7 @@ const selectedNumber = {
 const selectedNumber2 = {
   number: 0
 }
-console.log("loadedx4");
+console.log("loadedx5");
 // // mobile nav
 // gsap.set('._mobile_menu_wrap', {yPercent:120, autoAlpha:1})
 
