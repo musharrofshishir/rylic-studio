@@ -722,7 +722,7 @@ const selectedNumber = {
 const selectedNumber2 = {
   number: 0
 }
-console.log("loadedx3");
+console.log("loadedx4");
 // // mobile nav
 // gsap.set('._mobile_menu_wrap', {yPercent:120, autoAlpha:1})
 
