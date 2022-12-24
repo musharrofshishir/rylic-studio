@@ -151,43 +151,43 @@ ul {
     font-family: 'GT Walsheim';
     src: url('../fonts/GT-Walsheim-Bold.ttf') format('truetype');
     font-weight: 700;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'GT Walsheim-md';
     src: url('../fonts/GT-Walsheim-Medium.ttf') format('truetype');
     font-weight: 500;
-}
+} */
 
 
-@font-face {
+/* @font-face {
     font-family: 'GT Walsheim-rg';
     src: url('../fonts/GT-Walsheim-Regular.ttf') format('truetype');
     font-weight: 400;
-}
+} */
 
 @font-face {
-    font-family: 'universo-bold';
+    font-family: 'universo-b';
     src: url('../fonts/Universo-Bold.ttf');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'universo-black';
+    font-family: 'universo-bl';
     src: url('../fonts/Universo-Black.ttf');
 }
 
 @font-face {
-    font-family: 'universo-thin';
+    font-family: 'universo-t';
     src: url('../fonts/Universo-Light.ttf');
 
 }
 
 @font-face {
-    font-family: 'universo-rg';
+    font-family: 'universo-reg';
     src: url('../fonts/Universo-Regular.ttf');
 
-} */
+}
 
 #smooth-content {
     overflow-y: hidden !important;
@@ -211,7 +211,7 @@ ul {
 }
 
 ._preloader_txt {
-    font-family: 'Universo';
+    font-family: 'universo-bold';
     font-weight: 700;
     font-size: 10rem;
     line-height: 1.2;
@@ -517,8 +517,8 @@ ul {
 }
 
 ._rylic_header_txt_title {
-    font-family: 'Universo';
-    font-weight: bold;
+    font-family: 'universo-b';
+    font-weight: 400;
     font-size: 52px;
     line-height: 60px;
     text-align: center;
@@ -529,12 +529,14 @@ ul {
 }
 
 ._rylic_header_txt_title2 {
+    font-family: 'universo-bl';
+    /* font-weight: 400; */
     background: #F8CE68;
     width: fit-content;
     color: #121212;
     text-transform: uppercase;
     padding: 8px 18px 4px;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin: 10px auto;
     position: relative;
     z-index: -1;
@@ -552,6 +554,8 @@ ul {
 }
 
 ._rylic_header_txt_p {
+    /* font-family: 'GT Walsheim-md';
+    font-weight: 500; */
     font-family: 'GT Walsheim-md';
     font-weight: 500;
     font-size: 20px;
@@ -615,8 +619,8 @@ ul {
 }
 
 ._rylic_service_heading_title {
-    font-family: universo;
-    font-weight: 400;
+    font-family: "universo-bl";
+    /* font-weight: 400; */
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.02em;
@@ -714,8 +718,8 @@ ul {
 
 
 ._rylic_service_content_top_title {
-    font-family: 'Universo';
-    font-weight: 400;
+    font-family: 'universo-bl';
+    /* font-weight: 400; */
     font-size: 24px;
     line-height: 30px;
     text-align: center;
@@ -959,8 +963,8 @@ ul {
 }
 
 ._rylic_process_heading_title2 {
-    font-family: 'Universo';
-    font-weight: 400;
+    font-family: 'universo-bl';
+    /* font-weight: 400; */
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.02em;
@@ -1131,8 +1135,8 @@ ul {
 }
 
 ._rylic_project_top_text_title {
-    font-family: universo;
-    font-weight: 400;
+    font-family: 'universo-bl';
+    /* font-weight: 400; */
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
@@ -1401,8 +1405,8 @@ ul {
 }
 
 ._rylic_testimonial_text_title {
-    font-family: universo;
-    font-weight: 400;
+    font-family: 'universo-bl';
+    /* font-weight: 400; */
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.01em;
@@ -1572,8 +1576,8 @@ ul {
 }
 
 ._rylic_instagram_header_title_txt {
-    font-family: 'Universo';
-    font-weight: 400;
+    font-family: 'universo-bl';
+    /* font-weight: 400; */
     font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.02em;
@@ -1709,8 +1713,8 @@ ul {
 }
 
 ._rylic_cta_img {
-    width: 140px;
-    max-width: 140px;
+    width: 110px;
+    max-width: 110px;
     margin-bottom: -20px;
 }
 
@@ -1747,8 +1751,8 @@ ul {
 }
 
 ._rylic_cta_content_title {
-    font-family: 'Universo';
-    font-weight: 400;
+    font-family: 'universo-b';
+    /* font-weight: 500; */
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.03em;
@@ -1805,7 +1809,7 @@ ul {
 }
 
 ._rylic_footer_content_title {
-    font-family: universo;
+    font-family: 'universo-bold';
     font-size: 24px;
     line-height: 35px;
     letter-spacing: 1.2px;
