@@ -54,6 +54,101 @@ ul {
 /* Fonts */
 @font-face {
     font-family: 'GT Walsheim';
+    src: url('../fonts/gt-walsheim-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'GT Walsheim-md';
+    src: url('../fonts/gt-walsheim-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'GT Walsheim-rg';
+    src: url('../fonts/gt-walsheim-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'universo-black';
+    src: url('../fonts/universo-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'universo-bold';
+    src: url('../fonts/universo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'universo-light';
+    src: url('../fonts/universo-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'universo-rg';
+    src: url('../fonts/universo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'universostencil';
+    src: url('universo-stencil-webfont.woff2') format('woff2'),
+        url('universo-stencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'universo-thin';
+    src: url('../fonts/universo-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* @font-face {
+    font-family: 'GT Walsheim';
     src: url('../fonts/GT-Walsheim-Bold.ttf') format('truetype');
     font-weight: 700;
 }
@@ -92,7 +187,7 @@ ul {
     font-family: 'universo-rg';
     src: url('../fonts/Universo-Regular.ttf');
 
-}
+} */
 
 #smooth-content {
     overflow-y: hidden !important;
