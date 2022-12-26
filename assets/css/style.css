@@ -2000,6 +2000,7 @@ ul {
     ._rylic_process_bottom_btn_mob {
         display: block;
         padding: 0;
+        margin-top: 7px;
     }
 
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
