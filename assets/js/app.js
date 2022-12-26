@@ -569,6 +569,15 @@ $(document).ready(function () {
       scrub: 1
     }
   })
+  gsap.from('._rylic_service_shape_mob', {
+    y:20,
+    x: 20,
+    ease: 'Power3.out',
+    scrollTrigger: {
+      trigger: '._rylic_service_wrapper',
+      scrub: 1
+    }
+  })
   gsap.from('._rylic_port_shape', {
     y: 50,
     x: -30,
