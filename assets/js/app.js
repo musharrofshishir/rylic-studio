@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
   }, 2000);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-  // gsap.registerPlugin(ScrollTrigger);
+
   let smoother = ScrollSmoother.create({
     smooth: 1,   // seconds it takes to "catch up" to native scroll position
     effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
@@ -26,35 +26,45 @@ $(document).ready(function () {
     });
   });
   document.querySelector("#processClick").addEventListener("click", e => {
-    // scroll to the spot where .box-c is in the center.
-    // parameters: element, smooth, position
-    // smoother.scrollTo("#process", true, "center center");
-
-    // or you could animate the scrollTop:
     gsap.to(smoother, {
       scrollTop: smoother.offset("#process", "center center"),
       duration: 1
     });
   });
   document.querySelector("#serviceClick").addEventListener("click", e => {
-    // scroll to the spot where .box-c is in the center.
-    // parameters: element, smooth, position
-    // smoother.scrollTo("#process", true, "center center");
-
-    // or you could animate the scrollTop:
     gsap.to(smoother, {
       scrollTop: smoother.offset("#service", "top top"),
       duration: 1
     });
   });
   document.querySelector("#projectClick").addEventListener("click", e => {
-    // scroll to the spot where .box-c is in the center.
-    // parameters: element, smooth, position
-    // smoother.scrollTo("#process", true, "center center");
-
-    // or you could animate the scrollTop:
     gsap.to(smoother, {
       scrollTop: smoother.offset("#project", "top top"),
+      duration: 1
+    });
+  });
+  // Process section
+  document.querySelector("#pros1").addEventListener("click", e => {
+    gsap.to(smoother, {
+      scrollTop: smoother.offset("#prosNum1", "top top"),
+      duration: 1
+    });
+  });
+  document.querySelector("#pros2").addEventListener("click", e => {
+    gsap.to(smoother, {
+      scrollTop: smoother.offset("#prosNum2", "top top"),
+      duration: 1
+    });
+  });
+  document.querySelector("#pros3").addEventListener("click", e => {
+    gsap.to(smoother, {
+      scrollTop: smoother.offset("#prosNum3", "top top"),
+      duration: 1
+    });
+  });
+  document.querySelector("#pros4").addEventListener("click", e => {
+    gsap.to(smoother, {
+      scrollTop: smoother.offset("#prosNum4", "top top"),
       duration: 1
     });
   });
@@ -505,6 +515,14 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: '._rylic_header_shape1',
       scrub: 1.4
+    },
+  })
+  gsap.to('._rylic_process_shape1', {
+    rotate: -9.5,
+    ease: "Power3.out",
+    duration: 1,
+    scrollTrigger: {
+      trigger: '._rylic_process_wrapper',
     },
   })
   gsap.to('._rylic_header_shape_img2', {

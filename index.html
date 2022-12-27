@@ -44,6 +44,11 @@
                             <ul class="_mobile_nav_ul">
                                 <li class="_mobile_nav_li">
                                     <a href="#0" class="_nav_link">
+                                        UI Shop
+                                    </a>
+                                </li>
+                                <li class="_mobile_nav_li">
+                                    <a href="#0" class="_nav_link">
                                         Services
                                     </a>
                                 </li>
@@ -52,11 +57,7 @@
                                         Projects
                                     </a>
                                 </li>
-                                <li class="_mobile_nav_li">
-                                    <a href="#0" class="_nav_link">
-                                        UI Shop
-                                    </a>
-                                </li>
+
                             </ul>
                             <ul class="_mobile_nav_ul2">
                                 <li class="_mobile_nav_li">
@@ -674,22 +675,22 @@
                                             <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 mx-auto">
                                                 <div class="_rylic_process_content _rylic_process_content_mid">
                                                     <ul class="_rylic_process_content_mid_ul">
-                                                        <li @mouseover="number = 1"
+                                                        <li id="pros1" @mouseover="number = 1"
                                                             class="_rylic_process_content_mid_li">
                                                             <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1670815372/new-images/process1_dclhm5.svg"
                                                                 alt="process" class="_rylic_process_content_mid_img">
                                                         </li>
-                                                        <li @mouseover="number = 2"
+                                                        <li id="pros2" @mouseover="number = 2"
                                                             class="_rylic_process_content_mid_li">
                                                             <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1670815372/new-images/process2_lhptf8.svg"
                                                                 alt="process" class="_rylic_process_content_mid_img">
                                                         </li>
-                                                        <li @mouseover="number = 3"
+                                                        <li id="pros3" @mouseover="number = 3"
                                                             class="_rylic_process_content_mid_li">
                                                             <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1670815372/new-images/process3_wxqbrx.svg"
                                                                 alt="process" class="_rylic_process_content_mid_img">
                                                         </li>
-                                                        <li @mouseover="number = 4"
+                                                        <li id="pros4" @mouseover="number = 4"
                                                             class="_rylic_process_content_mid_li">
                                                             <img src="https://res.cloudinary.com/dmnwzu0xb/image/upload/v1670815372/new-images/process4_uq7fns.svg"
                                                                 alt="process" class="_rylic_process_content_mid_img">
@@ -699,7 +700,8 @@
                                             </div>
                                             <div class="col"></div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                                <div class="_rylic_process_content _rylic_process_content1">
+                                                <div id="prosNum1"
+                                                    class="_rylic_process_content _rylic_process_content1">
                                                     <div class="_rylic_process_content_num"
                                                         :class="number == 1 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt">
@@ -720,7 +722,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                                <div class="_rylic_process_content _rylic_process_content2">
+                                                <div id="prosNum2"
+                                                    class="_rylic_process_content _rylic_process_content2">
                                                     <div class="_rylic_process_content_num"
                                                         :class="number == 2 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt _wiggle">
@@ -744,7 +747,8 @@
                                     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                                <div class="_rylic_process_content _rylic_process_content3">
+                                                <div id="prosNum3"
+                                                    class="_rylic_process_content _rylic_process_content3">
                                                     <div class="_rylic_process_content_num"
                                                         :class="number == 3 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt">
@@ -761,7 +765,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                                <div class="_rylic_process_content _rylic_process_content3">
+                                                <div id="prosNum4"
+                                                    class="_rylic_process_content _rylic_process_content3">
                                                     <div class="_rylic_process_content_num"
                                                         :class="number == 4 ? '_wiggle':''">
                                                         <p class="_rylic_process_content_num_txt">
@@ -820,7 +825,7 @@
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <div class="_rylic_project_top_text">
-                                            <h4 class="_rylic_project_top_text_para">Recent projects</h4>
+                                            <h4 class="_rylic_project_top_text_para">Projects</h4>
                                             <h2 class="_rylic_project_top_text_title">Recent <span>Projects</span></h2>
                                         </div>
                                     </div>

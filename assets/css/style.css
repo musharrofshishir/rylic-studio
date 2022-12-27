@@ -355,8 +355,9 @@ ul {
 }
 
 ._mobile_menu_wrap ._rylic_navbar_wrap ._rylic_header_shape2 {
-    bottom: 82%;
-    right: -5px;
+    bottom: 80%;
+    /* right: -5px; */
+    right: 0px;
 }
 
 ._mobile_nav_ul_wrap {
@@ -392,7 +393,8 @@ ul {
 ._mobile_nav_li ._nav_link {
     width: 100%;
     padding: 30px 0;
-    border-bottom: 1px solid #403F5C;
+    border-bottom: 1.5px solid #403F5C;
+    font-size: 24px;
 }
 
 ._mobile_nav_li:nth-last-child(1) ._nav_link {
@@ -2016,7 +2018,8 @@ ul {
     }
 
     ._rylic_service_wrapper {
-        padding: 55px 0 18px;
+        /* padding: 55px 0 18px; */
+        padding: 55px 0 0px;
     }
 
     ._rylic_header_shape1 {
@@ -2024,7 +2027,7 @@ ul {
     }
 
     ._rylic_header_shape_img {
-        height: 120px;
+        height: 140px;
     }
 
     ._rylic_header_shape2 {
@@ -2036,7 +2039,8 @@ ul {
     }
 
     ._mobile_menu_wrap ._rylic_header_shape_img2 {
-        height: 180px;
+        /* height: 180px; */
+        height: 200px;
     }
 
     ._rylic_header_txt_title {
@@ -2047,9 +2051,9 @@ ul {
 
     ._rylic_header_txt_title2 {
         background: #F8CE68;
-        padding: 0px 10px 0px;
+        padding: 3px 10px 0px;
         font-weight: 500;
-        font-size: 28px !important;
+        font-size: 32px !important;
     }
 
     ._rylic_header_txt_title2 span img {
@@ -2082,6 +2086,20 @@ ul {
         background-color: red;
         opacity: 0.7;
         filter: blur(37.67px);
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(1) img {
+        width: 92px;
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(2) {
+        width: 118px;
+
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(3) {
+        width: 88px;
+
     }
 
     ._rylic_header_cursor_txt_li:nth-child(1)::before {
@@ -2131,9 +2149,9 @@ ul {
     }
 
     ._rylic_service_content_p {
-        max-width: 70%;
+        max-width: 240px;
         text-align: center;
-        margin: 22px auto 40px;
+        margin: 20px auto 60px;
         line-height: 24px;
     }
 
@@ -2145,10 +2163,11 @@ ul {
     ._rylic_service_content_2 ._rylic_service_content_p {
         margin-top: 22px;
         margin-bottom: 35px;
+        max-width: 260px;
     }
 
     ._rylic_service_content_3 ._rylic_service_content_p {
-        max-width: 60%;
+        max-width: 262px;
     }
 
     ._rylic_service_shape {
@@ -2261,7 +2280,7 @@ ul {
     }
 
     ._rylic_process_shape1 {
-        left: 52%;
+        left: 50%;
         transform: translate(-50%, 0);
     }
 
@@ -2349,6 +2368,8 @@ ul {
     }
 
     ._rylic_trusted_heading_title {
+        font-family: 'GT Walsheim-md';
+        font-weight: 500;
         font-size: 18px;
         line-height: 24px;
         text-align: center;
@@ -2469,19 +2490,19 @@ ul {
     }
 
     ._rylic_project_wrapper {
-        padding: 20px 0;
+        padding: 20px 0 0;
     }
 
     ._real_marque_shape img {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
 
     ._rylic_cta_img2 {
-        width: 60px;
-        padding: 0 18px;
+        width: 55px;
+        padding: 0 13px 0 18px;
         position: absolute;
-        bottom: -75px;
+        bottom: -78px;
         left: 50%;
         transform: translate(-50%, 0);
         background-color: var(--bg);
@@ -2489,6 +2510,12 @@ ul {
 
     ._rylic_cta_content_wrap {
         padding: 40px 0 62px;
+        border-top: 1.5px solid rgba(255, 255, 255, .07);
+        border-bottom: 1.5px solid rgba(255, 255, 255, .07);
+    }
+
+    ._rylic_process_bottom_shape {
+        height: 1.5px;
     }
 
     ._rylic_footer_wrapper {
@@ -2564,6 +2591,79 @@ ul {
     ._rylic_footer_content_li_ic {
         width: 50px;
         height: 50px;
+    }
+
+    ._rylic_process_bottom_btn_wrap {
+        padding: 10px 16px;
+    }
+
+    ._rylic_project_card_title {
+        font-size: 20px;
+    }
+
+    ._rylic_testimonial_card:hover {
+        border: 1px solid rgb(255 255 255 / 16%);
+    }
+
+    .slick-dots li {
+        margin: 0 3px;
+    }
+
+    .slide_list .slick-dots li button {
+        width: 16px;
+        height: 5px;
+    }
+
+    .slide_list .slick-dots {
+        bottom: -40px;
+    }
+
+    ._cta_btn {
+        padding: 19px 35px;
+    }
+
+    ._cta_btn ._rylic_cta_content_btn_txt {
+        font-size: 16px;
+    }
+
+    ._cta_btn ._rylic_cta_content_btn_ic svg {
+        width: 12px;
+        animation: 3.5s arrow ease infinite;
+    }
+
+    @keyframes arrow {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(4px, -4px);
+
+        }
+
+        100% {
+            transform: translate(0, 0);
+
+        }
+    }
+
+    ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
+        width: 210px;
+        max-width: 210px;
+        padding: 15px 26px !important;
+        gap: 0 12px;
+    }
+
+    ._rylic_process_bottom_btn_mob ._rylic_nav_btn ._rylic_cta_content_btn_ic svg {
+        width: 30px;
+        height: 30px;
+        animation-play-state: paused;
+    }
+
+    ._mobile_nav_li ._cta_btn ._rylic_cta_content_btn_ic svg {
+        width: 30px;
+        height: 30px;
+        animation-play-state: paused;
     }
 }
 
