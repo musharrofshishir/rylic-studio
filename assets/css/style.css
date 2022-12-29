@@ -351,7 +351,7 @@ ul {
 }
 
 ._mobile_menu_wrap ._rylic_navbar_wrap ._rylic_header_shape1 {
-    top: 85%;
+    top: 65%;
 }
 
 ._mobile_menu_wrap ._rylic_navbar_wrap ._rylic_header_shape2 {
@@ -2024,11 +2024,15 @@ ul {
     }
 
     ._rylic_header_shape1 {
-        top: 35%;
+        top: 40%;
     }
 
     ._rylic_header_shape_img {
         height: 140px;
+    }
+
+    ._mobile_menu_wrap ._rylic_header_shape_img {
+        height: 180px;
     }
 
     ._rylic_header_shape2 {
