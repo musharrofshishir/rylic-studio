@@ -2622,7 +2622,7 @@ ul {
     }
 
     ._cta_btn {
-        padding: 19px 35px;
+        padding: 18px 35px 20px;
     }
 
     ._cta_btn ._rylic_cta_content_btn_txt {
@@ -2653,7 +2653,7 @@ ul {
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
         width: 205px;
         max-width: 205px;
-        padding: 15px 26px !important;
+        padding: 15px 26px 15px 24px !important;
         gap: 0 10px;
     }
 
