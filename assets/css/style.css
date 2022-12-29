@@ -337,7 +337,7 @@ ul {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 20;
     transition: .5s all cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transform: translate(0%, 120%);
 }
@@ -2015,6 +2015,7 @@ ul {
 
     ._rylic_process_bottom_btn_mob ._cta_btn ._rylic_cta_content_btn_txt {
         font-size: 16px;
+        margin: 0 0px 0 0px;
     }
 
     ._rylic_service_wrapper {
@@ -2092,12 +2093,12 @@ ul {
         width: 92px;
     }
 
-    ._rylic_header_cursor_txt_li:nth-child(2) {
+    ._rylic_header_cursor_txt_li:nth-child(2) img {
         width: 118px;
 
     }
 
-    ._rylic_header_cursor_txt_li:nth-child(3) {
+    ._rylic_header_cursor_txt_li:nth-child(3) img {
         width: 88px;
 
     }
@@ -2651,7 +2652,7 @@ ul {
         width: 210px;
         max-width: 210px;
         padding: 15px 26px !important;
-        gap: 0 12px;
+        gap: 0 10px;
     }
 
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn ._rylic_cta_content_btn_ic svg {
