@@ -331,8 +331,8 @@ ul {
 
 ._mobile_menu_wrap {
     width: 100%;
-    /* height: calc(100vh - 80px); */
-    height: calc(90% - 20px);
+    height: calc(100vh - 78px);
+    /* height: calc(90% - 20px); */
     background-color: var(--bg);
     position: fixed;
     bottom: 0;
@@ -1962,10 +1962,913 @@ ul {
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
+    ._rylic_port_shape_ball {
+        right: 100px;
+    }
+
+    ._rylic_process_heading_title2 {
+        font-size: 26px;
+        max-width: 100%;
+        margin: 0 auto;
+        line-height: 33px;
+    }
+
+    ._rylic_process_heading_title {
+        font-size: 13px;
+        margin: 0 0 12px;
+    }
+
+    ._rylic_service_heading_title {
+        font-size: 26px;
+        max-width: 440px;
+    }
+
+    ._rylic_project_top_text_para {
+        font-size: 13px;
+    }
+
+    ._rylic_project_top_text_title {
+        font-size: 26px;
+    }
+
+    ._rylic_service_heading_title2 {
+        font-size: 13px;
+        margin: 0 0 12px !important;
+    }
+
+    ._rylic_port_shape img {
+        width: 70px;
+    }
+
+    ._rylic_port_shape_ball img {
+        width: 132px;
+        max-width: 132px;
+    }
+
+    ._rylic_port_slider_item {
+        padding: 0 13px;
+        width: 340px;
+        max-width: 272px;
+        height: 260px;
+    }
+
+    ._rylic_port_slider_content2 {
+        margin: 0 -14px 0 0;
+    }
+
+    ._rylic_project_card_image {
+        border: 8px solid #fff;
+    }
+
+    /* ._rylic_project_card_image {
+        width: 405px;
+        max-width: 405px;
+    } */
+
+    /* ._rylic_project_card {
+        margin: 0 auto 80px;
+        width: fit-content;
+    } */
+
+    ._rylic_logo_link_wrap {
+        margin: 0 130px 0 0;
+    }
+
+    .flickity-viewport {
+        height: 266px !important;
+    }
+
+    ._rylic_port_slider {
+        height: auto;
+    }
+
+    ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
+        bottom: 0;
+        opacity: 0;
+        display: none;
+        transform: translate(0%, 0) scale(0);
+    }
+
+    ._rylic_port_slider_content:hover {
+        transform: translate(0, 0px);
+    }
+
+    ._rylic_process_shape1 img {
+        width: 90px;
+    }
+
+    ._rylic_process_shape1 {
+        top: -60px;
+        left: 120px;
+    }
+
+    ._rylic_process_shape2 {
+        right: 150px;
+        top: -45px;
+    }
+
+    ._rylic_process_shape2 img {
+        width: 92px;
+    }
+
+    ._rylic_service_shape img {
+        width: 90px;
+    }
+
+    ._rylic_testimonial_chat_shape {
+        top: 50%;
+        transform: translate(70px, -50%);
+    }
+
+    ._rylic_testimonial_chat_shape img {
+        width: 54px;
+    }
+
+    ._rylic_testimonial_shape {
+        right: 50px;
+    }
+
+    ._rylic_testimonial_shape img {
+        width: 70px;
+    }
+
+    ._rylic_testimonial_text_para {
+        font-size: 13px;
+    }
+
+    ._rylic_testimonial_text_title {
+        font-size: 26px;
+    }
+
+    ._rylic_testimonial_duck_shape {
+        right: 50px;
+    }
+
+    ._rylic_testimonial_duck_shape img {
+        width: 80px;
+    }
+
+    ._rylic_instagram_shape {
+        left: 70px;
+    }
+
+    ._rylic_instagram_shape img {
+        width: 150px;
+        max-width: 150px;
+        margin: 9px 0 0 0;
+    }
+
+    ._rylic_instagram_header_title_txt {
+        font-size: 26px;
+    }
+
+    ._rylic_instagram_header_title {
+        gap: 0 15px;
+    }
+
+    ._rylic_instagram_header_img {
+        width: 44px;
+    }
+
+    ._rylic_cta_content_title {
+        font-size: 26px;
+        line-height: 38px;
+        max-width: 452px;
+    }
+
+    ._preloader_txt {
+        font-size: 2.5rem;
+    }
+
+    ._rylic_cta_img {
+        max-width: 80px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     ._navbar_menu_btn {
         display: block;
     }
+
+    /* mob */
+    ._preloader_txt {
+        font-size: 2rem;
+    }
+
+    ._rylic_logo_link_wrap {
+        margin: 0;
+    }
+
+    ._rylic_header_wrapper {
+        padding-bottom: 42px;
+    }
+
+    ._rylic_header_cursor_wrap {
+        display: none;
+    }
+
+    ._rylic_header_cursor {
+        display: none;
+    }
+
+    ._rylic_header_cursor_img2 {
+        display: none;
+    }
+
+    ._rylic_header_circular_txt_wrap {
+        display: none;
+    }
+
+    ._rylic_process_bottom_btn_mob {
+        display: block;
+        padding: 0;
+        margin-top: 7px;
+    }
+
+    ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
+        max-width: 193px;
+        width: 100%;
+        margin: 0 auto;
+        gap: 0 9px;
+        padding: 19px 20px !important;
+    }
+
+    ._rylic_process_bottom_btn_mob ._cta_btn ._rylic_cta_content_btn_txt {
+        font-size: 16px;
+        margin: 0 0px 0 0px;
+    }
+
+    ._rylic_service_wrapper {
+        /* padding: 55px 0 18px; */
+        padding: 55px 0 0px;
+    }
+
+    ._rylic_header_shape1 {
+        top: 40%;
+    }
+
+    ._rylic_header_shape_img {
+        height: 140px;
+    }
+
+    ._mobile_menu_wrap ._rylic_header_shape_img {
+        height: 180px;
+    }
+
+    ._rylic_header_shape2 {
+        bottom: 50px;
+    }
+
+    ._rylic_header_shape_img2 {
+        height: 180px;
+    }
+
+    ._mobile_menu_wrap ._rylic_header_shape_img2 {
+        /* height: 180px; */
+        height: 200px;
+    }
+
+    ._rylic_header_txt_title {
+        font-size: 35px;
+        line-height: 42px;
+        max-width: 348px;
+    }
+
+    ._rylic_header_txt_title2 {
+        background: #F8CE68;
+        padding: 3px 10px 0px;
+        font-weight: 500;
+        font-size: 32px !important;
+    }
+
+    ._rylic_header_txt_title2 span img {
+        width: 44px;
+        height: 44px;
+    }
+
+    ._rylic_header_cursor_txt_ul {
+        display: flex;
+        justify-content: center;
+        gap: 0 8px;
+        margin-top: 30px;
+    }
+
+    ._rylic_header_cursor_txt_li {
+        position: relative;
+        z-index: 1;
+    }
+
+    ._rylic_header_cursor_txt_li::before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        width: 76px;
+        height: 30px;
+        /* top: 12px; */
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: red;
+        opacity: 0.7;
+        filter: blur(37.67px);
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(1) img {
+        width: 92px;
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(2) img {
+        width: 118px;
+
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(3) img {
+        width: 88px;
+
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(1)::before {
+        background-color: #FF5722;
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(2)::before {
+        opacity: 0.6;
+        background-color: #1AACFF;
+    }
+
+    ._rylic_header_cursor_txt_li:nth-child(3)::before {
+        background-color: #1CBA6E;
+    }
+
+    ._rylic_header_wrap {
+        min-height: 360px;
+        padding: 18px 0 10px;
+    }
+
+    ._rylic_header_shape_r_wrap {
+        display: none;
+    }
+
+    ._rylic_header_txt_p {
+        margin-top: 19px;
+        font-size: 16px;
+        line-height: 25px;
+        max-width: 400px;
+    }
+
+    ._rylic_service_heading_wrap {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    ._rylic_service_heading_title2 {
+        margin: 0 0 11px !important;
+    }
+
+    ._rylic_service_content_top {
+        margin: 0 auto;
+    }
+
+    ._service1_top ._rylic_service_content_top_img_wrap {
+        top: -30px;
+    }
+
+    ._rylic_service_content_p {
+        max-width: 240px;
+        text-align: center;
+        margin: 20px auto 45px;
+        line-height: 24px;
+    }
+
+    ._rylic_service_content_2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    ._rylic_service_content_2 ._rylic_service_content_p {
+        margin-top: 22px;
+        /* margin-bottom: 35px; */
+        margin-bottom: 20px;
+        max-width: 260px;
+    }
+
+    ._rylic_service_content_3 ._rylic_service_content_p {
+        max-width: 262px;
+        margin-bottom: 58px;
+    }
+
+    ._rylic_service_shape {
+        display: none;
+    }
+
+    ._rylic_service_shape_mob {
+        display: block;
+        position: absolute;
+        right: -20px;
+        top: 470px;
+    }
+
+    ._rylic_service_shape_mob img {
+        width: 80px;
+    }
+
+    ._rylic_service_shape img {
+        width: 80px;
+    }
+
+    ._rylic_service_shape2 {
+        display: block;
+        position: absolute;
+        left: -24px;
+        bottom: 30%;
+        transform: translate(0, -70px);
+    }
+
+    ._rylic_service_shape2 img {
+        width: 60px;
+    }
+
+    ._rylic_port_shape {
+        display: none;
+    }
+
+    ._rylic_port_divider {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    ._rylic_port_shape_ball {
+        position: absolute;
+        top: -25px;
+        right: 12px;
+    }
+
+    ._rylic_port_shape_ball img {
+        width: 100px;
+    }
+
+    ._rylic_service_heading_title2 {
+        font-size: 12px;
+        margin-bottom: 11px;
+    }
+
+    ._rylic_service_heading_title {
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    ._rylic_port_wrapper {
+        padding: 58px 0 25px;
+    }
+
+    ._rylic_port_slider_item {
+        max-width: 300px;
+        padding: 0 10px;
+    }
+
+    ._rylic_port_slider_wrap {
+        padding: 30px 0 20px;
+    }
+
+    ._rylic_port_slider_ball {
+        display: none;
+    }
+
+    ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
+        bottom: 0;
+        opacity: 0;
+        display: none;
+        transform: translate(0%, 0) scale(0);
+    }
+
+    ._rylic_port_slider_content:hover {
+        transform: translate(0, 0px);
+    }
+
+    .webgl {
+        display: none;
+    }
+
+    ._rylic_process_content_wrap {
+        display: none;
+    }
+
+    ._rylic_process_content_mob_wrap {
+        display: block;
+        margin-top: 4px;
+    }
+
+    ._rylic_process_wrapper {
+        padding-top: 110px;
+    }
+
+    ._rylic_process_shape2 {
+        display: none;
+    }
+
+    ._rylic_process_shape1 {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    ._rylic_process_shape1 {
+        top: -62px;
+    }
+
+    ._rylic_process_shape1 img {
+        width: 92px;
+    }
+
+    ._rylic_process_heading_title {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    ._rylic_process_heading_title2 {
+        font-size: 24px;
+        /* max-width: 70%; */
+        max-width: 300px;
+        line-height: 30px;
+    }
+
+    ._rylic_process_content_num {
+        margin: 0 auto;
+    }
+
+    ._rylic_process_content_p {
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    ._rylic_process_content1 {
+        text-align: center;
+    }
+
+
+    ._rylic_process_content {
+        margin: 18px 0;
+    }
+
+    ._rylic_process_content1 {
+        margin: 50px 0 18px;
+    }
+
+    ._rylic_project_top_text {
+        text-align: center;
+    }
+
+    ._rylic_project_top_text_para {
+        font-size: 12px;
+        margin-bottom: 11px;
+    }
+
+    ._rylic_project_top_text_title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    ._rylic_project_card {
+        margin: 0 0 50px;
+        padding: 0 18px;
+    }
+
+    ._rylic_project_card_image {
+        border: 6px solid #fff;
+        margin: 0 0 24px;
+    }
+
+    ._rylic_instagram_wrapper {
+        padding: 40px 0 45px;
+    }
+
+    ._rylic_instagram_content_wrap {
+        margin-top: 30px;
+    }
+
+    ._rylic_instagram_bg {
+        height: calc(70% - 50px);
+    }
+
+    ._rylic_instagram_content_ul2,
+    ._rylic_instagram_content_ul3 {
+        display: none;
+    }
+
+    ._rylic_trusted_heading_title {
+        font-family: 'GT Walsheim-md';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    ._rylic_trusted_content_wrap {
+        margin-top: 20px;
+    }
+
+    ._rylic_testimonial_shape {
+        right: 10px;
+    }
+
+    ._rylic_testimonial_shape img {
+        /* width: 44px;
+        height: 40px; */
+        width: 80px;
+    }
+
+    ._rylic_testimonial_card_para._des_show {
+        display: none;
+    }
+
+    ._rylic_testimonial_card_para._mob_show {
+        display: block;
+    }
+
+    ._rylic_testimonial_chat_shape {
+        top: -10px;
+        left: 10px;
+        transform: translate(0px, -50%);
+    }
+
+    ._rylic_testimonial_chat_shape img {
+        width: 56px;
+        height: 44px;
+    }
+
+    ._rylic_testimonial_text_para {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 11px;
+    }
+
+    ._rylic_testimonial_text_title {
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    ._rylic_instagram_shape img {
+        display: none;
+    }
+
+    ._rylic_testimonial_wrapper {
+        padding: 100px 0 70px;
+    }
+
+    ._rylic_testimonial_duck_shape {
+        right: 16px;
+    }
+
+    ._rylic_testimonial_duck_shape img {
+        width: 55px;
+    }
+
+    ._rylic_instagram_header_title {
+        gap: 0 14px;
+    }
+
+    ._rylic_instagram_header_img {
+        width: 40px;
+    }
+
+    ._rylic_instagram_header_title_txt {
+        font-size: 20px;
+    }
+
+    ._rylic_trusted_content_img {
+        width: 200%;
+    }
+
+    ._rylic_testimonial_card_para {
+        text-align: center;
+    }
+
+    ._rylic_testimonial_card_bottom {
+        justify-content: center;
+        text-align: center;
+    }
+
+    ._rylic_cta_img2_mob_wrap {
+        display: block;
+    }
+
+    ._real_marque_wrapper {
+        padding: 85px 0 56px;
+    }
+
+    ._real_marque_content_wrap {
+        height: 60px;
+    }
+
+    ._real_marque_content_li img {
+        width: 1800px;
+    }
+
+    ._rylic_process_bottom_wrap {
+        margin: 50px 0 30px;
+    }
+
+    ._rylic_project_top {
+        margin: 0 0 12px;
+    }
+
+    ._rylic_project_wrapper {
+        padding: 20px 0 0;
+    }
+
+    ._real_marque_shape img {
+        width: 80px;
+        height: 80px;
+    }
+
+    ._rylic_cta_img2 {
+        width: 55px;
+        padding: 0 13px 0 18px;
+        position: absolute;
+        bottom: -78px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: var(--bg);
+    }
+
+    ._rylic_cta_content_wrap {
+        padding: 40px 0 62px;
+        border-top: 1.5px solid rgba(255, 255, 255, .07);
+        border-bottom: 1.5px solid rgba(255, 255, 255, .07);
+    }
+
+    ._rylic_process_bottom_shape {
+        height: 1.5px;
+    }
+
+    ._rylic_footer_wrapper {
+        padding: 60px 0 2px;
+    }
+
+    ._rylic_cta_content_title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    ._rylic_cta_img {
+        width: 100px;
+        max-width: 100px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 15px;
+        background-color: var(--bg);
+    }
+
+    ._rylic_cta_img_anim {
+        animation: tilt-shaking2 .1s linear infinite;
+    }
+
+    @keyframes tilt-shaking2 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        25% {
+            transform: translate(-50%, -50%) rotate(5deg);
+        }
+
+        50% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        75% {
+            transform: translate(-50%, -50%) rotate(-5deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+    }
+
+    ._rylic_trusted_content {
+        margin: 20px 0;
+    }
+
+    ._rylic_cta_content_btn_wrap {
+        justify-content: center;
+        margin: 30px 0 0;
+    }
+
+    ._rylic_footer_content_img {
+        display: none;
+    }
+
+    ._rylic_footer_content_logo_wrap {
+        display: none;
+    }
+
+    ._rylic_footer_content_li {
+        border: 1.5px solid rgba(255, 255, 255, 0.24);
+    }
+
+    ._rylic_footer_content_li_ic {
+        width: 50px;
+        height: 50px;
+    }
+
+    ._rylic_process_bottom_btn_wrap {
+        padding: 10px 16px;
+    }
+
+    ._rylic_project_card_title {
+        font-size: 20px;
+    }
+
+    ._rylic_testimonial_card:hover {
+        border: 1px solid rgb(255 255 255 / 16%);
+    }
+
+    .slick-dots li {
+        margin: 0 3px;
+    }
+
+    .slide_list .slick-dots li button {
+        width: 16px;
+        height: 5px;
+    }
+
+    .slide_list .slick-dots {
+        bottom: -40px;
+    }
+
+    ._cta_btn {
+        padding: 18px 35px 20px;
+    }
+
+    ._cta_btn ._rylic_cta_content_btn_txt {
+        font-size: 16px;
+    }
+
+    ._cta_btn ._rylic_cta_content_btn_ic svg {
+        width: 12px;
+        animation: 3.5s arrow ease infinite;
+    }
+
+    @keyframes arrow {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        50% {
+            transform: translate(4px, -4px);
+
+        }
+
+        100% {
+            transform: translate(0, 0);
+
+        }
+    }
+
+    ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
+        width: 205px;
+        max-width: 205px;
+        padding: 15px 26px 15px 24px !important;
+        gap: 0 10px;
+    }
+
+    ._rylic_process_bottom_btn_mob ._rylic_nav_btn ._rylic_cta_content_btn_ic svg {
+        width: 30px;
+        height: 30px;
+        animation-play-state: paused;
+    }
+
+    ._mobile_nav_li ._cta_btn ._rylic_cta_content_btn_ic svg {
+        width: 30px;
+        height: 30px;
+        animation-play-state: paused;
+    }
+
+    ._cta_btn ._rylic_cta_content_btn_txt {
+        font-weight: 500;
+        font-family: 'GT Walsheim-md';
+    }
+
+    ._rylic_service_content_txt {
+        margin: 0px 0 30px;
+    }
+
+    /* mob */
 }
 
 @media only screen and (max-width: 575px) {}
@@ -2235,6 +3138,7 @@ ul {
     ._rylic_service_heading_title {
         font-size: 24px;
         line-height: 30px;
+        max-width: 100%;
     }
 
     ._rylic_port_wrapper {

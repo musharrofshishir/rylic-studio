@@ -109,6 +109,13 @@ $(document).ready(function () {
           slidesToScroll: 1,
         }
       },
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
     ]
   });
 
