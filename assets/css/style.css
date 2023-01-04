@@ -2869,6 +2869,9 @@ ul {
     }
 
     /* mob */
+    .flickity-viewport {
+        height: 384px !important;
+    }
 }
 
 @media only screen and (max-width: 575px) {}

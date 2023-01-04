@@ -110,7 +110,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 2000,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
