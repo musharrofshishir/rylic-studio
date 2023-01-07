@@ -331,7 +331,7 @@ ul {
 
 ._mobile_menu_wrap {
     width: 100%;
-    height: calc(100vh - 78px);
+    height: calc(100% - 78px);
     /* height: calc(90% - 20px); */
     background-color: var(--bg);
     position: fixed;
@@ -2145,6 +2145,80 @@ ul {
         max-width: 80px;
         width: 80px;
     }
+
+    ._rylic_header_txt_title {
+        font-size: 36px;
+        line-height: 42px;
+        max-width: 400px;
+    }
+
+    ._rylic_header_txt_p {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 400px;
+        margin: 40px auto 0;
+    }
+
+    ._rylic_header_txt_title2 {
+        font-size: 32px;
+        line-height: 47px;
+        max-width: 400px;
+    }
+
+    ._rylic_header_circular_txt_wrap {
+        bottom: -75px;
+    }
+
+    ._rylic_header_circular_txt_wrap svg {
+        width: 139px;
+        max-width: 139px;
+        height: 139px;
+    }
+
+    ._rylic_header_shape_r_img {
+        max-width: 64px;
+    }
+
+    ._rylic_header_shape_r_wrap {
+        right: 200px;
+        bottom: -40px;
+    }
+
+    ._rylic_trusted_content_img {
+        width: 120%;
+    }
+
+    ._rylic_cta_content_btn_wrap {
+        /* max-width: 190px; */
+        margin: 0 0 0 auto;
+    }
+
+    ._rylic_cta_content_btn {
+        width: 190px;
+        max-width: 190px;
+        padding: 16px 0;
+        justify-content: center;
+    }
+
+    ._rylic_cta_content_btn_ic svg {
+        width: 15px;
+        max-width: 15px;
+    }
+
+    ._rylic_cta_content_btn_wrap ._rylic_cta_content_btn_txt {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    ._rylic_footer_content_logo_wrap img {
+        width: 110px;
+        max-width: 110px;
+    }
+
+    ._spaceship_img {
+        width: 58px;
+        max-width: 58px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3145,7 +3219,8 @@ ul {
     }
 
     ._rylic_port_wrapper {
-        padding: 58px 0 25px;
+        /* padding: 58px 0 25px; */
+        padding: 58px 0 8px;
     }
 
     ._rylic_port_slider_item {
@@ -3154,7 +3229,7 @@ ul {
     }
 
     ._rylic_port_slider_wrap {
-        padding: 30px 0 20px;
+        padding: 30px 0 10px;
     }
 
     ._rylic_port_slider_ball {
@@ -3288,7 +3363,7 @@ ul {
         line-height: 24px;
         text-align: center;
         color: #FFFFFF;
-        max-width: 65%;
+        max-width: 240px;
         margin: 0 auto;
     }
 
