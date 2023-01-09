@@ -1986,6 +1986,7 @@ ul {
 
     ._rylic_project_top_text_para {
         font-size: 13px;
+        margin: 0 0 12px;
     }
 
     ._rylic_project_top_text_title {
@@ -2102,7 +2103,7 @@ ul {
     }
 
     ._rylic_testimonial_duck_shape {
-        right: 50px;
+        right: 80px;
     }
 
     ._rylic_testimonial_duck_shape img {
@@ -2138,7 +2139,7 @@ ul {
     }
 
     ._preloader_txt {
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
 
     ._rylic_cta_img {
@@ -2184,9 +2185,9 @@ ul {
         bottom: -25px;
     }
 
-    ._rylic_trusted_content_img {
+    /* ._rylic_trusted_content_img {
         width: 120%;
-    }
+    } */
 
     ._rylic_cta_content_btn_wrap {
         /* max-width: 190px; */
@@ -2263,7 +2264,7 @@ ul {
     }
 
     ._rylic_service_content_top_title {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -2335,6 +2336,120 @@ ul {
         max-width: 172px; */
         padding: 16px 0;
         justify-content: center;
+    }
+
+    ._rylic_service_wrapper {
+        padding: 104px 0 38px;
+    }
+
+    ._rylic_port_wrapper {
+        padding: 84px 0 100px;
+    }
+
+    ._rylic_port_shape_ball {
+        top: 10px;
+    }
+
+    ._rylic_port_slider_wrap {
+        padding: 30px 0;
+    }
+
+    ._rylic_process_content_num_txt {
+        font-size: 17px;
+    }
+
+    ._rylic_process_content_num {
+        width: 32px;
+        height: 32px;
+    }
+
+    ._rylic_process_content_wrap {
+        margin-top: 32px;
+    }
+
+    ._rylic_process_wrapper {
+        padding: 70px 0 10px;
+    }
+
+    ._rylic_project_top {
+        margin: 0 0 38px;
+    }
+
+    ._rylic_project_card_title {
+        font-size: 20px;
+    }
+
+    ._rylic_testimonial_card_para {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    ._rylic_testimonial_card {
+        min-height: 254px;
+    }
+
+    .slide_list .slick-dots li button {
+        width: 14px;
+        height: 6px;
+    }
+
+    .slick-dots li {
+        margin: 0 2px;
+    }
+
+    ._rylic_testimonial_wrapper {
+        padding: 100px 0 76px;
+    }
+
+    ._rylic_instagram_wrapper {
+        padding: 70px 0;
+    }
+
+    ._rylic_instagram_content_wrap {
+        margin: 40px 0 0;
+    }
+
+    ._rylic_instagram_content_li {
+        width: 214px;
+        flex: 0 0 214px;
+        max-width: 214px;
+        margin: 0 8px;
+        padding: 5px;
+    }
+
+    ._rylic_instagram_content_ul {
+        gap: 16px 16px;
+        margin: 0 0 16px;
+    }
+
+    ._rylic_trusted_heading_title {
+        font-family: 'GT Walsheim-md';
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    ._rylic_trusted_content_wrap {
+        margin: 32px 0 0;
+    }
+
+    ._rylic_trusted_content {
+        margin: 16px 0;
+    }
+
+    ._rylic_cta_content_wrap {
+        padding: 24px 0;
+    }
+
+    ._rylic_cta_img {
+        margin-bottom: -10px;
+    }
+
+    ._rylic_footer_wrapper {
+        padding: 50px 0 34px;
+    }
+
+    ._rylic_footer_content_copy {
+        margin: 38px 0 9px;
     }
 }
 
