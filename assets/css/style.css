@@ -2167,13 +2167,13 @@ ul {
     }
 
     ._rylic_header_circular_txt_wrap {
-        bottom: -75px;
+        bottom: -85px;
     }
 
     ._rylic_header_circular_txt_wrap svg {
-        width: 139px;
-        max-width: 139px;
-        height: 139px;
+        width: 159px;
+        max-width: 159px;
+        height: 159px;
     }
 
     ._rylic_header_shape_r_img {
@@ -2235,6 +2235,27 @@ ul {
 
     ._rylic_header_cursor_wrap {
         display: none;
+    }
+
+    ._rylic_header_cursor_tab_wrap {
+        position: absolute;
+        min-height: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    ._rylic_header_cursor_tab1 {
+        left: 22px;
+    }
+
+    ._rylic_header_cursor_tab2 {
+        right: 100px;
+    }
+
+    ._rylic_header_cursor_tab3 {
+        left: calc(50% - 60px);
+        top: calc(100% - 200px);
+        transform: translate(-50%, 0);
     }
 
     .container {
@@ -2325,22 +2346,46 @@ ul {
     }
 
     ._cta_btn ._rylic_cta_content_btn_txt {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 22px;
     }
 
+    ._rylic_logo_link_wrap img {
+        width: 100px;
+        max-width: 100px;
+    }
+
+    /* ._rylic_cta_content_btn {
+        width: 180px;
+        max-width: 180px;
+        padding: 16px 0;
+        justify-content: center;
+        padding: 9px 20px !important;
+    } */
     ._rylic_cta_content_btn {
         width: 210px;
         max-width: 210px;
-        /* width: 172px;
-        max-width: 172px; */
         padding: 16px 0;
         justify-content: center;
     }
 
-    ._rylic_service_wrapper {
-        padding: 104px 0 38px;
+    ._rylic_nav_btn {
+        width: 180px;
+        max-width: 180px;
+        padding: 16px 0;
+        justify-content: center;
+        padding: 9px 20px !important;
     }
+
+    ._rylic_nav_btn ._rylic_cta_content_btn_txt {
+        margin: 0 6px 0 -6px;
+    }
+
+    ._rylic_cta_content_btn ._rylic_cta_content_btn_txt {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
 
     ._rylic_port_wrapper {
         padding: 84px 0 100px;
@@ -2450,6 +2495,22 @@ ul {
 
     ._rylic_footer_content_copy {
         margin: 38px 0 9px;
+    }
+
+    ._real_marque_content_li img {
+        width: 2200px;
+    }
+
+    ._real_marque_content_wrap {
+        height: 60px;
+    }
+
+    ._real_marque_wrapper {
+        padding: 90px 0 56px;
+    }
+
+    ._rylic_project_card {
+        margin: 0 0 52px;
     }
 }
 
