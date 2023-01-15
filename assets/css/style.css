@@ -2283,10 +2283,6 @@ ul {
         transform: translate(-50%, 0);
     }
 
-    .container {
-        max-width: 880px;
-    }
-
     ._rylic_service_content_top {
         min-height: 180px;
         max-width: 229px;
@@ -2564,7 +2560,17 @@ ul {
     ._rylic_nav_btn svg {
         animation: none !important;
     }
+
+    .container {
+        max-width: 880px;
+    }
 }
+
+/* @media only screen and (min-width:992px) and (max-width:1199px) {
+    .container {
+        max-width: 880px;
+    }
+} */
 
 @media only screen and (max-width: 991px) {
     ._navbar_menu_btn {
