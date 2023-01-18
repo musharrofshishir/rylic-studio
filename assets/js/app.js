@@ -783,7 +783,13 @@ const selectedNumber = {
 const selectedNumber2 = {
   number: 0
 }
-console.log("loadedx7");
+
+const instaDiv = document.querySelector('._rylic_instagram_content_ul_wrap');
+
+instaDiv.addEventListener('click',()=>{
+  window.open("https://www.instagram.com/rylicstudio/");
+});
+
 // // mobile nav
 // gsap.set('._mobile_menu_wrap', {yPercent:120, autoAlpha:1})
 
