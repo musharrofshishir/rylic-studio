@@ -3065,6 +3065,9 @@ ul {
 
     ._rylic_process_content_num {
         margin: 0 auto;
+        width: 36px;
+        height: 36px;
+
     }
 
     ._rylic_process_content_p {
@@ -3072,6 +3075,7 @@ ul {
         margin: 0 auto;
         text-align: center;
         font-size: 15px;
+        line-height: 26px;
     }
 
     ._rylic_process_content1 {
@@ -3808,6 +3812,7 @@ ul {
         margin: 0 auto;
         text-align: center;
         font-size: 15px;
+        line-height: 26px;
     }
 
     ._rylic_process_content1 {
@@ -4182,6 +4187,7 @@ ul {
         width: 235px;
         flex: 0 0 235px;
         max-width: 235px;
+        height: 180px;
     }
 }
 

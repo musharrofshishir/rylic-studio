@@ -659,7 +659,8 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: '._rylic_process_content ',
       scrub: 1,
-      start: "top center"
+      start: "top center",
+      end:"center center",
     }
   })
   gsap.from('._rylic_project_card_image_wrap', {
