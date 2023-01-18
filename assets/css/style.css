@@ -2370,9 +2370,9 @@ ul {
         display: none;
     }
 
-    ._rylic_process_content_mid_img {
+    /* ._rylic_process_content_mid_img {
         max-width: 237px;
-    }
+    } */
 
     ._rylic_process_content1 {
         max-width: 230px;
@@ -2642,6 +2642,10 @@ ul {
     ._service2_top ._rylic_service_content_top_img {
         width: 92px;
         max-width: 92px;
+    }
+
+    ._rylic_process_content_mid_img {
+        max-width: 237px;
     }
 }
 
