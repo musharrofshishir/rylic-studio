@@ -3457,6 +3457,10 @@ ul {
     ._rylic_process_content_num_txt {
         font-size: 18px;
     }
+
+    ._rylic_testimonial_card {
+        min-height: 284px;
+    }
 }
 
 @media only screen and (max-width: 575px) {}
