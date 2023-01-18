@@ -68,6 +68,34 @@ $(document).ready(function () {
       duration: 1
     });
   });
+
+  $("._navbar_menu_btn").click(() => {
+    $("._navbar_menu_btn").toggleClass('_open');
+    $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
+    $("._body").toggleClass('overflow-hidden');
+    
+  })
+  
+  $("._nav_service").click(() => {
+    $("._navbar_menu_btn").toggleClass('_open');
+    $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
+    $("._body").toggleClass('overflow-hidden');
+    gsap.to(smoother, {
+      scrollTop: smoother.offset("#service", "top top"),
+      duration: 1
+    });
+    
+  })
+  
+  $("._nav_project").click(() => {
+    $("._navbar_menu_btn").toggleClass('_open');
+    $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
+    $("._body").toggleClass('overflow-hidden');
+    gsap.to(smoother, {
+      scrollTop: smoother.offset("#project", "top top"),
+      duration: 2.6,
+    });
+  })
   var elem = document.querySelector('._rylic_port_slider');
   var flkty = new Flickity(elem, {
     // options
@@ -94,16 +122,16 @@ $(document).ready(function () {
   // });
   $('.slide_list').slick({
     autoplay: true,
-    autoplaySpeed:6000,
+    autoplaySpeed: 6000,
     arrows: false,
     dots: true,
     slidesToShow: 3,
     adaptiveHeight: true,
     useTransform: true,
-    cssEase:'ease-in-out',
+    cssEase: 'ease-in-out',
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -285,13 +313,13 @@ $(document).ready(function () {
           duration: .2,
           opacity: 0,
           stagger: .1
-        },"<")
+        }, "<")
         .from('._rylic_process_bottom_btn_mob', {
           y: 30,
           ease: 'power3.out',
           duration: .3,
           opacity: 0,
-        },"<")
+        }, "<")
         .from('._rylic_header_cursor', {
           y: 50,
           ease: 'power3.out',
@@ -595,7 +623,7 @@ $(document).ready(function () {
     }
   })
   gsap.from('._rylic_service_shape_mob', {
-    y:20,
+    y: 20,
     x: 20,
     ease: 'Power3.out',
     scrollTrigger: {
@@ -735,12 +763,7 @@ $(document).ready(function () {
 
 
 });
-$("._navbar_menu_btn").click(()=>{
-    $("._navbar_menu_btn").toggleClass('_open');
-    $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
-    $("._body").toggleClass('overflow-hidden');
 
-})
 
 
 
