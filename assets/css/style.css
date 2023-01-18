@@ -2593,6 +2593,11 @@ ul {
     ._rylic_service_heading_wrap {
         margin: 0;
     }
+
+    ._rylic_header_txt_title2 span img {
+        width: 42px;
+        height: 42px;
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
@@ -4192,6 +4197,10 @@ ul {
         flex: 0 0 235px;
         max-width: 235px;
         height: 180px;
+    }
+
+    ._rylic_testimonial_top {
+        margin: 0 0 36px;
     }
 }
 
