@@ -1974,6 +1974,19 @@ ul {
         padding: 38px 0 50px;
         min-height: 600px;
     }
+
+    ._rylic_logo_link_wrap {
+        /* margin: 0 250px 0 0; */
+        margin: 0 290px 0 0;
+    }
+
+    ._rylic_header_cursor1 {
+        left: 130px;
+    }
+
+    ._rylic_header_cursor2 {
+        right: 256px;
+    }
 }
 
 @media only screen and (max-width: 1399px) {
