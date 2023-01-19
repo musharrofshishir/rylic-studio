@@ -1987,6 +1987,44 @@ ul {
     ._rylic_header_cursor2 {
         right: 256px;
     }
+
+    ._rylic_service_heading_wrap {
+        margin: 0 0px 0 0;
+    }
+
+    ._rylic_service_content_top {
+        min-height: 270px;
+        max-width: 100%;
+    }
+
+    ._rylic_service_content_top_inner {
+        max-height: 260px;
+        min-height: 260px;
+    }
+
+    ._service1_top ._rylic_service_content_top_img {
+        width: 116px;
+        max-width: 116px;
+    }
+
+    ._service2_top ._rylic_service_content_top_img {
+        width: 126px;
+        max-width: 126px;
+    }
+
+    ._service3_top ._rylic_service_content_top_img {
+        width: 102px;
+        max-width: 102px;
+    }
+
+    ._rylic_service_content_top_title {
+        font-size: 28px;
+        max-width: 160px;
+    }
+
+    ._rylic_cta_content_title {
+        max-width: 710px;
+    }
 }
 
 @media only screen and (max-width: 1399px) {
