@@ -207,7 +207,7 @@ const tick = () => {
 
     // Render
     // process
-    renderer.render(scene, camera)
+    // renderer.render(scene, camera)
     // header
     renderer2.render(scene, camera2)
     renderer3.render(scene, camera2)

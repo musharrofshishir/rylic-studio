@@ -790,6 +790,10 @@ instaDiv.addEventListener('click',()=>{
   window.open("https://www.instagram.com/rylicstudio/");
 });
 
+// scroll to top
+$(window).on('beforeunload', function(){
+  $(window).scrollTop(0);
+});
 // // mobile nav
 // gsap.set('._mobile_menu_wrap', {yPercent:120, autoAlpha:1})
 

@@ -780,7 +780,8 @@ ul {
 
 /* Portfolio */
 ._rylic_port_wrapper {
-    padding: 130px 0 100px;
+    /* padding: 130px 0 100px; */
+    padding: 130px 0 70px;
     position: relative;
 }
 
@@ -949,7 +950,8 @@ ul {
 
 ._rylic_process_shape1 {
     position: absolute;
-    top: -100px;
+    /* top: -100px; */
+    top: -70px;
     left: 300px;
 }
 
@@ -2025,6 +2027,15 @@ ul {
     ._rylic_cta_content_title {
         max-width: 710px;
     }
+
+    ._big_des_no_show {
+        display: none !important;
+    }
+
+    ._big_des_show {
+        display: block !important;
+
+    }
 }
 
 @media only screen and (max-width: 1399px) {
@@ -2034,6 +2045,10 @@ ul {
 
     ._rylic_service_heading_wrap {
         margin: 0 0px 0 0;
+    }
+
+    ._preloader_txt {
+        font-size: 6rem;
     }
 }
 
