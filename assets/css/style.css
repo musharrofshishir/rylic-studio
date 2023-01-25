@@ -59,7 +59,8 @@ ul {
 /* Fonts */
 @font-face {
     font-family: 'GT Walsheim';
-    src: url('../fonts/gt-walsheim-bold-webfont.woff') format('woff');
+    /* src: url('../fonts/gt-walsheim-bold-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679130/fonts/gt-walsheim-bold-webfont_cjrwuk.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -70,7 +71,8 @@ ul {
 
 @font-face {
     font-family: 'GT Walsheim-md';
-    src: url('../fonts/gt-walsheim-medium-webfont.woff') format('woff');
+    /* src: url('../fonts/gt-walsheim-medium-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679131/fonts/gt-walsheim-medium-webfont_oz9fb2.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 
@@ -81,7 +83,8 @@ ul {
 
 @font-face {
     font-family: 'GT Walsheim-rg';
-    src: url('../fonts/gt-walsheim-regular-webfont.woff') format('woff');
+    /* src: url('../fonts/gt-walsheim-regular-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679132/fonts/gt-walsheim-regular-webfont_cymyqh.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -91,7 +94,8 @@ ul {
 
 @font-face {
     font-family: 'universo-black';
-    src: url('../fonts/universo-black-webfont.woff') format('woff');
+    /* src: url('../fonts/universo-black-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679132/fonts/universo-black-webfont_cgx89t.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -102,7 +106,8 @@ ul {
 
 @font-face {
     font-family: 'universo-bold';
-    src: url('../fonts/universo-bold-webfont.woff') format('woff');
+    /* src: url('../fonts/universo-bold-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679133/fonts/universo-bold-webfont_xoltsf.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -113,7 +118,8 @@ ul {
 
 @font-face {
     font-family: 'universo-light';
-    src: url('../fonts/universo-light-webfont.woff') format('woff');
+    /* src: url('../fonts/universo-light-webfont.woff') format('woff'); */
+    src: url('.https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679134/fonts/universo-light-webfont_qcg31m.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -124,29 +130,17 @@ ul {
 
 @font-face {
     font-family: 'universo-rg';
-    src: url('../fonts/universo-regular-webfont.woff') format('woff');
+    /* src: url('../fonts/universo-regular-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/universo-regular-webfont_qky1sw.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-
-
-
-@font-face {
-    font-family: 'universostencil';
-    src: url('universo-stencil-webfont.woff2') format('woff2'),
-        url('universo-stencil-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 
 
 @font-face {
     font-family: 'universo-thin';
-    src: url('../fonts/universo-thin-webfont.woff') format('woff');
+    /* src: url('../fonts/universo-thin-webfont.woff') format('woff'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679136/fonts/universo-thin-webfont_ydw36n.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -173,24 +167,28 @@ ul {
 
 @font-face {
     font-family: 'universo-b';
-    src: url('../fonts/Universo-Bold.ttf');
+    /* src: url('../fonts/Universo-Bold.ttf'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/Universo-Bold_mhjj61.ttf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'universo-bl';
-    src: url('../fonts/Universo-Black.ttf');
+    /* src: url('../fonts/Universo-Black.ttf'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679134/fonts/Universo-Black_qpyqwv.ttf');
 }
 
 @font-face {
     font-family: 'universo-t';
-    src: url('../fonts/Universo-Light.ttf');
+    /* src: url('../fonts/Universo-Light.ttf'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/Universo-Light_yfgcba.ttf');
 
 }
 
 @font-face {
     font-family: 'universo-reg';
-    src: url('../fonts/Universo-Regular.ttf');
+    /* src: url('../fonts/Universo-Regular.ttf'); */
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679136/fonts/Universo-Regular_rkoemj.ttf');
 
 }
 
