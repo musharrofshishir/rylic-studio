@@ -2666,6 +2666,20 @@ ul {
         width: 42px;
         height: 42px;
     }
+
+    ._rylic_nav_btn {
+        width: 205px;
+        max-width: 205px;
+        padding: 15px 26px 15px 24px !important;
+        gap: 0 10px;
+    }
+
+    ._rylic_nav_btn ._rylic_cta_content_btn_txt {
+        font-size: 16px;
+        margin: 0 0px 0 0px;
+        font-weight: 500;
+        font-family: 'GT Walsheim-md';
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
@@ -2781,6 +2795,10 @@ ul {
 @media only screen and (min-width: 768px) and (max-width: 780px) {
     ._rylic_service_content_p {
         font-size: 13px;
+    }
+
+    ._rylic_logo_link_wrap {
+        margin: 0 90px 0 0;
     }
 }
 
@@ -3962,7 +3980,7 @@ ul {
     }
 
     ._rylic_trusted_content_wrap {
-        margin-top: 20px;
+        margin-top: 16px;
     }
 
     ._rylic_testimonial_shape {
@@ -4153,7 +4171,7 @@ ul {
     }
 
     ._rylic_trusted_content {
-        margin: 20px 0;
+        margin: 12px 0;
     }
 
     ._rylic_cta_content_btn_wrap {
@@ -4269,6 +4287,13 @@ ul {
 
     ._rylic_testimonial_top {
         margin: 0 0 36px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    ._rylic_testimonial_card_para {
+        font-size: 12px;
+        line-height: 22px;
     }
 }
 
