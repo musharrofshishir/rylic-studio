@@ -2493,8 +2493,11 @@ ul {
 
 
     ._rylic_cta_content_btn ._rylic_cta_content_btn_txt {
-        font-size: 15px;
+        /* font-size: 15px; */
+        font-size: 16px;
         line-height: 22px;
+        font-weight: 500;
+        font-family: 'GT Walsheim-md';
     }
 
     ._rylic_nav_btn ._rylic_cta_content_btn_txt {
