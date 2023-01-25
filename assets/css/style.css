@@ -1,23 +1,32 @@
-/* Common CSS */
+._preloader_wrap,
+body {
+    background-color: var(--bg)
+}
+
+._preloader_txt,
+body,
+html,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+._preloader_wrap,
+.head,
+.webgl,
 body,
 html {
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100%
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--bg);
+    scroll-behavior: smooth
 }
 
 ._no_scroll {
     position: fixed;
-    inset: 0;
+    inset: 0
 }
 
 h1,
@@ -27,269 +36,171 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+    margin: 0
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+    list-style: none
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #000
 }
 
 button {
-    outline: none !important;
+    outline: 0 !important;
     border: none;
-    background-color: transparent;
+    background-color: transparent
 }
 
-ul {
-    list-style: none;
-}
-
-/* .scrollbar-track {
-    opacity: 1 !important;
-    transition: .2s all ease;
-} */
-
-/* Common CSS */
-/* Fonts */
 @font-face {
     font-family: 'GT Walsheim';
-    /* src: url('../fonts/gt-walsheim-bold-webfont.woff') format('woff'); */
     src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679130/fonts/gt-walsheim-bold-webfont_cjrwuk.woff') format('woff');
     font-weight: 700;
-    font-style: normal;
-
+    font-style: normal
 }
-
-
-
 
 @font-face {
     font-family: 'GT Walsheim-md';
-    /* src: url('../fonts/gt-walsheim-medium-webfont.woff') format('woff'); */
     src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679131/fonts/gt-walsheim-medium-webfont_oz9fb2.woff') format('woff');
     font-weight: 500;
-    font-style: normal;
-
+    font-style: normal
 }
-
-
-
 
 @font-face {
     font-family: 'GT Walsheim-rg';
-    /* src: url('../fonts/gt-walsheim-regular-webfont.woff') format('woff'); */
     src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679132/fonts/gt-walsheim-regular-webfont_cymyqh.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-
-@font-face {
-    font-family: 'universo-black';
-    /* src: url('../fonts/universo-black-webfont.woff') format('woff'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679132/fonts/universo-black-webfont_cgx89t.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'universo-bold';
-    /* src: url('../fonts/universo-bold-webfont.woff') format('woff'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679133/fonts/universo-bold-webfont_xoltsf.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'universo-light';
-    /* src: url('../fonts/universo-light-webfont.woff') format('woff'); */
-    src: url('.https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679134/fonts/universo-light-webfont_qcg31m.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'universo-rg';
-    /* src: url('../fonts/universo-regular-webfont.woff') format('woff'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/universo-regular-webfont_qky1sw.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'universo-thin';
-    /* src: url('../fonts/universo-thin-webfont.woff') format('woff'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679136/fonts/universo-thin-webfont_ydw36n.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* @font-face {
-    font-family: 'GT Walsheim';
-    src: url('../fonts/GT-Walsheim-Bold.ttf') format('truetype');
-    font-weight: 700;
-} */
-
-/* @font-face {
-    font-family: 'GT Walsheim-md';
-    src: url('../fonts/GT-Walsheim-Medium.ttf') format('truetype');
-    font-weight: 500;
-} */
-
-
-/* @font-face {
-    font-family: 'GT Walsheim-rg';
-    src: url('../fonts/GT-Walsheim-Regular.ttf') format('truetype');
     font-weight: 400;
-} */
+    font-style: normal
+}
 
 @font-face {
-    font-family: 'universo-b';
-    /* src: url('../fonts/Universo-Bold.ttf'); */
+    font-family: universo-black;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679132/fonts/universo-black-webfont_cgx89t.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: universo-bold;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679133/fonts/universo-bold-webfont_xoltsf.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: universo-light;
+    src: url('.https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679134/fonts/universo-light-webfont_qcg31m.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: universo-rg;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/universo-regular-webfont_qky1sw.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: universo-thin;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679136/fonts/universo-thin-webfont_ydw36n.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: universo-b;
     src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/Universo-Bold_mhjj61.ttf');
-    font-weight: 700;
+    font-weight: 700
 }
 
 @font-face {
-    font-family: 'universo-bl';
-    /* src: url('../fonts/Universo-Black.ttf'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679134/fonts/Universo-Black_qpyqwv.ttf');
+    font-family: universo-bl;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679134/fonts/Universo-Black_qpyqwv.ttf')
 }
 
 @font-face {
-    font-family: 'universo-t';
-    /* src: url('../fonts/Universo-Light.ttf'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/Universo-Light_yfgcba.ttf');
-
+    font-family: universo-t;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679135/fonts/Universo-Light_yfgcba.ttf')
 }
 
 @font-face {
-    font-family: 'universo-reg';
-    /* src: url('../fonts/Universo-Regular.ttf'); */
-    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679136/fonts/Universo-Regular_rkoemj.ttf');
-
+    font-family: universo-reg;
+    src: url('https://res.cloudinary.com/dmnwzu0xb/raw/upload/v1674679136/fonts/Universo-Regular_rkoemj.ttf')
 }
 
 #smooth-content {
-    overflow-y: hidden !important;
+    overflow-y: hidden !important
 }
 
-/* Fonts */
-/* Preloader */
 ._preloader_wrap {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg);
-    /* background-color: #fff; */
-    /* border: 38px solid var(--bg); */
     top: 0;
     left: 0;
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 ._preloader_txt {
-    font-family: 'universo-b';
+    font-family: universo-b;
     font-size: 8rem;
     line-height: 1.2;
     text-align: center;
-    /* color: #000; */
     color: #fff;
-    margin: 0;
-    padding: 0;
-    transform: scale(1.01);
+    transform: scale(1.01)
 }
 
-/* Preloader */
-/* heading */
 .line {
-    overflow: hidden;
+    overflow: hidden
 }
 
-/* heading */
-/* BIG */
 ._rylic_big_wrapper {
     overflow: hidden;
-    background: linear-gradient(125.17deg, #F1E4E4 -45.13%, #C3BEAE 109.3%);
+    background: linear-gradient(125.17deg, #f1e4e4 -45.13%, #c3beae 109.3%)
 }
 
 ._rylic_big_2_wrap {
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
-.webgl,
-.head {
-    /* position: sticky;
-    top: 0; */
+.head,
+.webgl {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
+    z-index: -2
 }
 
-/* Header */
-/* Navbar */
 ._rylic_navbar_wrap {
     position: relative;
     padding-top: 20px;
-    /* background-color: var(--bg) !important; */
-    background-color: transparent !important;
+    background-color: transparent !important
 }
 
-#processClick {
-    cursor: pointer;
-}
-
-#serviceClick {
-    cursor: pointer;
-}
-
-#projectClick {
-    cursor: pointer;
+#processClick,
+#projectClick,
+#serviceClick,
+._rylic_instagram_content_ul_wrap {
+    cursor: pointer
 }
 
 ._rylic_logo_link_wrap {
-    margin: 0 250px 0 0;
-    /* margin: 0 240px 0 0; */
+    margin: 0 250px 0 0
 }
 
 ._navbar_menu_btn {
     display: none;
     width: 50px;
     height: 50px;
-    border: 1.5px solid #403F5C;
+    border: 1.5px solid #403f5c;
     border-radius: 50%;
     position: absolute;
-    /* right: 12px; */
-    right: 22px;
+    right: 22px
 }
 
 ._navbar_menu_btn span {
@@ -298,125 +209,129 @@ ul {
     height: 2px;
     background-color: #fff;
     margin: 3px 0;
-    transition: .2s all ease-in-out;
+    transition: .2s ease-in-out;
     transform: translate(-50%, 0);
     position: relative;
-    left: 50%;
+    left: 50%
 }
 
-._navbar_menu_btn span:nth-child(1) {
+._navbar_menu_btn span:first-child {
     width: 10px;
-    transform: translate(0%, 0);
+    transform: translate(0, 0)
 }
-
-._navbar_menu_btn span:nth-child(2) {}
 
 ._navbar_menu_btn span:nth-child(3) {
     width: 10px;
-    transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
 }
 
-._open span:nth-child(1) {
+._open span:first-child {
     width: 20px;
     transform: translate(-30%, -1.5px) rotate(45deg);
-    transform-origin: left top;
+    transform-origin: left top
 }
 
 ._open span:nth-child(2) {
     visibility: hidden;
-    opacity: 0;
+    opacity: 0
 }
 
 ._open span:nth-child(3) {
     width: 20px;
     transform: translate(-30%, 2px) rotate(-45deg);
-    transform-origin: left bottom;
+    transform-origin: left bottom
 }
 
 ._mobile_menu_wrap {
     width: 100%;
     height: calc(100% - 78px);
-    /* height: calc(90% - 20px); */
     background-color: var(--bg);
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 20;
-    transition: .5s all cubic-bezier(0.895, 0.03, 0.685, 0.22);
-    transform: translate(0%, 120%);
+    transition: .5s cubic-bezier(.895, .03, .685, .22);
+    transform: translate(0, 120%)
+}
+
+._nav_link,
+._port_btn,
+._port_next g,
+._port_next svg path,
+._port_prev g,
+._rylic_cta_content_btn_ic {
+    transition: .2s
 }
 
 ._mobile_menu_wrap_open {
-    transform: translate(0%, 0%);
+    transform: translate(0, 0)
 }
 
 ._mobile_menu_wrap ._rylic_navbar_wrap {
-    height: 100%;
+    height: 100%
 }
 
 ._mobile_menu_wrap ._rylic_navbar_wrap ._rylic_header_shape1 {
-    top: 65%;
+    top: 65%
 }
 
 ._mobile_menu_wrap ._rylic_navbar_wrap ._rylic_header_shape2 {
     bottom: 80%;
-    /* right: -5px; */
-    right: 0px;
+    right: 0
 }
 
 ._mobile_nav_ul_wrap {
     width: 100%;
     height: 100%;
-    /* padding: 102px 0 50px; */
     padding: 22px 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
-._mobile_nav_ul {
-    width: calc(100% - 58px);
-    margin: 0 auto;
-    position: relative;
-    top: 15%;
-}
-
+._mobile_nav_ul,
 ._mobile_nav_ul2 {
     width: calc(100% - 58px);
     margin: 0 auto;
-    position: relative;
+    position: relative
 }
 
-._mobile_nav_li {
+._mobile_nav_ul {
+    top: 15%
+}
+
+._mobile_nav_li,
+._rylic_instagram_content_li_img_link,
+._rylic_nav_btn ._rylic_cta_content_btn_ic {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 ._mobile_nav_li ._nav_link {
     width: 100%;
     padding: 30px 0;
     border-bottom: 1.5px solid rgba(255, 255, 255, .1);
-    font-size: 24px;
+    font-size: 24px
 }
 
-._mobile_nav_li:nth-last-child(1) ._nav_link {
-    border: none;
+._mobile_nav_li:last-child ._nav_link {
+    border: none
 }
 
 ._nav_ul2 ._nav_li {
-    margin: 0 25px;
+    margin: 0 25px
 }
 
 ._nav_li ._rylic_process_bottom_btn_wrap {
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 0
 }
 
 ._rylic_process_bottom_btn_mob {
     display: none;
-    background-color: transparent;
+    background-color: transparent
 }
 
 ._nav_link {
@@ -424,134 +339,131 @@ ul {
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: .2s all ease;
+    justify-content: center
 }
 
 ._rylic_nav_btn {
     display: flex;
     align-items: center !important;
     justify-content: center;
-    padding: 12px 20px !important;
+    padding: 12px 20px !important
 }
 
-._rylic_nav_btn:hover ._rylic_cta_content_btn_ic {
-    transform: rotate(0) !important;
-}
-
-._rylic_nav_btn ._rylic_cta_content_btn_ic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 0px 8.92975px 16.3712px rgba(0, 0, 0, 0.25), inset 0px -2.23244px 2.97658px rgba(0, 0, 0, 0.45), inset 0px -5.95317px 7.44146px rgba(0, 0, 0, 0.29); */
+._rylic_nav_btn:hover ._rylic_cta_content_btn_ic,
+._rylic_process_content_mid_li:hover {
+    transform: rotate(0) !important
 }
 
 ._rylic_nav_btn ._rylic_cta_content_btn_txt {
-    margin: 0 6px 0 -4px;
+    margin: 0 6px 0 -4px
 }
 
-/* Navbar */
-
-._rylic_header_wrapper {
-    position: relative;
-    /* padding: 102px 0 0; */
+._real_marque_wrap,
+._rylic_cta_wrapper,
+._rylic_header_wrapper,
+._rylic_port_wrap,
+.slide_list {
+    position: relative
 }
 
 ._rylic_header_shape1 {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%)
 }
 
 ._rylic_header_shape2 {
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: 0;
-    transform: translate(0, 50%);
+    transform: translate(0, 50%)
 }
 
 ._rylic_header_cursor_wrap {
     position: absolute;
     min-height: 100%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
 }
 
-._rylic_header_cursor_tab_wrap {
-    display: none;
+._rylic_header_cursor_tab_wrap,
+._rylic_header_cursor_txt_ul,
+._rylic_process_content_mob_wrap,
+._rylic_service_shape2,
+._rylic_service_shape_mob,
+._rylic_testimonial_card_para._mob_show,
+.slide_list .slick-dots li button::after,
+.slide_list .slick-dots li button::before {
+    display: none
 }
 
 ._rylic_header_cursor {
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%)
 }
 
 ._rylic_header_cursor1 {
-    left: 50px;
+    left: 50px
 }
 
 ._rylic_header_cursor2 {
     right: 160px;
-    z-index: 20;
+    z-index: 20
 }
 
 ._rylic_header_cursor3 {
-    /* top: calc(75% - 5px); */
     top: calc(75% - 20px);
     left: calc(50% - 70px);
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
 }
 
 ._rylic_header_cursor_img2 {
     position: absolute;
     width: fit-content;
     top: -40px;
-    left: -44px;
+    left: -44px
 }
 
 ._rylic_header_shape_r_wrap {
     position: absolute;
     right: 300px;
     bottom: -40px;
-    transform: rotate(-20deg);
+    transform: rotate(-20deg)
 }
 
 ._rylic_header_wrap {
-    /* padding: 100px 0 50px; */
     padding: 18px 0 50px;
-    min-height: 580px;
+    min-height: 580px
 }
 
 ._rylic_header_txt_title {
-    font-family: 'universo-b';
+    font-family: universo-b;
     font-weight: 400;
     font-size: 52px;
     line-height: 60px;
     text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
+    letter-spacing: .02em;
+    color: #fff;
     margin: 20px auto 18px;
-    max-width: 50%;
+    max-width: 50%
 }
 
 ._rylic_header_txt_title2 {
-    font-family: 'universo-bl';
-    /* font-weight: 400; */
-    background: #F8CE68;
+    font-family: universo-bl;
+    background: #f8ce68;
     width: fit-content;
     color: #121212;
     text-transform: uppercase;
     padding: 8px 18px 4px;
-    /* font-weight: 500; */
     margin: 10px auto;
     position: relative;
     z-index: -1;
-    transform: rotate(-2deg);
+    transform: rotate(-2deg)
 }
 
 ._rylic_header_txt_title2 span {
@@ -561,25 +473,19 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(100%, -100%);
+    transform: translate(100%, -100%)
 }
 
 ._rylic_header_txt_p {
-    /* font-family: 'GT Walsheim-md';
-    font-weight: 500; */
     font-family: 'GT Walsheim-md';
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    color: #FFFFFF;
-    opacity: 0.72;
+    color: #fff;
+    opacity: .72;
     max-width: 526px;
-    margin: 40px auto 0;
-}
-
-._rylic_header_cursor_txt_ul {
-    display: none;
+    margin: 40px auto 0
 }
 
 ._rylic_header_circular_txt_wrap {
@@ -588,62 +494,48 @@ ul {
     bottom: -100px;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 2;
+    z-index: 2
 }
 
 ._arrow {
-    animation: floating 3s ease-in-out infinite;
+    animation: 3s ease-in-out infinite floating
 }
 
 @keyframes floating {
-    0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
+
+    0%,
+    100% {
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .6);
+        transform: translatey(0)
     }
 
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-20px);
-    }
-
-    100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
+        box-shadow: 0 25px 15px 0 rgba(0, 0, 0, .2);
+        transform: translatey(-20px)
     }
 }
 
-/* Header */
-/* Service */
 ._rylic_service_wrapper {
     padding: 104px 0 78px;
-    position: relative;
+    position: relative
 }
 
 ._rylic_service_heading_wrap {
-    margin: 0 10px 0 0;
+    margin: 0 10px 0 0
 }
 
 ._rylic_service_shape {
     position: absolute;
     bottom: 80px;
-    right: 0;
-}
-
-._rylic_service_shape_mob {
-    display: none;
-}
-
-._rylic_service_shape2 {
-    display: none;
+    right: 0
 }
 
 ._rylic_service_heading_title {
-    font-family: "universo-bl";
-    /* font-weight: 400; */
+    font-family: universo-bl;
     font-size: 36px;
     line-height: 40px;
-    letter-spacing: 0.02em;
-    color: #121212;
+    letter-spacing: .02em;
+    color: #121212
 }
 
 ._rylic_service_heading_title2 {
@@ -651,17 +543,17 @@ ul {
     font-weight: 700;
     font-size: 15px;
     line-height: 17px;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     text-transform: uppercase;
-    color: #656565;
+    color: #656565
 }
 
 ._rylic_service_content_wrap {
-    margin: 58px 0 0;
+    margin: 58px 0 0
 }
 
 ._rylic_service_content {
-    margin: 0 -12px;
+    margin: 0 -12px
 }
 
 ._rylic_service_content_top {
@@ -671,7 +563,7 @@ ul {
     min-height: 240px;
     max-width: 270px;
     width: 100%;
-    position: relative;
+    position: relative
 }
 
 ._rylic_service_content_top_inner {
@@ -680,19 +572,19 @@ ul {
     justify-content: center;
     max-height: 240px;
     min-height: 240px;
-    padding: 20px 10px 36px;
+    padding: 20px 10px 36px
 }
 
 ._service1_top ._rylic_service_content_top_img_wrap {
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
 }
 
 ._service2_top {
     background-image: url("https://res.cloudinary.com/dmnwzu0xb/image/upload/v1668313559/rylic-assets/images/service2_ii3enu.png");
-    background-color: #040229;
+    background-color: #040229
 }
 
 ._service3_top {
@@ -700,69 +592,67 @@ ul {
     background-color: #ff6813;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -9px;
+    background-position-x: -9px
 }
 
 ._service1_top ._rylic_service_content_top_img {
     margin-top: -28px;
     width: 106px;
-    max-width: 106px;
+    max-width: 106px
 }
 
 ._service2_top ._rylic_service_content_top_img_wrap {
     position: absolute;
     left: 50%;
     top: 36px;
-    transform: translate(-50%, -36px);
+    transform: translate(-50%, -36px)
 }
 
 ._service2_top ._rylic_service_content_top_img {
-    margin-top: 0px;
+    margin-top: 0;
     width: 116px;
-    max-width: 116px;
+    max-width: 116px
 }
 
 ._service3_top ._rylic_service_content_top_img_wrap {
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(calc(-50% - 3px), 0);
+    transform: translate(calc(-50% - 3px), 0)
 }
 
 ._service3_top ._rylic_service_content_top_img {
     margin-top: -28px;
     width: 92px;
-    max-width: 92px;
+    max-width: 92px
 }
 
-
 ._rylic_service_content_top_title {
-    font-family: 'universo-bl';
-    /* font-weight: 400; */
+    font-family: universo-bl;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-    letter-spacing: 0.01em;
+    letter-spacing: .01em;
     color: #121212;
-    max-width: 128px;
+    max-width: 128px
 }
 
 ._service2_top ._rylic_service_content_top_title {
     color: #fff;
-    max-width: 240px;
+    max-width: 240px
 }
 
 ._service3_top ._rylic_service_content_top_title {
     color: #fff;
-    max-width: 270px;
+    max-width: 270px
 }
 
 ._rylic_service_content_txt {
-    margin: 30px 0;
+    margin: 30px 0
 }
 
 ._service2_txt {
-    margin-top: 0;
+    margin-top: 0
 }
 
 ._rylic_service_content_p {
@@ -771,144 +661,116 @@ ul {
     font-size: 16px;
     line-height: 26px;
     color: #121212;
-    max-width: 95%;
+    max-width: 95%
 }
 
-/* Service */
 ._rylic_port_divider {
-    background: #592F00;
-    opacity: 0.24;
-    margin: 0;
+    background: #592f00;
+    opacity: .24;
+    margin: 0
 }
 
-/* Portfolio */
 ._rylic_port_wrapper {
-    /* padding: 130px 0 100px; */
     padding: 130px 0 70px;
-    position: relative;
+    position: relative
 }
 
 ._rylic_port_shape_ball {
     position: absolute;
     top: -30px;
-    right: 240px;
+    right: 240px
 }
 
 ._rylic_port_shape_ball img {
     width: 170px;
-    max-width: 170px;
-}
-
-._rylic_port_wrap {
-    position: relative;
-
+    max-width: 170px
 }
 
 ._rylic_port_shape {
     position: absolute;
     top: -90px;
-    left: 0;
+    left: 0
 }
 
 ._rylic_port_wrapper ._rylic_service_heading_title2 {
-    margin: 0 0 30px;
+    margin: 0 0 30px
 }
 
 ._rylic_port_wrapper ._rylic_service_heading_title span {
-    color: #ED2975;
+    color: #ed2975
 }
 
 ._rylic_port_slider {
     list-style: none;
-    height: 370px;
+    height: 370px
 }
 
 ._rylic_port_slider_wrap {
-    padding: 50px 0;
+    padding: 50px 0
 }
 
 ._rylic_port_slider_inner {
-    margin: 0 calc(-100% + 85%);
+    margin: 0 calc(-100% + 85%)
 }
 
 .flickity-viewport {
-    height: 384px !important;
+    height: 384px !important
 }
 
 ._rylic_port_slider_item {
     padding: 0 15px;
     width: 370px;
     max-width: 370px;
-    height: 364px;
+    height: 364px
 }
 
 ._rylic_port_slider_content2 {
-    margin: 0 -18px 0 0;
+    margin: 0 -18px 0 0
 }
 
 ._port_btn {
-    background: none;
-    transition: .2s all ease;
+    background: 0 0;
     padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 ._port_prev {
     left: auto;
-    right: 236px;
-    /* top: -40px; */
+    right: 236px
 }
 
-._port_prev g {
-    transition: .2s all ease;
-}
-
-._port_prev:hover svg g {
-    opacity: 1;
-}
-
-._port_next:hover {
-    opacity: 1;
+._port_next:hover,
+._port_next:hover svg g,
+._port_prev:hover svg g,
+._rylic_footer_content_li._instagram:hover::before {
+    opacity: 1
 }
 
 ._port_next {
-    right: 180px;
-    /* top: -40px; */
+    right: 180px
 }
 
 ._port_prev svg {
-    width: 18px;
+    width: 18px
 }
 
 ._port_next svg {
-    width: 48px;
-}
-
-._port_next g {
-    transition: .2s all ease;
-}
-
-._port_next:hover svg g {
-    opacity: 1;
-}
-
-._port_next svg path {
-    transition: .2s all ease;
+    width: 48px
 }
 
 ._port_next:hover svg path {
     opacity: 1;
     fill: #000412;
-    stroke: #000412;
+    stroke: #000412
 }
 
 ._rylic_port_slider_content {
     position: relative;
     padding: 20px 0;
-    transition: .2s all ease;
-    cursor: grab;
+    transition: .2s;
+    cursor: grab
 }
 
 ._rylic_port_slider_ball {
@@ -917,27 +779,24 @@ ul {
     left: 50%;
     bottom: -50px;
     transform: translate(-50%, 0) scale(.1);
-    transition: .2s all cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    opacity: 0;
+    transition: .2s cubic-bezier(.55, .085, .68, .53);
+    opacity: 0
 }
 
 ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
     bottom: -40px;
     opacity: 1;
-    transform: translate(-50%, 0) scale(1);
+    transform: translate(-50%, 0) scale(1)
 }
 
 ._rylic_port_slider_content:hover {
-    transform: translate(0, -20px);
+    transform: translate(0, -20px)
 }
 
-/* Portfolio */
-/* BIG */
-/* Process */
 ._rylic_process_wrapper {
     padding: 100px 0 10px;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 ._process_overlay {
@@ -948,28 +807,28 @@ ul {
     top: 0;
     left: 0;
     transform: rotate(180deg);
-    background: linear-gradient(180deg, #040229 0%, rgba(4, 2, 41, 0.2) 38.95%, rgba(4, 2, 41, 0) 84.01%);
+    background: linear-gradient(180deg, #040229 0, rgba(4, 2, 41, .2) 38.95%, rgba(4, 2, 41, 0) 84.01%)
 }
 
 ._rylic_process_shape1 {
     position: absolute;
-    /* top: -100px; */
     top: -70px;
-    left: 300px;
+    left: 300px
 }
 
 ._rylic_process_shape1 img {
-    width: 115px;
+    width: 115px
 }
 
 ._rylic_process_shape2 {
     position: absolute;
     top: -65px;
-    right: 300px;
+    right: 300px
 }
 
-._rylic_process_heading {
-    text-align: center;
+._rylic_process_heading,
+._rylic_testimonial_top_text {
+    text-align: center
 }
 
 ._rylic_process_heading_title {
@@ -977,39 +836,34 @@ ul {
     font-weight: 700;
     font-size: 15px;
     line-height: 17px;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     text-transform: uppercase;
-    color: #49F595;
-    margin: 0 0 18px;
+    color: #49f595;
+    margin: 0 0 18px
 }
 
 ._rylic_process_heading_title2 {
-    font-family: 'universo-bl';
-    /* font-weight: 400; */
+    font-family: universo-bl;
     font-size: 36px;
     line-height: 40px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    /* max-width: 90%; */
+    letter-spacing: .02em;
+    color: #fff;
     max-width: 394px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
-._rylic_process_heading_title2 span {
-    color: #F8CE68;
+._rylic_process_heading_title2 span,
+._rylic_project_top_text_title span,
+._rylic_testimonial_text_title span {
+    color: #f8ce68
 }
 
 ._rylic_process_content_wrap {
-    /* margin-top: 60px; */
-    margin-top: 40px;
-}
-
-._rylic_process_content_mob_wrap {
-    display: none;
+    margin-top: 40px
 }
 
 ._rylic_process_content1 {
-    margin: 0 0 100px;
+    margin: 0 0 100px
 }
 
 ._rylic_process_content_num {
@@ -1018,9 +872,9 @@ ul {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #49F595;
+    background: #49f595;
     border-radius: 50%;
-    transition: .2s all ease;
+    transition: .2s
 }
 
 ._rylic_process_content_num_txt {
@@ -1028,11 +882,11 @@ ul {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    color: #121212;
+    color: #121212
 }
 
 ._rylic_process_content_txt {
-    margin: 15px 0;
+    margin: 15px 0
 }
 
 ._rylic_process_content_p {
@@ -1040,13 +894,13 @@ ul {
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
-    color: #C0C0C9;
+    color: #c0c0c9
 }
 
 ._rylic_process_content_p span {
     font-family: 'GT Walsheim';
     font-weight: 700;
-    color: #FFFFFF;
+    color: #fff
 }
 
 ._rylic_process_content_mid {
@@ -1054,66 +908,61 @@ ul {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 ._rylic_process_content_mid_ul {
-    width: fit-content;
+    width: fit-content
 }
 
 ._rylic_process_content_mid_li {
     width: fit-content;
     margin: 14px 0;
-    transition: .35s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: .35s cubic-bezier(.075, .82, .165, 1);
     transform-origin: bottom;
-    cursor: pointer;
+    cursor: pointer
 }
-
 
 ._rylic_process_content_mid_li:nth-child(odd) {
-    transform: rotate(3deg);
+    transform: rotate(3deg)
 }
 
-._rylic_process_content_mid_li:nth-child(even) {
-    transform: rotate(-3deg);
-}
-
-._rylic_process_content_mid_li:hover {
-    transform: rotate(0deg) !important;
+._rylic_process_content_mid_li:nth-child(2n) {
+    transform: rotate(-3deg)
 }
 
 ._wiggle {
-    transition: .8s all ease;
-    animation: wiggle 1.1s ease-in-out 1;
-    transform-origin: center bottom;
+    transition: .8s;
+    animation: 1.1s ease-in-out wiggle;
+    transform-origin: center bottom
 }
 
 @keyframes wiggle {
     0% {
-        transform: rotate(10deg) scale(1);
+        transform: rotate(10deg) scale(1)
     }
 
     25% {
-        transform: rotate(-10deg) scale(1.3);
+        transform: rotate(-10deg) scale(1.3)
     }
 
     50% {
-        transform: rotate(20deg) scale(1.3);
+        transform: rotate(20deg) scale(1.3)
     }
 
     75% {
-        transform: rotate(-20deg) scale(1.3);
+        transform: rotate(-20deg) scale(1.3)
     }
 
     100% {
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0) scale(1)
     }
 }
 
 ._rylic_process_bottom_wrap {
     margin: 50px 0;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 ._rylic_process_bottom_shape {
@@ -1125,27 +974,25 @@ ul {
     left: 0;
     transform: translate(0, -50%);
     z-index: -1;
-    position: absolute;
+    position: absolute
 }
 
 ._rylic_process_bottom_btn_wrap {
     width: fit-content;
     margin: 0 auto;
     padding: 10px 24px;
-    background: #040229;
+    background: #040229
 }
 
-/* Process */
-/*Project css start*/
 ._rylic_project_wrapper {
     padding: 20px 0 36px;
     position: relative;
     z-index: 2;
-    background-color: var(--bg);
+    background-color: var(--bg)
 }
 
 ._rylic_project_top {
-    margin: 0 0 50px;
+    margin: 0 0 50px
 }
 
 ._rylic_project_top_text_para {
@@ -1153,39 +1000,33 @@ ul {
     font-weight: 700;
     font-size: 15px;
     line-height: 17px;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     text-transform: uppercase;
-    color: #FF5722;
-    margin: 0 0 18px;
+    color: #ff5722;
+    margin: 0 0 18px
 }
 
-._rylic_project_top_text_title {
-    font-family: 'universo-bl';
-    /* font-weight: 400; */
+._rylic_project_top_text_title,
+._rylic_testimonial_text_title {
+    font-family: universo-bl;
     font-size: 36px;
     line-height: 40px;
-    letter-spacing: 0.01em;
-    color: #FFFFFF;
-}
-
-._rylic_project_top_text_title span {
-    color: #F8CE68;
+    letter-spacing: .01em;
+    color: #fff
 }
 
 ._rylic_project_card {
     margin: 0 0 80px;
-    transition: .2s all ease;
+    transition: .2s
 }
 
 ._rylic_project_card_image {
-    /* padding: 16px; */
     background: #fff;
     border: 16px solid #fff;
     margin: 0 0 30px;
-    transition: .2s all ease;
+    transition: .2s;
     overflow: hidden;
-    position: relative;
-
+    position: relative
 }
 
 ._rylic_project_card_image_view {
@@ -1199,50 +1040,41 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s all cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition: .5s cubic-bezier(.95, .05, .795, .035);
     z-index: 2;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
 }
 
 ._rylic_project_card_image:hover ._rylic_project_card_img {
-    transform: scale(1.03);
+    transform: scale(1.03)
 }
 
 ._rylic_project_card_image:hover ._rylic_project_card_image_view {
     visibility: visible;
-    opacity: 1;
-
+    opacity: 1
 }
 
 ._rylic_project_card_img {
-    transition: .5s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: .5s cubic-bezier(.25, .46, .45, .94);
+    width: 100%;
+    height: auto;
+    display: block
 }
 
-._rylic_project_card_title {
+._rylic_project_card_title,
+._rylic_trusted_heading_title {
     font-family: 'GT Walsheim-md';
     font-weight: 500;
     font-size: 24px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: #fff
 }
 
-._rylic_project_card_img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/*Project css end*/
-/* Marque */
 ._real_marque_wrapper {
     position: relative;
     padding: 120px 0 56px;
-    overflow: hidden;
-}
-
-._real_marque_wrap {
-    position: relative;
+    overflow: hidden
 }
 
 ._real_marque_shape {
@@ -1250,7 +1082,7 @@ ul {
     top: -100%;
     left: 50%;
     transform: translate(-50%, -20px);
-    z-index: 2;
+    z-index: 2
 }
 
 ._real_marque_content_wrap {
@@ -1260,162 +1092,138 @@ ul {
     display: flex;
     align-items: center;
     transform: rotate(-5deg) translate(-50px, 50px);
-    transform-origin: left bottom;
+    transform-origin: left bottom
 }
 
 ._real_marque_content_ul {
     display: flex;
     align-items: center;
-    list-style: none;
+    list-style: none
 }
 
 ._real_marque_content_li {
-    margin: 5px 15px;
+    margin: 5px 15px
 }
 
-/* Marque */
-/* testimonial css --*/
 ._rylic_testimonial_wrapper {
     padding: 100px 0 120px;
     position: relative;
     z-index: 1;
-    /* overflow-x: hidden; */
-    overflow: hidden;
+    overflow: hidden
 }
 
 ._rylic_testimonial_shape {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 300px
 }
 
 ._rylic_testimonial_duck_shape {
     position: absolute;
     bottom: 0;
     right: 400px;
-    animation: duck 5s ease-in-out infinite;
+    animation: 5s ease-in-out infinite duck
 }
 
 ._rylic_testimonial_duck_shape:hover {
-    animation-play-state: paused;
+    animation-play-state: paused
 }
 
 @keyframes duck {
     0% {
-        transform: translate(-5px, 2px);
+        transform: translate(-5px, 2px)
     }
 
     5% {
-        transform: translate(-10px, 0px);
-
+        transform: translate(-10px, 0)
     }
 
     10% {
-        transform: translate(-10px, 2px);
-
+        transform: translate(-10px, 2px)
     }
 
     15% {
-        transform: translate(-15px, 2px);
-
+        transform: translate(-15px, 2px)
     }
 
     20% {
-        transform: translate(-20px, 0px);
-
+        transform: translate(-20px, 0)
     }
 
     25% {
-        transform: translate(-25px, 2px);
+        transform: translate(-25px, 2px)
     }
 
     30% {
-        transform: translate(-30px, 0px);
-
+        transform: translate(-30px, 0)
     }
 
     35% {
-        transform: translate(-35px, 2px);
-
+        transform: translate(-35px, 2px)
     }
 
     40% {
-        transform: translate(-40px, 0px);
-
+        transform: translate(-40px, 0)
     }
 
     45% {
-        transform: translate(-45px, 2px);
-
+        transform: translate(-45px, 2px)
     }
 
     50% {
-        transform: translate(-50px, 0px);
+        transform: translate(-50px, 0)
     }
 
     55% {
-        transform: translate(-45px, 2px) scaleX(-1);
+        transform: translate(-45px, 2px) scaleX(-1)
     }
 
     60% {
-        transform: translate(-40px, 0px) scaleX(-1);
-
+        transform: translate(-40px, 0) scaleX(-1)
     }
 
     65% {
-        transform: translate(-35px, 2px) scaleX(-1);
-
+        transform: translate(-35px, 2px) scaleX(-1)
     }
 
     70% {
-        transform: translate(-30px, 0px) scaleX(-1);
-
+        transform: translate(-30px, 0) scaleX(-1)
     }
 
     75% {
-        transform: translate(-25px, 2px) scaleX(-1);
-
+        transform: translate(-25px, 2px) scaleX(-1)
     }
 
     80% {
-        transform: translate(-20px, 0px) scaleX(-1);
-
+        transform: translate(-20px, 0) scaleX(-1)
     }
 
     85% {
-        transform: translate(-15px, 2px) scaleX(-1);
-
+        transform: translate(-15px, 2px) scaleX(-1)
     }
 
     90% {
-        transform: translate(-10px, 0px) scaleX(-1);
-
+        transform: translate(-10px, 0) scaleX(-1)
     }
 
     95% {
-        transform: translate(-05px, 2px) scaleX(-1);
-
+        transform: translate(5px, 2px) scaleX(-1)
     }
 
     100% {
-        transform: translate(0px, 0px) scaleX(1);
-
+        transform: translate(0, 0) scaleX(1)
     }
 }
 
 ._rylic_testimonial_top {
     margin: 0 0 50px;
-    position: relative;
+    position: relative
 }
 
 ._rylic_testimonial_chat_shape {
     position: absolute;
     top: 50%;
-    transform: translate(100px, -50%);
-}
-
-._rylic_testimonial_top_text {
-    text-align: center;
+    transform: translate(100px, -50%)
 }
 
 ._rylic_testimonial_text_para {
@@ -1423,83 +1231,55 @@ ul {
     font-weight: 700;
     font-size: 15px;
     line-height: 17px;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     text-transform: uppercase;
-    color: #7D67FF;
-    margin: 0 0 18px;
-}
-
-._rylic_testimonial_text_title {
-    font-family: 'universo-bl';
-    /* font-weight: 400; */
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 0.01em;
-    color: #FFFFFF;
-}
-
-._rylic_testimonial_text_title span {
-    color: #F8CE68;
-}
-
-._rylic_testimonial_slider {
-    /* margin-right: -100%; */
+    color: #7d67ff;
+    margin: 0 0 18px
 }
 
 .splide__slide {
-    padding: 0 15px;
+    padding: 0 15px
 }
 
 ._rylic_testimonial_card {
-    border: 1px solid rgb(255 255 255 / 16%);
+    border: 1px solid;
     padding: 25px;
     margin: 0 0 20px;
-    height: 100%;
-    min-height: 272px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: .2s all ease;
+    transition: .2s;
+    height: 100%;
+    min-height: 299px
 }
 
 ._rylic_testimonial_card:hover {
-    border-color: rgb(255 255 255 / 36%);
+    border-color: rgb(255 255 255 / 36%)
 }
 
 ._rylic_testimonial_card_para {
     font-family: 'GT Walsheim-rg';
-    /* font-weight: 500; */
     font-size: 16px;
     line-height: 28.5px;
-    color: #FFFFFF;
-    /* max-width: 84%; */
-    margin: 0 0 33px;
+    color: #fff;
+    margin: 0 0 33px
 }
 
 ._rylic_testimonial_card_para._des_show {
-    display: block;
-}
-
-._rylic_testimonial_card_para._mob_show {
-    display: none;
-}
-
-._rylic_testimonial_card {
-    height: 100%;
-    min-height: 299px;
+    display: block
 }
 
 ._rylic_testimonial_card_bottom {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 ._rylic_testimonial_card_bottom_image {
-    background: #D9D9D9;
+    background: #d9d9d9;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin: 0 16px 0 0;
+    margin: 0 16px 0 0
 }
 
 ._rylic_testimonial_bottom_text_para {
@@ -1507,8 +1287,8 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    color: #F8CE68;
-    margin: 0 0 8px;
+    color: #f8ce68;
+    margin: 0 0 8px
 }
 
 ._rylic_testimonial_bottom_text_title {
@@ -1516,24 +1296,23 @@ ul {
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
-    color: #FFFFFF;
-    opacity: 0.75;
+    color: #fff;
+    opacity: .75
 }
 
 ._rylic_testimonial_slider_wrap .splide__pagination {
     bottom: 100px;
     display: flex;
-    align-items: center;
-    /* gap: 0 5px; */
+    align-items: center
 }
 
 ._rylic_testimonial_slider_wrap .splide__pagination__page {
     background: #464465;
-    opacity: 0.6;
+    opacity: .6;
     border-radius: 300px;
     width: 16px;
     height: 8px;
-    transition: .2s all ease;
+    transition: .2s
 }
 
 ._rylic_testimonial_slider_wrap .splide__pagination__page.is-active {
@@ -1541,93 +1320,77 @@ ul {
     width: 65px;
     height: 8px;
     transform: scale(1);
-    transition: .2s all ease;
-}
-
-.slide_list {
-    position: relative;
+    transition: .2s
 }
 
 .slide_list .slick-dots {
-    bottom: -50px;
+    bottom: -50px
 }
 
 .slide_list .slick-dots li button {
     background: #464465;
-    opacity: 0.6;
+    opacity: .6;
     border-radius: 300px;
     width: 20px;
     height: 8px;
     padding: 3px 5px;
-    transition: .2s all ease;
-}
-
-.slide_list .slick-dots li button::before,
-.slide_list .slick-dots li button::after {
-    display: none;
+    transition: .2s
 }
 
 .slide_list .slick-dots .slick-active button {
     background: #fff;
     opacity: 1;
-    transition: .2s all ease;
+    transition: .2s
 }
 
-/* testimonial css --*/
-
-/* Instagram */
 ._rylic_instagram_wrapper {
     padding: 100px 0;
     position: relative;
-    z-index: 2;
+    z-index: 2
 }
 
 ._rylic_instagram_shape {
     position: absolute;
     top: -58px;
-    left: 200px;
+    left: 200px
 }
 
 ._rylic_instagram_shape img {
-    margin: 1px 0 0 0;
+    margin: 1px 0 0
 }
 
 ._rylic_instagram_bg {
     position: absolute;
-    background: linear-gradient(124.71deg, #EAD5C1 2.12%, #CFCFCF 58.09%, #C7CFE2 108.23%);
+    background: linear-gradient(124.71deg, #ead5c1 2.12%, #cfcfcf 58.09%, #c7cfe2 108.23%);
     width: 100%;
     height: calc(60% - 50px);
     z-index: -1;
     top: 0;
-    left: 0;
+    left: 0
 }
 
+._rylic_footer_content_ul,
 ._rylic_instagram_header_title {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0 20px;
+    gap: 0 20px
 }
 
 ._rylic_instagram_header_img {
-    width: 65px;
+    width: 65px
 }
 
 ._rylic_instagram_header_title_txt {
-    font-family: 'universo-bl';
-    /* font-weight: 400; */
+    font-family: universo-bl;
     font-size: 40px;
     line-height: 40px;
-    letter-spacing: 0.02em;
-    color: #121212;
+    letter-spacing: .02em;
+    color: #121212
 }
 
 ._rylic_instagram_content_wrap {
-    margin: 60px 0 0;
-}
-
-._rylic_instagram_content_ul_wrap {
-    cursor: pointer;
+    margin: 60px 0 0
 }
 
 ._rylic_instagram_content_ul {
@@ -1637,26 +1400,24 @@ ul {
     gap: 24px 24px;
     margin: 0 0 24px;
     overflow: auto;
-    pointer-events: none !important;
+    pointer-events: none !important
 }
 
 ._rylic_instagram_content_ul::-webkit-scrollbar {
-    display: none;
+    display: none
 }
 
 ._rylic_instagram_content_ul::-webkit-scrollbar-thumb {
-    /* Foreground */
-    background: #999;
+    background: #999
 }
 
 ._rylic_instagram_content_ul::-webkit-scrollbar-track {
-    /* Background */
-    background: #333;
+    background: #333
 }
 
 ._rylic_instagram_content_ul1 {
     overflow: auto;
-    position: relative;
+    position: relative
 }
 
 ._rylic_instagram_content_li {
@@ -1665,171 +1426,129 @@ ul {
     max-width: 300px;
     margin: 0 12px;
     padding: 10px;
-    background: #FFFFFF;
-    /* filter: brightness(0.9); */
-    /* transition: .8s all ease; */
-    /* box-shadow: 16px 30px 40px rgba(4, 2, 41, 0.08); */
-}
-
-._rylic_instagram_content_li_img_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fff
 }
 
 ._rylic_instagram_content_li:hover {
-    filter: brightness(1);
+    filter: brightness(1)
 }
 
 ._rylic_instagram_content_li_img {
-    width: 100%;
+    width: 100%
 }
 
-/* Instagram */
-/* Trusted */
 ._rylic_trusted_wrapper {
-    padding: 0px 0 50px;
-}
-
-._rylic_trusted_heading_title {
-    /* font-family: 'GT Walsheim';
-    font-weight: 700; */
-    font-family: 'GT Walsheim-md';
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 27px;
-    color: #FFFFFF;
+    padding: 0 0 50px
 }
 
 ._rylic_trusted_content_wrap {
     margin: 50px 0 0;
-    overflow: hidden;
+    overflow: hidden
 }
 
 ._rylic_trusted_content {
     margin: 30px 0;
     display: flex;
-    gap: 0 70px;
+    gap: 0 70px
 }
 
 ._rylic_trusted_content1 {
-    justify-content: center;
+    justify-content: center
 }
 
 ._rylic_trusted_content2 {
-    justify-content: flex-end;
+    justify-content: flex-end
 }
 
-/* ._rylic_trusted_content_img {
-    width: 164px;
-    max-width: 164px;
-    margin: 0 auto;
-} */
 ._rylic_trusted_content_img {
     width: 100%;
-    margin: 0 auto;
-}
-
-/* Trusted */
-/* Cta */
-._rylic_cta_wrapper {
-    position: relative;
+    margin: 0 auto
 }
 
 ._rylic_cta_img_wrap {
     position: relative;
-    width: 100%;
+    width: 100%
 }
 
 ._rylic_cta_img2_mob_wrap {
     position: relative;
     width: 100%;
-    display: none;
+    display: none
 }
 
 ._rylic_cta_shape {
     position: absolute;
     left: calc(50% + 100px);
     top: 54px;
-    transform: rotate(-20deg);
+    transform: rotate(-20deg)
 }
 
 ._rylic_cta_img {
     width: 110px;
     max-width: 110px;
-    margin-bottom: -20px;
+    margin-bottom: -20px
 }
 
 ._rylic_cta_img_anim {
-    animation: tilt-shaking .1s linear infinite;
+    animation: .1s linear infinite tilt-shaking
 }
 
 @keyframes tilt-shaking {
-    0% {
-        transform: rotate(0deg);
+
+    0%,
+    100%,
+    50% {
+        transform: rotate(0)
     }
 
     25% {
-        transform: rotate(5deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
+        transform: rotate(5deg)
     }
 
     75% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
+        transform: rotate(-5deg)
     }
 }
 
 ._rylic_cta_content_wrap {
     border-top: 2px solid rgba(255, 255, 255, .07);
     border-bottom: 2px solid rgba(255, 255, 255, .07);
-    padding: 40px 0;
+    padding: 40px 0
 }
 
 ._rylic_cta_content_title {
-    font-family: 'universo-bl';
-    /* font-weight: 500; */
+    font-family: universo-bl;
     font-size: 40px;
     line-height: 57px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    max-width: 80%;
+    letter-spacing: .03em;
+    color: #fff;
+    max-width: 80%
 }
 
 ._rylic_cta_content_btn_wrap {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end
 }
 
 ._cta_btn {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 32.81%, rgba(0, 0, 0, 0.02) 100%), #F8C768;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .2) 32.81%, rgba(0, 0, 0, .02) 100%), #f8c768;
     background-blend-mode: soft-light, normal;
-    box-shadow: inset -2.0348px -2.0348px 2.0348px rgba(0, 0, 0, 0.05), inset 2.0348px 2.0348px 2.0348px rgba(255, 255, 255, 0.2);
+    box-shadow: inset -2.0348px -2.0348px 2.0348px rgba(0, 0, 0, .05), inset 2.0348px 2.0348px 2.0348px rgba(255, 255, 255, .2);
     border-radius: 56.6803px;
     padding: 21px 35px;
     display: flex;
     align-items: baseline;
     gap: 0 16px;
-    transition: .2s all ease;
+    transition: .2s
 }
 
 ._cta_btn:hover {
-    background: #eeba55;
-}
-
-._rylic_cta_content_btn_ic {
-    transition: .2s all ease;
+    background: #eeba55
 }
 
 ._cta_btn:hover ._rylic_cta_content_btn_ic {
-    transform: rotate(50deg);
+    transform: rotate(50deg)
 }
 
 ._cta_btn ._rylic_cta_content_btn_txt {
@@ -1837,54 +1556,45 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: #000000;
+    color: #000
 }
 
-/* Cta */
-/* Footer */
 ._rylic_footer_wrapper {
-    padding: 70px 0 34px;
+    padding: 70px 0 34px
 }
 
 ._rylic_footer_content_txt {
-    margin: 24px 0;
+    margin: 24px 0
 }
 
 ._rylic_footer_content_title {
-    font-family: 'universo-bold';
+    font-family: universo-bold;
     font-size: 24px;
     line-height: 35px;
     letter-spacing: 1.2px;
-    color: #FFFFFF;
-}
-
-._rylic_footer_content_ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px 20px;
+    color: #fff
 }
 
 ._rylic_footer_content_li {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(255, 255, 255, 0.24);
+    border: 2px solid rgba(255, 255, 255, .24);
     border-radius: 50%;
-    transition: .2s all ease;
+    transition: .2s
 }
 
 ._rylic_footer_content_li:hover {
-    border-color: transparent;
+    border-color: transparent
 }
 
 ._rylic_footer_content_li._dribbble:hover {
-    background-color: #EA4C89;
+    background-color: #ea4c89
 }
 
 ._rylic_footer_content_li._instagram {
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 ._rylic_footer_content_li._instagram::before {
@@ -1898,23 +1608,19 @@ ul {
     left: 0;
     opacity: 0;
     z-index: -1;
-    transition: .2s all ease;
-}
-
-._rylic_footer_content_li._instagram:hover::before {
-    opacity: 1;
+    transition: .2s
 }
 
 ._rylic_footer_content_li._fb:hover {
-    background-color: #4267B2;
+    background-color: #4267b2
 }
 
 ._rylic_footer_content_li._be:hover {
-    background-color: #053eff;
+    background-color: #053eff
 }
 
 ._rylic_footer_content_li._linkd:hover {
-    background-color: #0e76a8;
+    background-color: #0e76a8
 }
 
 ._rylic_footer_content_li_ic {
@@ -1922,11 +1628,11 @@ ul {
     height: 44px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 ._rylic_footer_content_copy {
-    margin: 38px 0;
+    margin: 38px 0
 }
 
 ._rylic_footer_content_copy_title {
@@ -1935,425 +1641,386 @@ ul {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff
 }
 
 ._spaceship_img {
-    animation: toFloat 3.2s infinite ease-in-out;
+    animation: 3.2s ease-in-out infinite toFloat
 }
 
 @keyframes toFloat {
-    from {
-        transform: translate(0, 0px);
+
+    from,
+    to {
+        transform: translate(0, 0)
     }
 
     65% {
-        transform: translate(0, 15px);
-    }
-
-    to {
-        transform: translate(0, -0px);
+        transform: translate(0, 15px)
     }
 }
 
-/* Footer */
-/* Alpine */
-
-/* Alpine */
-/* Responsive */
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width:1680px) {
     .container {
-        max-width: 1365px;
+        max-width: 1365px
     }
 
     ._rylic_header_txt_title {
-        max-width: 40%;
+        max-width: 40%
     }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width:1920px) {
     .container {
-        max-width: 1560px;
+        max-width: 1560px
     }
 
     ._rylic_header_wrap {
         padding: 38px 0 50px;
-        min-height: 600px;
+        min-height: 600px
     }
 
     ._rylic_logo_link_wrap {
-        /* margin: 0 250px 0 0; */
-        margin: 0 290px 0 0;
+        margin: 0 290px 0 0
     }
 
     ._rylic_header_cursor1 {
-        left: 130px;
+        left: 130px
     }
 
     ._rylic_header_cursor2 {
-        right: 256px;
+        right: 256px
     }
 
     ._rylic_service_heading_wrap {
-        margin: 0 0px 0 0;
+        margin: 0
     }
 
     ._rylic_service_content_top {
         min-height: 270px;
-        max-width: 100%;
+        max-width: 100%
     }
 
     ._rylic_service_content_top_inner {
         max-height: 260px;
-        min-height: 260px;
+        min-height: 260px
     }
 
     ._service1_top ._rylic_service_content_top_img {
         width: 116px;
-        max-width: 116px;
+        max-width: 116px
     }
 
     ._service2_top ._rylic_service_content_top_img {
         width: 126px;
-        max-width: 126px;
+        max-width: 126px
     }
 
     ._service3_top ._rylic_service_content_top_img {
         width: 102px;
-        max-width: 102px;
+        max-width: 102px
     }
 
     ._rylic_service_content_top_title {
         font-size: 28px;
-        max-width: 160px;
+        max-width: 160px
     }
 
     ._rylic_cta_content_title {
-        max-width: 710px;
+        max-width: 710px
     }
 
     ._big_des_no_show {
-        display: none !important;
+        display: none !important
     }
 
     ._big_des_show {
-        display: block !important;
-
+        display: block !important
     }
 }
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width:1399px) {
     ._rylic_logo_link_wrap {
-        margin: 0 190px 0 0;
+        margin: 0 190px 0 0
     }
 
     ._rylic_service_heading_wrap {
-        margin: 0 0px 0 0;
+        margin: 0
     }
 
     ._preloader_txt {
-        font-size: 6rem;
+        font-size: 6rem
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+@media only screen and (min-width:1200px) and (max-width:1399px) {
     .container {
-        max-width: 1170px;
+        max-width: 1170px
     }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width:1199px) {
     ._rylic_header_wrap {
-        /* padding: 100px 0 50px; */
-        /* padding: 18px 0 50px; */
-        min-height: 460px;
+        min-height: 460px
     }
 
     ._rylic_header_shape_img {
-        width: 60px;
+        width: 60px
     }
 
     ._rylic_header_shape2 {
-        bottom: 0px;
+        bottom: 0
     }
 
     ._rylic_header_shape_img2 {
-        height: 200px;
+        height: 200px
     }
 
+    ._rylic_header_cursor_tab2,
     ._rylic_port_shape_ball {
-        right: 100px;
+        right: 100px
     }
 
     ._rylic_process_heading_title2 {
         font-size: 26px;
         max-width: 100%;
         margin: 0 auto;
-        line-height: 33px;
+        line-height: 33px
     }
 
-    ._rylic_process_heading_title {
+    ._rylic_process_heading_title,
+    ._rylic_project_top_text_para {
         font-size: 13px;
-        margin: 0 0 12px;
+        margin: 0 0 12px
     }
 
     ._rylic_service_heading_title {
         font-size: 26px;
         max-width: 440px;
-        line-height: 33px;
+        line-height: 33px
     }
 
-    ._rylic_project_top_text_para {
-        font-size: 13px;
-        margin: 0 0 12px;
-    }
-
-    ._rylic_project_top_text_title {
-        font-size: 26px;
+    ._rylic_instagram_header_title_txt,
+    ._rylic_project_top_text_title,
+    ._rylic_testimonial_text_title {
+        font-size: 26px
     }
 
     ._rylic_service_heading_title2 {
         font-size: 13px;
-        margin: 0 0 12px !important;
+        margin: 0 0 12px !important
     }
 
-    ._rylic_port_shape img {
-        width: 70px;
+    ._rylic_port_shape img,
+    ._rylic_testimonial_shape img {
+        width: 70px
     }
 
     ._rylic_port_shape_ball img {
         width: 132px;
-        max-width: 132px;
+        max-width: 132px
     }
 
     ._rylic_port_slider_item {
         padding: 0 13px;
         width: 340px;
         max-width: 272px;
-        height: 260px;
+        height: 260px
     }
 
     ._rylic_port_slider_content2 {
-        margin: 0 -14px 0 0;
+        margin: 0 -14px 0 0
     }
 
     ._rylic_project_card_image {
-        border: 8px solid #fff;
+        border: 8px solid #fff
     }
 
-    /* ._rylic_project_card_image {
-        width: 405px;
-        max-width: 405px;
-    } */
-
-    /* ._rylic_project_card {
-        margin: 0 auto 80px;
-        width: fit-content;
-    } */
-
     ._rylic_logo_link_wrap {
-        margin: 0 130px 0 0;
+        margin: 0 130px 0 0
     }
 
     .flickity-viewport {
-        height: 266px !important;
+        height: 266px !important
     }
 
     ._rylic_port_slider {
-        height: auto;
+        height: auto
     }
 
     ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
         bottom: 0;
         opacity: 0;
         display: none;
-        transform: translate(0%, 0) scale(0);
+        transform: translate(0, 0) scale(0)
     }
 
     ._rylic_port_slider_content:hover {
-        transform: translate(0, 0px);
+        transform: translate(0, 0)
     }
 
-    ._rylic_process_shape1 img {
-        width: 90px;
+    ._rylic_process_shape1 img,
+    ._rylic_service_shape img {
+        width: 90px
     }
 
     ._rylic_process_shape1 {
         top: -60px;
-        left: 120px;
+        left: 120px
     }
 
     ._rylic_process_shape2 {
         right: 150px;
-        top: -45px;
+        top: -45px
     }
 
     ._rylic_process_shape2 img {
-        width: 92px;
-    }
-
-    ._rylic_service_shape img {
-        width: 90px;
+        width: 92px
     }
 
     ._rylic_testimonial_chat_shape {
         top: 50%;
-        transform: translate(70px, -50%);
+        transform: translate(70px, -50%)
     }
 
     ._rylic_testimonial_chat_shape img {
-        width: 54px;
+        width: 54px
     }
 
     ._rylic_testimonial_shape {
-        right: 50px;
-    }
-
-    ._rylic_testimonial_shape img {
-        width: 70px;
+        right: 50px
     }
 
     ._rylic_testimonial_text_para {
-        font-size: 13px;
-    }
-
-    ._rylic_testimonial_text_title {
-        font-size: 26px;
+        font-size: 13px
     }
 
     ._rylic_testimonial_duck_shape {
-        right: 80px;
+        right: 80px
     }
 
     ._rylic_testimonial_duck_shape img {
-        width: 80px;
+        width: 80px
     }
 
     ._rylic_instagram_shape {
-        left: 70px;
+        left: 70px
     }
 
     ._rylic_instagram_shape img {
         width: 150px;
         max-width: 150px;
-        margin: 9px 0 0 0;
-    }
-
-    ._rylic_instagram_header_title_txt {
-        font-size: 26px;
+        margin: 9px 0 0
     }
 
     ._rylic_instagram_header_title {
-        gap: 0 15px;
+        gap: 0 15px
     }
 
     ._rylic_instagram_header_img {
-        width: 44px;
+        width: 44px
     }
 
     ._rylic_cta_content_title {
         font-size: 26px;
         line-height: 38px;
-        max-width: 452px;
+        max-width: 452px
     }
 
     ._preloader_txt {
-        font-size: 5rem;
+        font-size: 5rem
     }
 
     ._rylic_cta_img {
         max-width: 80px;
-        width: 80px;
+        width: 80px
     }
 
     ._rylic_header_txt_title {
         font-size: 36px;
         line-height: 42px;
-        max-width: 400px;
+        max-width: 400px
     }
 
     ._rylic_header_txt_p {
         font-size: 16px;
         line-height: 30px;
         max-width: 400px;
-        margin: 40px auto 0;
+        margin: 40px auto 0
     }
 
     ._rylic_header_txt_title2 {
         font-size: 32px;
         line-height: 32px;
-        max-width: 400px;
+        max-width: 400px
     }
 
     ._rylic_header_circular_txt_wrap {
-        bottom: -85px;
+        bottom: -85px
     }
 
     ._rylic_header_circular_txt_wrap svg {
         width: 159px;
         max-width: 159px;
-        height: 159px;
+        height: 159px
     }
 
     ._rylic_header_shape_r_img {
-        max-width: 64px;
+        max-width: 64px
     }
 
     ._rylic_header_shape_r_wrap {
         right: 200px;
-        bottom: -25px;
+        bottom: -25px
     }
 
-    /* ._rylic_trusted_content_img {
-        width: 120%;
-    } */
-
-    ._rylic_cta_content_btn_wrap {
-        /* max-width: 190px; */
-        margin: 0 0 0 auto;
+    ._rylic_cta_content_btn_wrap,
+    ._rylic_process_content4 {
+        margin: 0 0 0 auto
     }
 
     ._rylic_cta_content_btn_ic svg {
         width: 15px;
-        max-width: 15px;
+        max-width: 15px
     }
 
     ._rylic_cta_content_btn_wrap ._rylic_cta_content_btn_txt {
         font-size: 15px;
-        line-height: 17px;
+        line-height: 17px
     }
 
     ._rylic_footer_content_logo_wrap img {
         width: 110px;
-        max-width: 110px;
+        max-width: 110px
     }
 
     ._spaceship_img {
         width: 58px;
-        max-width: 58px;
+        max-width: 58px
     }
 
     ._rylic_nav_btn ._rylic_cta_content_btn_ic svg {
         width: 26px !important;
-        max-width: 26px !important;
+        max-width: 26px !important
     }
 
     ._rylic_header_cursor {
-        scale: 0.8;
+        scale: 0.8
     }
 
     ._rylic_header_cursor2 {
         right: 90px;
-        top: 39%;
+        top: 39%
     }
 
     ._rylic_header_cursor1 {
         left: 10px;
-        top: 38%;
+        top: 38%
     }
 
+    ._col_mob_none,
     ._rylic_header_cursor_wrap {
-        display: none;
+        display: none
     }
 
     ._rylic_header_cursor_tab_wrap {
@@ -2361,221 +2028,135 @@ ul {
         min-height: 100%;
         left: 50%;
         transform: translate(-50%, 0);
-        display: block;
+        display: block
     }
 
     ._rylic_header_cursor_tab1 {
-        /* left: 22px; */
-        left: -2px;
-    }
-
-    ._rylic_header_cursor_tab2 {
-        right: 100px;
+        left: -2px
     }
 
     ._rylic_header_cursor_tab3 {
         left: calc(50% - 60px);
-        /* top: calc(100% - 200px); */
         top: calc(100% - 150px);
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 0)
     }
-
-    /* ._rylic_service_content_top {
-        min-height: 180px;
-        max-width: 229px;
-        width: 100%;
-        max-height: 180px;
-    } */
-
-    /* ._service1_top ._rylic_service_content_top_img {
-        width: 88px;
-        max-width: 88px;
-    } */
-
-    /* ._service2_top ._rylic_service_content_top_img {
-        width: 92px;
-        max-width: 92px;
-    } */
-
-    /* ._service3_top ._rylic_service_content_top_img {
-        width: 76px;
-        max-width: 76px;
-    } */
-
-    /* ._rylic_service_content_top_title {
-        font-size: 18px;
-        line-height: 24px;
-    } */
-
-    /* ._service2_top ._rylic_service_content_top_title {
-        color: #fff;
-        max-width: 121px;
-    } */
-
-    /* ._rylic_service_content_top_inner {
-        max-height: 194px;
-        min-height: 194px;
-    } */
-
-    /* ._rylic_service_content_p {
-        font-size: 14px;
-        line-height: 21px;
-        max-width: 229px;
-    } */
-
-    /* ._rylic_service_content_2 {
-        width: fit-content;
-        margin: 0 auto;
-    } */
 
     ._rylic_service_content_3 {
         width: fit-content;
-        margin: 0 -12px 0 auto;
+        margin: 0 -12px 0 auto
     }
 
     ._rylic_process_content_p {
         font-size: 14px;
-        line-height: 21px;
+        line-height: 21px
     }
-
-    ._col_mob_none {
-        display: none;
-    }
-
-    /* ._rylic_process_content_mid_img {
-        max-width: 237px;
-    } */
 
     ._rylic_process_content1 {
         max-width: 230px;
-        margin: 0 0 34px;
+        margin: 0 0 34px
     }
 
     ._rylic_process_content2 {
-        margin: 0 0 55px auto;
+        margin: 0 0 55px auto
     }
 
     ._rylic_process_content3 {
-        max-width: 228px;
-    }
-
-    ._rylic_process_content4 {
-        margin: 0 0 0 auto;
+        max-width: 228px
     }
 
     ._cta_btn ._rylic_cta_content_btn_txt {
         font-size: 14px;
-        line-height: 22px;
+        line-height: 22px
     }
 
     ._rylic_logo_link_wrap img {
         width: 100px;
-        max-width: 100px;
+        max-width: 100px
     }
 
-    /* ._rylic_cta_content_btn {
-        width: 180px;
-        max-width: 180px;
-        padding: 16px 0;
-        justify-content: center;
-        padding: 9px 20px !important;
-    } */
     ._rylic_cta_content_btn {
         width: 210px;
-        /* max-width: 210px; */
         max-width: 192px;
         padding: 16px 0;
-        justify-content: center;
+        justify-content: center
     }
 
     ._rylic_nav_btn {
-        width: 180px;
-        max-width: 180px;
-        padding: 16px 0;
-        justify-content: center;
-        padding: 9px 20px !important;
+        justify-content: center
     }
 
-
     ._rylic_cta_content_btn ._rylic_cta_content_btn_txt {
-        /* font-size: 15px; */
         font-size: 16px;
         line-height: 22px;
         font-weight: 500;
-        font-family: 'GT Walsheim-md';
+        font-family: 'GT Walsheim-md'
     }
-
-    ._rylic_nav_btn ._rylic_cta_content_btn_txt {
-        margin: 0 6px 0 -6px;
-        font-size: 14px;
-    }
-
 
     ._rylic_port_wrapper {
-        padding: 84px 0 100px;
+        padding: 84px 0 100px
     }
 
     ._rylic_port_shape_ball {
-        top: 10px;
+        top: 10px
     }
 
     ._rylic_port_slider_wrap {
-        padding: 30px 0;
+        padding: 30px 0
     }
 
     ._rylic_process_content_num_txt {
-        font-size: 17px;
+        font-size: 17px
     }
 
     ._rylic_process_content_num {
         width: 32px;
-        height: 32px;
+        height: 32px
     }
 
     ._rylic_process_content_wrap {
-        margin-top: 32px;
+        margin-top: 32px
     }
 
     ._rylic_process_wrapper {
-        padding: 70px 0 10px;
+        padding: 70px 0 10px
     }
 
     ._rylic_project_top {
-        margin: 0 0 38px;
+        margin: 0 0 38px
     }
 
     ._rylic_project_card_title {
-        font-size: 20px;
+        font-size: 20px
     }
 
     ._rylic_testimonial_card_para {
         font-size: 14px;
-        line-height: 24px;
+        line-height: 24px
     }
 
     ._rylic_testimonial_card {
-        min-height: 254px;
+        min-height: 254px
     }
 
     .slide_list .slick-dots li button {
         width: 14px;
-        height: 6px;
+        height: 6px
     }
 
     .slick-dots li {
-        margin: 0 2px;
+        margin: 0 2px
     }
 
     ._rylic_testimonial_wrapper {
-        padding: 100px 0 76px;
+        padding: 100px 0 76px
     }
 
     ._rylic_instagram_wrapper {
-        padding: 70px 0;
+        padding: 70px 0
     }
 
     ._rylic_instagram_content_wrap {
-        margin: 40px 0 0;
+        margin: 40px 0 0
     }
 
     ._rylic_instagram_content_li {
@@ -2583,359 +2164,347 @@ ul {
         flex: 0 0 214px;
         max-width: 214px;
         margin: 0 8px;
-        padding: 5px;
+        padding: 5px
     }
 
     ._rylic_instagram_content_ul {
         gap: 16px 16px;
-        margin: 0 0 16px;
+        margin: 0 0 16px
     }
 
     ._rylic_trusted_heading_title {
         font-family: 'GT Walsheim-md';
         font-weight: 500;
-        font-size: 18px;
+        font-size: 18px
     }
 
     ._rylic_trusted_content_wrap {
-        margin: 32px 0 0;
+        margin: 32px 0 0
     }
 
     ._rylic_trusted_content {
-        margin: 16px 0;
+        margin: 16px 0
     }
 
     ._rylic_cta_content_wrap {
-        padding: 24px 0;
+        padding: 24px 0
     }
 
     ._rylic_cta_img {
-        margin-bottom: -10px;
+        margin-bottom: -10px
     }
 
     ._rylic_footer_wrapper {
-        padding: 50px 0 34px;
+        padding: 50px 0 34px
     }
 
     ._rylic_footer_content_copy {
-        margin: 38px 0 9px;
+        margin: 38px 0 9px
     }
 
     ._real_marque_content_li img {
-        width: 2200px;
+        width: 2200px
     }
 
     ._real_marque_content_wrap {
-        height: 60px;
+        height: 60px
     }
 
     ._real_marque_wrapper {
-        padding: 90px 0 56px;
+        padding: 90px 0 56px
     }
 
     ._rylic_project_card {
-        margin: 0 0 52px;
+        margin: 0 0 52px
     }
 
     ._cta_btn ._rylic_cta_content_btn_ic svg {
         width: 12px;
-        animation: 3.5s arrow ease infinite;
+        animation: 3.5s infinite arrow
     }
 
     @keyframes arrow {
-        0% {
-            transform: translate(0, 0);
+
+        0%,
+        100% {
+            transform: translate(0, 0)
         }
 
         50% {
-            transform: translate(4px, -4px);
-
-        }
-
-        100% {
-            transform: translate(0, 0);
-
+            transform: translate(4px, -4px)
         }
     }
 
     ._rylic_nav_btn svg {
-        animation: none !important;
+        animation: none !important
     }
 
     .container {
-        max-width: 880px;
+        max-width: 880px
     }
 
     ._rylic_service_heading_wrap {
-        margin: 0;
+        margin: 0
     }
 
     ._rylic_header_txt_title2 span img {
         width: 42px;
-        height: 42px;
+        height: 42px
     }
 
     ._rylic_nav_btn {
         width: 205px;
         max-width: 180px;
-        /* padding: 15px 26px 15px 24px !important; */
         padding: 10px 21px 10px 19px !important;
-        gap: 0 10px;
+        gap: 0 10px
     }
 
     ._rylic_nav_btn ._rylic_cta_content_btn_txt {
         font-size: 16px;
-        margin: 0 0px 0 0px;
+        margin: 0;
         font-weight: 500;
-        font-family: 'GT Walsheim-md';
+        font-family: 'GT Walsheim-md'
     }
 }
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     ._rylic_service_content_top_inner {
         max-height: 194px;
-        min-height: 194px;
+        min-height: 194px
     }
 
     ._rylic_service_content_top {
         min-height: 180px;
         max-width: 229px;
         width: 100%;
-        max-height: 180px;
+        max-height: 180px
     }
 
     ._rylic_service_content_2 {
         width: fit-content;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._service3_top ._rylic_service_content_top_img {
         width: 76px;
-        max-width: 76px;
+        max-width: 76px
     }
 
     ._rylic_service_content_top_title {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 24px
     }
 
     ._service2_top ._rylic_service_content_top_title {
         color: #fff;
-        max-width: 121px;
+        max-width: 121px
     }
 
     ._rylic_service_content_p {
         font-size: 14px;
         line-height: 21px;
-        max-width: 229px;
+        max-width: 229px
     }
 
     ._service1_top ._rylic_service_content_top_img {
         width: 88px;
-        max-width: 88px;
+        max-width: 88px
     }
 
     ._service2_top ._rylic_service_content_top_img {
         width: 92px;
-        max-width: 92px;
+        max-width: 92px
     }
 
     ._rylic_process_content_mid_img {
-        max-width: 237px;
+        max-width: 237px
     }
 }
 
-@media only screen and (max-width: 991px) {
-
-    /* ._navbar_menu_btn {
-        display: block;
-    } */
+@media only screen and (max-width:991px) {
     ._nav_collapse {
         flex: 1 1;
-        display: flex !important;
+        display: flex !important
     }
 
     ._nav_ul2 {
-        flex-direction: row;
+        flex-direction: row
     }
 
     ._rylic_logo_link_wrap {
-        margin: 0 110px 0 0;
+        margin: 0 110px 0 0
     }
 
     ._rylic_process_heading {
         margin: 0 auto;
-        max-width: 280px;
+        max-width: 280px
     }
 
     ._rylic_header_cursor {
-        scale: 0.7;
+        scale: 0.7
     }
 
     ._rylic_header_cursor_tab1 {
-        left: 14px;
+        left: 14px
     }
 
     ._rylic_header_cursor_tab2 {
-        right: 110px;
+        right: 110px
     }
 
     ._rylic_header_cursor_tab3 {
-        left: calc(50% - 54px);
+        left: calc(50% - 54px)
     }
 
     ._rylic_cta_content_btn {
         width: 210px;
-        max-width: 210px;
+        max-width: 210px
     }
 
     ._rylic_nav_btn {
         width: 205px;
-        max-width: 180px;
+        max-width: 180px
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 769px) {
+@media only screen and (min-width:768px) and (max-width:769px) {
     ._rylic_service_content {
-        margin: 0 0px 0 -12px;
+        margin: 0 0 0 -12px
     }
 
     ._rylic_service_content_2 {
         width: fit-content;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._rylic_service_content_3 {
         width: fit-content;
-        margin: 0 -12px 0 auto;
+        margin: 0 -12px 0 auto
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 780px) {
+@media only screen and (min-width:768px) and (max-width:780px) {
     ._rylic_service_content_p {
-        font-size: 13px;
+        font-size: 13px
     }
 
     ._rylic_logo_link_wrap {
-        margin: 0 90px 0 0;
+        margin: 0 90px 0 0
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width:767px) {
     ._nav_collapse {
-        display: none !important;
+        display: none !important
     }
 
-    ._navbar_menu_btn {
-        display: block;
+    ._navbar_menu_btn,
+    ._rylic_cta_img2_mob_wrap,
+    ._rylic_testimonial_card_para._mob_show {
+        display: block
     }
 
-    /* mob */
     ._preloader_txt {
-        font-size: 2rem;
+        font-size: 2rem
     }
 
     ._rylic_logo_link_wrap {
-        margin: 0;
+        margin: 0
     }
 
     ._rylic_header_wrapper {
-        padding-bottom: 40px;
+        padding-bottom: 40px
     }
 
-    ._rylic_header_cursor_wrap {
-        display: none;
-    }
-
-    ._rylic_header_cursor {
-        display: none;
-    }
-
-    ._rylic_header_cursor_img2 {
-        display: none;
-    }
-
-    ._rylic_header_circular_txt_wrap {
-        display: none;
+    ._rylic_footer_content_img,
+    ._rylic_footer_content_logo_wrap,
+    ._rylic_header_circular_txt_wrap,
+    ._rylic_header_cursor,
+    ._rylic_header_cursor_img2,
+    ._rylic_header_cursor_wrap,
+    ._rylic_header_shape_r_wrap,
+    ._rylic_instagram_content_ul2,
+    ._rylic_instagram_content_ul3,
+    ._rylic_instagram_shape img,
+    ._rylic_port_shape,
+    ._rylic_port_slider_ball,
+    ._rylic_process_content_wrap,
+    ._rylic_process_shape2,
+    ._rylic_service_shape,
+    ._rylic_testimonial_card_para._des_show,
+    .webgl {
+        display: none
     }
 
     ._rylic_process_bottom_btn_mob {
         display: block;
         padding: 0;
-        margin-top: 7px;
+        margin-top: 7px
     }
 
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
-        max-width: 193px;
-        width: 100%;
         margin: 0 auto;
-        gap: 0 9px;
-        padding: 19px 20px !important;
+        gap: 0 9px
     }
 
     ._rylic_process_bottom_btn_mob ._cta_btn ._rylic_cta_content_btn_txt {
         font-size: 16px;
-        margin: 0 0px 0 0px;
+        margin: 0
     }
 
     ._rylic_service_wrapper {
-        /* padding: 55px 0 18px; */
-        padding: 55px 0 0px;
+        padding: 55px 0 0
     }
 
     ._rylic_header_shape1 {
-        top: 40%;
+        top: 40%
     }
 
     ._rylic_header_shape_img {
-        height: 140px;
+        height: 140px
     }
 
-    ._mobile_menu_wrap ._rylic_header_shape_img {
-        height: 180px;
+    ._mobile_menu_wrap ._rylic_header_shape_img,
+    ._rylic_header_shape_img2 {
+        height: 180px
     }
 
     ._rylic_header_shape2 {
-        bottom: 50px;
-    }
-
-    ._rylic_header_shape_img2 {
-        height: 180px;
+        bottom: 50px
     }
 
     ._mobile_menu_wrap ._rylic_header_shape_img2 {
-        /* height: 180px; */
-        height: 200px;
+        height: 200px
     }
 
     ._rylic_header_txt_title {
         font-size: 35px;
         line-height: 42px;
-        max-width: 348px;
+        max-width: 348px
     }
 
     ._rylic_header_txt_title2 {
-        background: #F8CE68;
-        padding: 3px 10px 0px;
+        background: #f8ce68;
+        padding: 3px 10px 0;
         font-weight: 500;
-        font-size: 32px !important;
+        font-size: 32px !important
     }
 
     ._rylic_header_txt_title2 span img {
         width: 44px;
-        height: 44px;
+        height: 44px
     }
 
     ._rylic_header_cursor_txt_ul {
         display: flex;
         justify-content: center;
         gap: 0 8px;
-        margin-top: 30px;
+        margin-top: 30px
     }
 
     ._rylic_header_cursor_txt_li {
         position: relative;
-        z-index: 1;
+        z-index: 1
     }
 
     ._rylic_header_cursor_txt_li::before {
@@ -2944,116 +2513,103 @@ ul {
         content: '';
         width: 76px;
         height: 30px;
-        /* top: 12px; */
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
         background-color: red;
-        opacity: 0.7;
-        filter: blur(37.67px);
+        opacity: .7;
+        filter: blur(37.67px)
     }
 
-    ._rylic_header_cursor_txt_li:nth-child(1) img {
-        width: 92px;
+    ._rylic_header_cursor_txt_li:first-child img,
+    ._rylic_process_shape1 img {
+        width: 92px
     }
 
     ._rylic_header_cursor_txt_li:nth-child(2) img {
-        width: 118px;
-
+        width: 118px
     }
 
     ._rylic_header_cursor_txt_li:nth-child(3) img {
-        width: 88px;
-
+        width: 88px
     }
 
-    ._rylic_header_cursor_txt_li:nth-child(1)::before {
-        background-color: #FF5722;
+    ._rylic_header_cursor_txt_li:first-child::before {
+        background-color: #ff5722
     }
 
     ._rylic_header_cursor_txt_li:nth-child(2)::before {
-        opacity: 0.6;
-        background-color: #1AACFF;
+        opacity: .6;
+        background-color: #1aacff
     }
 
     ._rylic_header_cursor_txt_li:nth-child(3)::before {
-        background-color: #1CBA6E;
+        background-color: #1cba6e
     }
 
     ._rylic_header_wrap {
         min-height: 360px;
-        padding: 18px 0 10px;
-    }
-
-    ._rylic_header_shape_r_wrap {
-        display: none;
+        padding: 18px 0 10px
     }
 
     ._rylic_header_txt_p {
         margin-top: 24px;
         font-size: 16px;
         line-height: 25px;
-        max-width: 400px;
+        max-width: 400px
     }
 
     ._rylic_service_heading_wrap {
         flex-direction: column-reverse;
-        text-align: center;
+        text-align: center
     }
 
     ._rylic_service_heading_title2 {
-        margin: 0 0 11px !important;
+        margin: 0 0 11px !important
     }
 
     ._rylic_service_content_top {
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._service1_top ._rylic_service_content_top_img_wrap {
-        top: -30px;
+        top: -30px
     }
 
     ._rylic_service_content_p {
         max-width: 240px;
         text-align: center;
         margin: 20px auto 45px;
-        line-height: 24px;
+        line-height: 24px
     }
 
     ._rylic_service_content_2 {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
 
     ._rylic_service_content_2 ._rylic_service_content_p {
         margin-top: 22px;
-        /* margin-bottom: 35px; */
         margin-bottom: 20px;
-        max-width: 260px;
+        max-width: 260px
     }
 
     ._rylic_service_content_3 ._rylic_service_content_p {
         max-width: 262px;
-        margin-bottom: 58px;
-    }
-
-    ._rylic_service_shape {
-        display: none;
+        margin-bottom: 58px
     }
 
     ._rylic_service_shape_mob {
         display: block;
         position: absolute;
         right: -20px;
-        top: 470px;
+        top: 470px
     }
 
-    ._rylic_service_shape_mob img {
-        width: 80px;
-    }
-
-    ._rylic_service_shape img {
-        width: 80px;
+    ._rylic_service_shape img,
+    ._rylic_service_shape_mob img,
+    ._rylic_testimonial_shape img {
+        width: 80px
     }
 
     ._rylic_service_shape2 {
@@ -3061,123 +2617,95 @@ ul {
         position: absolute;
         left: -24px;
         bottom: 30%;
-        transform: translate(0, -70px);
+        transform: translate(0, -70px)
     }
 
     ._rylic_service_shape2 img {
-        width: 60px;
-    }
-
-    ._rylic_port_shape {
-        display: none;
+        width: 60px
     }
 
     ._rylic_port_divider {
         margin: 0 auto;
-        max-width: 320px;
+        max-width: 320px
     }
 
     ._rylic_port_shape_ball {
         position: absolute;
         top: -25px;
-        right: 12px;
+        right: 12px
     }
 
     ._rylic_port_shape_ball img {
-        width: 100px;
+        width: 100px
     }
 
+    ._rylic_project_top_text_para,
     ._rylic_service_heading_title2 {
         font-size: 12px;
-        margin-bottom: 11px;
+        margin-bottom: 11px
     }
 
     ._rylic_service_heading_title {
         font-size: 24px;
         line-height: 30px;
         max-width: 300px;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._rylic_port_wrapper {
-        padding: 58px 0 25px;
+        padding: 58px 0 25px
     }
 
     ._rylic_port_slider_item {
         max-width: 300px;
-        padding: 0 10px;
+        padding: 0 10px
     }
 
     ._rylic_port_slider_wrap {
-        padding: 30px 0 20px;
-    }
-
-    ._rylic_port_slider_ball {
-        display: none;
+        padding: 30px 0 20px
     }
 
     ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
         bottom: 0;
         opacity: 0;
         display: none;
-        transform: translate(0%, 0) scale(0);
+        transform: translate(0, 0) scale(0)
     }
 
     ._rylic_port_slider_content:hover {
-        transform: translate(0, 0px);
-    }
-
-    .webgl {
-        display: none;
-    }
-
-    ._rylic_process_content_wrap {
-        display: none;
+        transform: translate(0, 0)
     }
 
     ._rylic_process_content_mob_wrap {
         display: block;
-        margin-top: 4px;
+        margin-top: 4px
     }
 
     ._rylic_process_wrapper {
-        padding-top: 110px;
-    }
-
-    ._rylic_process_shape2 {
-        display: none;
+        padding-top: 110px
     }
 
     ._rylic_process_shape1 {
         left: 50%;
         transform: translate(-50%, 0);
-    }
-
-    ._rylic_process_shape1 {
-        top: -62px;
-    }
-
-    ._rylic_process_shape1 img {
-        width: 92px;
+        top: -62px
     }
 
     ._rylic_process_heading_title {
         font-size: 14px;
-        margin-bottom: 8px;
+        margin-bottom: 8px
     }
 
     ._rylic_process_heading_title2 {
         font-size: 24px;
-        /* max-width: 70%; */
         max-width: 270px;
-        line-height: 30px;
+        line-height: 30px
     }
 
     ._rylic_process_content_num {
         margin: 0 auto;
         width: 36px;
-        height: 36px;
-
+        height: 36px
     }
 
     ._rylic_process_content_p {
@@ -3185,64 +2713,50 @@ ul {
         margin: 0 auto;
         text-align: center;
         font-size: 15px;
-        line-height: 26px;
+        line-height: 26px
     }
-
-    ._rylic_process_content1 {
-        text-align: center;
-    }
-
 
     ._rylic_process_content {
-        /* margin: 18px 0; */
         margin: 18px auto;
-        max-width: 260px;
+        max-width: 260px
     }
 
     ._rylic_process_content1 {
-        margin: 50px auto 18px;
-        max-width: 396px;
-    }
-
-    ._rylic_project_top_text {
         text-align: center;
+        margin: 50px auto 18px;
+        max-width: 396px
     }
 
-    ._rylic_project_top_text_para {
-        font-size: 12px;
-        margin-bottom: 11px;
+    ._rylic_project_top_text,
+    ._rylic_testimonial_card_para {
+        text-align: center
     }
 
     ._rylic_project_top_text_title {
         font-size: 24px;
-        line-height: 30px;
+        line-height: 30px
     }
 
     ._rylic_project_card {
         margin: 0 0 50px;
-        padding: 0 18px;
+        padding: 0 18px
     }
 
     ._rylic_project_card_image {
         border: 6px solid #fff;
-        margin: 0 0 24px;
+        margin: 0 0 24px
     }
 
     ._rylic_instagram_wrapper {
-        padding: 40px 0 45px;
+        padding: 40px 0 45px
     }
 
     ._rylic_instagram_content_wrap {
-        margin-top: 30px;
+        margin-top: 30px
     }
 
     ._rylic_instagram_bg {
-        height: calc(70% - 50px);
-    }
-
-    ._rylic_instagram_content_ul2,
-    ._rylic_instagram_content_ul3 {
-        display: none;
+        height: calc(70% - 50px)
     }
 
     ._rylic_trusted_heading_title {
@@ -3251,153 +2765,132 @@ ul {
         font-size: 18px;
         line-height: 24px;
         text-align: center;
-        color: #FFFFFF;
+        color: #fff;
         max-width: 65%;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._rylic_trusted_content_wrap {
-        margin-top: 20px;
+        margin-top: 20px
     }
 
     ._rylic_testimonial_shape {
-        right: 10px;
-    }
-
-    ._rylic_testimonial_shape img {
-        /* width: 44px;
-        height: 40px; */
-        width: 80px;
-    }
-
-    ._rylic_testimonial_card_para._des_show {
-        display: none;
-    }
-
-    ._rylic_testimonial_card_para._mob_show {
-        display: block;
+        right: 10px
     }
 
     ._rylic_testimonial_chat_shape {
         top: -10px;
         left: 10px;
-        transform: translate(0px, -50%);
+        transform: translate(0, -50%)
+    }
+
+    ._rylic_cta_img,
+    ._rylic_cta_img2 {
+        position: absolute;
+        left: 50%;
+        background-color: var(--bg)
     }
 
     ._rylic_testimonial_chat_shape img {
         width: 56px;
-        height: 44px;
+        height: 44px
     }
 
     ._rylic_testimonial_text_para {
         font-size: 12px;
         line-height: 14px;
-        margin-bottom: 11px;
+        margin-bottom: 11px
     }
 
     ._rylic_testimonial_text_title {
         font-size: 24px;
         line-height: 30px;
         max-width: 200px;
-        margin: 0 auto;
-    }
-
-    ._rylic_instagram_shape img {
-        display: none;
+        margin: 0 auto
     }
 
     ._rylic_testimonial_wrapper {
-        padding: 100px 0 70px;
+        padding: 100px 0 70px
     }
 
     ._rylic_testimonial_duck_shape {
-        right: 16px;
+        right: 16px
     }
 
     ._rylic_testimonial_duck_shape img {
-        width: 55px;
+        width: 55px
     }
 
     ._rylic_instagram_header_title {
-        gap: 0 14px;
+        gap: 0 14px
     }
 
     ._rylic_instagram_header_img {
-        width: 40px;
+        width: 40px
     }
 
-    ._rylic_instagram_header_title_txt {
-        font-size: 20px;
+    ._rylic_instagram_header_title_txt,
+    ._rylic_project_card_title {
+        font-size: 20px
     }
 
     ._rylic_trusted_content_img {
-        width: 200%;
-    }
-
-    ._rylic_testimonial_card_para {
-        text-align: center;
+        width: 200%
     }
 
     ._rylic_testimonial_card_bottom {
         justify-content: center;
-        text-align: center;
-    }
-
-    ._rylic_cta_img2_mob_wrap {
-        display: block;
+        text-align: center
     }
 
     ._real_marque_wrapper {
-        padding: 85px 0 56px;
+        padding: 85px 0 56px
     }
 
     ._real_marque_content_wrap {
-        height: 60px;
+        height: 60px
     }
 
     ._real_marque_content_li img {
-        width: 1800px;
+        width: 1800px
     }
 
     ._rylic_process_bottom_wrap {
-        margin: 50px 0 30px;
+        margin: 50px 0 30px
     }
 
     ._rylic_project_top {
-        margin: 0 0 12px;
+        margin: 0 0 12px
     }
 
     ._rylic_project_wrapper {
-        padding: 20px 0 0;
+        padding: 20px 0 0
     }
 
     ._real_marque_shape img {
         width: 80px;
-        height: 80px;
+        height: 80px
     }
 
     ._rylic_cta_img2 {
         width: 55px;
         padding: 0 13px 0 18px;
-        position: absolute;
         bottom: -78px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        background-color: var(--bg);
+        transform: translate(-50%, 0)
     }
 
     ._rylic_cta_content_wrap {
         padding: 40px 0 62px;
         border-top: 1.5px solid rgba(255, 255, 255, .07);
-        border-bottom: 1.5px solid rgba(255, 255, 255, .07);
+        border-bottom: 1.5px solid rgba(255, 255, 255, .07)
     }
 
     ._rylic_process_bottom_shape {
-        height: 1.5px;
+        height: 1.5px
     }
 
     ._rylic_footer_wrapper {
-        padding: 60px 0 2px;
+        padding: 60px 0 2px
     }
 
     ._rylic_cta_content_title {
@@ -3405,124 +2898,102 @@ ul {
         line-height: 30px;
         margin: 0 auto;
         text-align: center;
-        max-width: 300px;
+        max-width: 300px
     }
 
     ._rylic_cta_img {
         width: 100px;
         max-width: 100px;
         margin: 0;
-        position: absolute;
         top: 0;
-        left: 50%;
         transform: translate(-50%, -50%);
-        padding: 0 15px;
-        background-color: var(--bg);
+        padding: 0 15px
     }
 
     ._rylic_cta_img_anim {
-        animation: tilt-shaking2 .1s linear infinite;
+        animation: .1s linear infinite tilt-shaking2
     }
 
     @keyframes tilt-shaking2 {
-        0% {
-            transform: translate(-50%, -50%) rotate(0deg);
+
+        0%,
+        100%,
+        50% {
+            transform: translate(-50%, -50%) rotate(0)
         }
 
         25% {
-            transform: translate(-50%, -50%) rotate(5deg);
-        }
-
-        50% {
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(5deg)
         }
 
         75% {
-            transform: translate(-50%, -50%) rotate(-5deg);
-        }
-
-        100% {
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(-5deg)
         }
     }
 
     ._rylic_trusted_content {
-        margin: 20px 0;
+        margin: 20px 0
     }
 
     ._rylic_cta_content_btn_wrap {
         justify-content: center;
-        margin: 30px 0 0;
-    }
-
-    ._rylic_footer_content_img {
-        display: none;
-    }
-
-    ._rylic_footer_content_logo_wrap {
-        display: none;
+        margin: 30px 0 0
     }
 
     ._rylic_footer_content_li {
-        border: 1.5px solid rgba(255, 255, 255, 0.24);
+        border: 1.5px solid rgba(255, 255, 255, .24)
     }
 
     ._rylic_footer_content_li_ic {
         width: 50px;
-        height: 50px;
+        height: 50px
     }
 
     ._rylic_process_bottom_btn_wrap {
-        padding: 10px 16px;
-    }
-
-    ._rylic_project_card_title {
-        font-size: 20px;
+        padding: 10px 16px
     }
 
     ._rylic_testimonial_card:hover {
-        border: 1px solid rgb(255 255 255 / 16%);
+        border: 1px solid
     }
 
     .slick-dots li {
-        margin: 0 3px;
+        margin: 0 3px
     }
 
     .slide_list .slick-dots li button {
         width: 16px;
-        height: 5px;
+        height: 5px
     }
 
     .slide_list .slick-dots {
-        bottom: -40px;
+        bottom: -40px
     }
 
     ._cta_btn {
-        padding: 18px 35px 20px;
+        padding: 18px 35px 20px
     }
 
     ._cta_btn ._rylic_cta_content_btn_txt {
         font-size: 16px;
+        font-weight: 500;
+        font-family: 'GT Walsheim-md'
     }
 
     ._cta_btn ._rylic_cta_content_btn_ic svg {
         width: 12px;
-        animation: 3.5s arrow ease infinite;
+        animation: 3.5s infinite arrow
     }
 
     @keyframes arrow {
-        0% {
-            transform: translate(0, 0);
+
+        0%,
+        100% {
+            transform: translate(0, 0)
         }
 
         50% {
-            transform: translate(4px, -4px);
-
-        }
-
-        100% {
-            transform: translate(0, 0);
-
+            transform: translate(4px, -4px)
         }
     }
 
@@ -3530,157 +3001,140 @@ ul {
         width: 205px;
         max-width: 205px;
         padding: 15px 26px 15px 24px !important;
-        gap: 0 10px;
+        gap: 0 10px
     }
 
+    ._mobile_nav_li ._cta_btn ._rylic_cta_content_btn_ic svg,
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn ._rylic_cta_content_btn_ic svg {
         width: 30px;
         height: 30px;
-        animation-play-state: paused;
-    }
-
-    ._mobile_nav_li ._cta_btn ._rylic_cta_content_btn_ic svg {
-        width: 30px;
-        height: 30px;
-        animation-play-state: paused;
-    }
-
-    ._cta_btn ._rylic_cta_content_btn_txt {
-        font-weight: 500;
-        font-family: 'GT Walsheim-md';
+        animation-play-state: paused
     }
 
     ._rylic_service_content_txt {
-        margin: 0px 0 30px;
+        margin: 0 0 30px
     }
 
-    /* mob */
     .flickity-viewport {
-        height: 384px !important;
+        height: 384px !important
     }
 
     ._rylic_service_content_3 {
         width: fit-content;
-        margin: 0 auto 0 auto;
+        margin: 0 auto
     }
 
     ._rylic_process_content_num_txt {
-        font-size: 18px;
+        font-size: 18px
     }
 
     ._rylic_testimonial_card {
-        min-height: 284px;
+        min-height: 284px
     }
 }
 
-@media only screen and (max-width: 575px) {}
-
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width:420px) {
     ._preloader_txt {
-        font-size: 2rem;
+        font-size: 2rem
     }
 
     ._rylic_logo_link_wrap {
-        margin: 0;
+        margin: 0
     }
 
     ._rylic_header_wrapper {
-        padding-bottom: 40px;
+        padding-bottom: 40px
     }
 
-    ._rylic_header_cursor_wrap {
-        display: none;
-    }
-
-    ._rylic_header_cursor {
-        display: none;
-    }
-
-    ._rylic_header_cursor_img2 {
-        display: none;
-    }
-
-    ._rylic_header_circular_txt_wrap {
-        display: none;
+    ._rylic_footer_content_img,
+    ._rylic_footer_content_logo_wrap,
+    ._rylic_header_circular_txt_wrap,
+    ._rylic_header_cursor,
+    ._rylic_header_cursor_img2,
+    ._rylic_header_cursor_wrap,
+    ._rylic_header_shape_r_wrap,
+    ._rylic_instagram_content_ul2,
+    ._rylic_instagram_content_ul3,
+    ._rylic_instagram_shape img,
+    ._rylic_port_shape,
+    ._rylic_port_slider_ball,
+    ._rylic_process_content_wrap,
+    ._rylic_process_shape2,
+    ._rylic_service_shape,
+    ._rylic_testimonial_card_para._des_show,
+    .webgl {
+        display: none
     }
 
     ._rylic_process_bottom_btn_mob {
         display: block;
         padding: 0;
-        margin-top: 7px;
+        margin-top: 7px
     }
 
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn {
-        max-width: 193px;
-        width: 100%;
         margin: 0 auto;
-        gap: 0 9px;
-        padding: 19px 20px !important;
+        gap: 0 9px
     }
 
     ._rylic_process_bottom_btn_mob ._cta_btn ._rylic_cta_content_btn_txt {
         font-size: 16px;
-        margin: 0 0px 0 0px;
+        margin: 0
     }
 
     ._rylic_service_wrapper {
-        /* padding: 55px 0 18px; */
-        padding: 55px 0 0px;
+        padding: 55px 0 0
     }
 
     ._rylic_header_shape1 {
-        top: 40%;
+        top: 40%
     }
 
     ._rylic_header_shape_img {
-        height: 140px;
+        height: 140px
     }
 
-    ._mobile_menu_wrap ._rylic_header_shape_img {
-        height: 180px;
+    ._mobile_menu_wrap ._rylic_header_shape_img,
+    ._rylic_header_shape_img2 {
+        height: 180px
     }
 
     ._rylic_header_shape2 {
-        bottom: 50px;
-    }
-
-    ._rylic_header_shape_img2 {
-        height: 180px;
+        bottom: 50px
     }
 
     ._mobile_menu_wrap ._rylic_header_shape_img2 {
-        /* height: 180px; */
-        height: 200px;
+        height: 200px
     }
 
     ._rylic_header_txt_title {
         font-size: 35px;
         line-height: 42px;
-        max-width: 100%;
+        max-width: 100%
     }
 
     ._rylic_header_txt_title2 {
-        background: #F8CE68;
-        padding: 3px 10px 0px;
+        background: #f8ce68;
+        padding: 3px 10px 0;
         font-weight: 500;
-        font-size: 32px !important;
+        font-size: 32px !important
     }
 
     ._rylic_header_txt_title2 span img {
         width: 44px;
-        height: 44px;
+        height: 44px
     }
 
     ._rylic_header_cursor_txt_ul {
         display: flex;
         justify-content: center;
         gap: 0 8px;
-        margin-top: 30px;
+        margin-top: 30px
     }
 
     ._rylic_header_cursor_txt_li {
         position: relative;
-        z-index: 1;
+        z-index: 1
     }
 
     ._rylic_header_cursor_txt_li::before {
@@ -3689,116 +3143,104 @@ ul {
         content: '';
         width: 76px;
         height: 30px;
-        /* top: 12px; */
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
         background-color: red;
-        opacity: 0.7;
-        filter: blur(37.67px);
+        opacity: .7;
+        filter: blur(37.67px)
     }
 
-    ._rylic_header_cursor_txt_li:nth-child(1) img {
-        width: 92px;
+    ._rylic_header_cursor_txt_li:first-child img,
+    ._rylic_process_shape1 img {
+        width: 92px
     }
 
     ._rylic_header_cursor_txt_li:nth-child(2) img {
-        width: 118px;
-
+        width: 118px
     }
 
     ._rylic_header_cursor_txt_li:nth-child(3) img {
-        width: 88px;
-
+        width: 88px
     }
 
-    ._rylic_header_cursor_txt_li:nth-child(1)::before {
-        background-color: #FF5722;
+    ._rylic_header_cursor_txt_li:first-child::before {
+        background-color: #ff5722
     }
 
     ._rylic_header_cursor_txt_li:nth-child(2)::before {
-        opacity: 0.6;
-        background-color: #1AACFF;
+        opacity: .6;
+        background-color: #1aacff
     }
 
     ._rylic_header_cursor_txt_li:nth-child(3)::before {
-        background-color: #1CBA6E;
+        background-color: #1cba6e
     }
 
     ._rylic_header_wrap {
         min-height: 360px;
-        padding: 18px 0 10px;
-    }
-
-    ._rylic_header_shape_r_wrap {
-        display: none;
+        padding: 18px 0 10px
     }
 
     ._rylic_header_txt_p {
         margin-top: 24px;
         font-size: 16px;
         line-height: 25px;
-        max-width: 270px;
+        max-width: 270px
     }
 
     ._rylic_service_heading_wrap {
         flex-direction: column-reverse;
-        text-align: center;
+        text-align: center
     }
 
     ._rylic_service_heading_title2 {
-        margin: 0 0 11px !important;
+        margin: 0 0 11px !important
     }
 
+    ._rylic_process_content_num,
     ._rylic_service_content_top {
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._service1_top ._rylic_service_content_top_img_wrap {
-        top: -30px;
+        top: -30px
     }
 
     ._rylic_service_content_p {
         max-width: 240px;
         text-align: center;
         margin: 20px auto 45px;
-        line-height: 24px;
+        line-height: 24px
     }
 
     ._rylic_service_content_2 {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
 
     ._rylic_service_content_2 ._rylic_service_content_p {
         margin-top: 22px;
-        /* margin-bottom: 35px; */
         margin-bottom: 20px;
-        max-width: 260px;
+        max-width: 260px
     }
 
     ._rylic_service_content_3 ._rylic_service_content_p {
         max-width: 262px;
-        margin-bottom: 58px;
-    }
-
-    ._rylic_service_shape {
-        display: none;
+        margin-bottom: 58px
     }
 
     ._rylic_service_shape_mob {
         display: block;
         position: absolute;
         right: -20px;
-        top: 470px;
+        top: 470px
     }
 
-    ._rylic_service_shape_mob img {
-        width: 80px;
-    }
-
-    ._rylic_service_shape img {
-        width: 80px;
+    ._rylic_service_shape img,
+    ._rylic_service_shape_mob img,
+    ._rylic_testimonial_shape img {
+        width: 80px
     }
 
     ._rylic_service_shape2 {
@@ -3806,119 +3248,88 @@ ul {
         position: absolute;
         left: -24px;
         bottom: 30%;
-        transform: translate(0, -70px);
+        transform: translate(0, -70px)
     }
 
     ._rylic_service_shape2 img {
-        width: 60px;
-    }
-
-    ._rylic_port_shape {
-        display: none;
+        width: 60px
     }
 
     ._rylic_port_divider {
         margin: 0 auto;
-        max-width: 320px;
+        max-width: 320px
     }
 
     ._rylic_port_shape_ball {
         position: absolute;
         top: -25px;
-        right: 12px;
+        right: 12px
     }
 
     ._rylic_port_shape_ball img {
-        width: 100px;
+        width: 100px
     }
 
+    ._rylic_project_top_text_para,
     ._rylic_service_heading_title2 {
         font-size: 12px;
-        margin-bottom: 11px;
+        margin-bottom: 11px
     }
 
+    ._rylic_project_top_text_title,
     ._rylic_service_heading_title {
         font-size: 24px;
-        line-height: 30px;
-        /* max-width: 100%; */
+        line-height: 30px
     }
 
     ._rylic_port_wrapper {
-        /* padding: 58px 0 25px; */
-        padding: 58px 0 8px;
+        padding: 58px 0 8px
     }
 
     ._rylic_port_slider_item {
         max-width: 300px;
-        padding: 0 10px;
+        padding: 0 10px
     }
 
     ._rylic_port_slider_wrap {
-        padding: 30px 0 10px;
-    }
-
-    ._rylic_port_slider_ball {
-        display: none;
+        padding: 30px 0 10px
     }
 
     ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
         bottom: 0;
         opacity: 0;
         display: none;
-        transform: translate(0%, 0) scale(0);
+        transform: translate(0, 0) scale(0)
     }
 
     ._rylic_port_slider_content:hover {
-        transform: translate(0, 0px);
-    }
-
-    .webgl {
-        display: none;
-    }
-
-    ._rylic_process_content_wrap {
-        display: none;
+        transform: translate(0, 0)
     }
 
     ._rylic_process_content_mob_wrap {
         display: block;
-        margin-top: 4px;
+        margin-top: 4px
     }
 
     ._rylic_process_wrapper {
-        padding-top: 110px;
-    }
-
-    ._rylic_process_shape2 {
-        display: none;
+        padding-top: 110px
     }
 
     ._rylic_process_shape1 {
         left: 50%;
         transform: translate(-50%, 0);
-    }
-
-    ._rylic_process_shape1 {
-        top: -62px;
-    }
-
-    ._rylic_process_shape1 img {
-        width: 92px;
+        top: -62px
     }
 
     ._rylic_process_heading_title {
         font-size: 14px;
-        margin-bottom: 8px;
+        margin-bottom: 8px
     }
 
     ._rylic_process_heading_title2 {
         font-size: 24px;
         max-width: 240px;
-        line-height: 30px;
-    }
-
-    ._rylic_process_content_num {
-        margin: 0 auto;
+        line-height: 30px
     }
 
     ._rylic_process_content_p {
@@ -3926,65 +3337,44 @@ ul {
         margin: 0 auto;
         text-align: center;
         font-size: 15px;
-        line-height: 26px;
+        line-height: 26px
+    }
+
+    ._rylic_process_content {
+        margin: 18px auto;
+        max-width: 100%
     }
 
     ._rylic_process_content1 {
         text-align: center;
-    }
-
-
-    ._rylic_process_content {
-        /* margin: 18px 0; */
-        margin: 18px auto;
-        max-width: 100%;
-    }
-
-    ._rylic_process_content1 {
-        /* margin: 50px 0 18px; */
         margin: 50px auto 18px;
-        max-width: 100%;
+        max-width: 100%
     }
 
     ._rylic_project_top_text {
-        text-align: center;
-    }
-
-    ._rylic_project_top_text_para {
-        font-size: 12px;
-        margin-bottom: 11px;
-    }
-
-    ._rylic_project_top_text_title {
-        font-size: 24px;
-        line-height: 30px;
+        text-align: center
     }
 
     ._rylic_project_card {
         margin: 0 0 50px;
-        padding: 0 18px;
+        padding: 0 18px
     }
 
     ._rylic_project_card_image {
         border: 6px solid #fff;
-        margin: 0 0 24px;
+        margin: 0 0 24px
     }
 
     ._rylic_instagram_wrapper {
-        padding: 40px 0 45px;
+        padding: 40px 0 45px
     }
 
     ._rylic_instagram_content_wrap {
-        margin-top: 30px;
+        margin-top: 30px
     }
 
     ._rylic_instagram_bg {
-        height: calc(70% - 50px);
-    }
-
-    ._rylic_instagram_content_ul2,
-    ._rylic_instagram_content_ul3 {
-        display: none;
+        height: calc(70% - 50px)
     }
 
     ._rylic_trusted_heading_title {
@@ -3993,279 +3383,245 @@ ul {
         font-size: 18px;
         line-height: 24px;
         text-align: center;
-        color: #FFFFFF;
+        color: #fff;
         max-width: 240px;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     ._rylic_trusted_content_wrap {
-        margin-top: 16px;
+        margin-top: 16px
     }
 
     ._rylic_testimonial_shape {
-        right: 10px;
+        right: 10px
     }
 
-    ._rylic_testimonial_shape img {
-        /* width: 44px;
-        height: 40px; */
-        width: 80px;
-    }
-
-    ._rylic_testimonial_card_para._des_show {
-        display: none;
-    }
-
+    ._rylic_cta_img2_mob_wrap,
     ._rylic_testimonial_card_para._mob_show {
-        display: block;
+        display: block
     }
 
     ._rylic_testimonial_chat_shape {
         top: -10px;
         left: 10px;
-        transform: translate(0px, -50%);
+        transform: translate(0, -50%)
+    }
+
+    ._rylic_cta_img,
+    ._rylic_cta_img2 {
+        position: absolute;
+        left: 50%;
+        background-color: var(--bg)
     }
 
     ._rylic_testimonial_chat_shape img {
         width: 56px;
-        height: 44px;
+        height: 44px
     }
 
     ._rylic_testimonial_text_para {
         font-size: 12px;
         line-height: 14px;
-        margin-bottom: 11px;
+        margin-bottom: 11px
     }
 
     ._rylic_testimonial_text_title {
         font-size: 24px;
         line-height: 30px;
         max-width: 200px;
-        margin: 0 auto;
-    }
-
-    ._rylic_instagram_shape img {
-        display: none;
+        margin: 0 auto
     }
 
     ._rylic_testimonial_wrapper {
-        padding: 100px 0 70px;
+        padding: 100px 0 70px
     }
 
     ._rylic_testimonial_duck_shape {
-        right: 16px;
+        right: 16px
     }
 
     ._rylic_testimonial_duck_shape img {
-        width: 55px;
+        width: 55px
     }
 
     ._rylic_instagram_header_title {
-        gap: 0 14px;
+        gap: 0 14px
     }
 
     ._rylic_instagram_header_img {
-        width: 40px;
+        width: 40px
     }
 
-    ._rylic_instagram_header_title_txt {
-        font-size: 20px;
+    ._rylic_instagram_header_title_txt,
+    ._rylic_project_card_title {
+        font-size: 20px
     }
 
     ._rylic_trusted_content_img {
-        width: 200%;
+        width: 200%
     }
 
     ._rylic_testimonial_card_para {
         text-align: center;
         font-size: 15px;
-        line-height: 26px;
+        line-height: 26px
     }
 
     ._rylic_testimonial_card_bottom {
         justify-content: center;
-        text-align: center;
-    }
-
-    ._rylic_cta_img2_mob_wrap {
-        display: block;
+        text-align: center
     }
 
     ._real_marque_wrapper {
-        padding: 85px 0 56px;
+        padding: 85px 0 56px
     }
 
     ._real_marque_content_wrap {
-        height: 60px;
+        height: 60px
     }
 
     ._real_marque_content_li img {
-        width: 1800px;
+        width: 1800px
     }
 
     ._rylic_process_bottom_wrap {
-        margin: 50px 0 30px;
+        margin: 50px 0 30px
     }
 
     ._rylic_project_top {
-        margin: 0 0 12px;
+        margin: 0 0 12px
     }
 
     ._rylic_project_wrapper {
-        padding: 20px 0 0;
+        padding: 20px 0 0
     }
 
     ._real_marque_shape img {
         width: 80px;
-        height: 80px;
+        height: 80px
     }
 
     ._rylic_cta_img2 {
         width: 55px;
         padding: 0 13px 0 18px;
-        position: absolute;
         bottom: -78px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        background-color: var(--bg);
+        transform: translate(-50%, 0)
     }
 
     ._rylic_cta_content_wrap {
         padding: 40px 0 62px;
         border-top: 1.5px solid rgba(255, 255, 255, .07);
-        border-bottom: 1.5px solid rgba(255, 255, 255, .07);
+        border-bottom: 1.5px solid rgba(255, 255, 255, .07)
     }
 
     ._rylic_process_bottom_shape {
-        height: 1.5px;
+        height: 1.5px
     }
 
     ._rylic_footer_wrapper {
-        padding: 60px 0 2px;
+        padding: 60px 0 2px
     }
 
     ._rylic_cta_content_title {
         font-size: 20px;
         line-height: 30px;
         margin: 0 auto;
-        text-align: center;
+        text-align: center
     }
 
     ._rylic_cta_img {
         width: 100px;
         max-width: 100px;
         margin: 0;
-        position: absolute;
         top: 0;
-        left: 50%;
         transform: translate(-50%, -50%);
-        padding: 0 15px;
-        background-color: var(--bg);
+        padding: 0 15px
     }
 
     ._rylic_cta_img_anim {
-        animation: tilt-shaking2 .1s linear infinite;
+        animation: .1s linear infinite tilt-shaking2
     }
 
     @keyframes tilt-shaking2 {
-        0% {
-            transform: translate(-50%, -50%) rotate(0deg);
+
+        0%,
+        100%,
+        50% {
+            transform: translate(-50%, -50%) rotate(0)
         }
 
         25% {
-            transform: translate(-50%, -50%) rotate(5deg);
-        }
-
-        50% {
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(5deg)
         }
 
         75% {
-            transform: translate(-50%, -50%) rotate(-5deg);
-        }
-
-        100% {
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(-5deg)
         }
     }
 
     ._rylic_trusted_content {
-        margin: 12px 0;
+        margin: 12px 0
     }
 
     ._rylic_cta_content_btn_wrap {
         justify-content: center;
-        margin: 30px 0 0;
-    }
-
-    ._rylic_footer_content_img {
-        display: none;
-    }
-
-    ._rylic_footer_content_logo_wrap {
-        display: none;
+        margin: 30px 0 0
     }
 
     ._rylic_footer_content_li {
-        border: 1.5px solid rgba(255, 255, 255, 0.24);
+        border: 1.5px solid rgba(255, 255, 255, .24)
     }
 
     ._rylic_footer_content_li_ic {
         width: 50px;
-        height: 50px;
+        height: 50px
     }
 
     ._rylic_process_bottom_btn_wrap {
-        padding: 10px 16px;
-    }
-
-    ._rylic_project_card_title {
-        font-size: 20px;
+        padding: 10px 16px
     }
 
     ._rylic_testimonial_card:hover {
-        border: 1px solid rgb(255 255 255 / 16%);
+        border: 1px solid
     }
 
     .slick-dots li {
-        margin: 0 3px;
+        margin: 0 3px
     }
 
     .slide_list .slick-dots li button {
         width: 16px;
-        height: 5px;
+        height: 5px
     }
 
     .slide_list .slick-dots {
-        bottom: -40px;
+        bottom: -40px
     }
 
     ._cta_btn {
-        padding: 18px 35px 20px;
+        padding: 18px 35px 20px
     }
 
     ._cta_btn ._rylic_cta_content_btn_txt {
         font-size: 16px;
+        font-weight: 500;
+        font-family: 'GT Walsheim-md'
     }
 
     ._cta_btn ._rylic_cta_content_btn_ic svg {
         width: 12px;
-        animation: 3.5s arrow ease infinite;
+        animation: 3.5s infinite arrow
     }
 
     @keyframes arrow {
-        0% {
-            transform: translate(0, 0);
+
+        0%,
+        100% {
+            transform: translate(0, 0)
         }
 
         50% {
-            transform: translate(4px, -4px);
-
-        }
-
-        100% {
-            transform: translate(0, 0);
-
+            transform: translate(4px, -4px)
         }
     }
 
@@ -4273,51 +3629,39 @@ ul {
         width: 205px;
         max-width: 205px;
         padding: 15px 26px 15px 24px !important;
-        gap: 0 10px;
+        gap: 0 10px
     }
 
+    ._mobile_nav_li ._cta_btn ._rylic_cta_content_btn_ic svg,
     ._rylic_process_bottom_btn_mob ._rylic_nav_btn ._rylic_cta_content_btn_ic svg {
         width: 30px;
         height: 30px;
-        animation-play-state: paused;
-    }
-
-    ._mobile_nav_li ._cta_btn ._rylic_cta_content_btn_ic svg {
-        width: 30px;
-        height: 30px;
-        animation-play-state: paused;
-    }
-
-    ._cta_btn ._rylic_cta_content_btn_txt {
-        font-weight: 500;
-        font-family: 'GT Walsheim-md';
+        animation-play-state: paused
     }
 
     ._rylic_service_content_txt {
-        margin: 0px 0 30px;
+        margin: 0 0 30px
     }
 
     ._rylic_instagram_content_li {
         width: 235px;
         flex: 0 0 235px;
         max-width: 235px;
-        height: 180px;
+        height: 180px
     }
 
     ._rylic_testimonial_top {
-        margin: 0 0 36px;
+        margin: 0 0 36px
     }
 }
 
 @media only screen and (max-width:375px) {
     ._rylic_testimonial_card_para {
         font-size: 12px;
-        line-height: 22px;
+        line-height: 22px
     }
 }
 
-/* Responsive */
-/* Variables */
 :root {
     --white: #fff;
     --black: #000;
@@ -4327,10 +3671,7 @@ ul {
     --color-or2: #FF5E3B;
     --color-btn: #FF5E3A;
     --color-yl: #FFDA58;
-    /* Fonts */
     --gtRg: 'GT Walsheim';
     --gtMd: 'GT Walsheim';
-    --gtBd: 'GT Walsheim';
+    --gtBd: 'GT Walsheim'
 }
-
-/* Variables */
