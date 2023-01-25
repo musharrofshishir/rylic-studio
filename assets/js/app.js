@@ -72,7 +72,7 @@ $(document).ready(function () {
   $("._navbar_menu_btn").click(() => {
     $("._navbar_menu_btn").toggleClass('_open');
     $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
-    $("._body").toggleClass('overflow-hidden');
+    $("._body").toggleClass('_no_scroll');
     
   })
   
