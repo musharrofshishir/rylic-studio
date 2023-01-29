@@ -2689,7 +2689,7 @@ button {
     }
 
     ._rylic_port_slider_wrap {
-        padding: 30px 0 20px
+        padding: 16px 0 20px
     }
 
     ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
@@ -3062,6 +3062,10 @@ button {
     ._rylic_footer_content_copy {
         margin: 24px 0 30px;
     }
+
+    ._rylic_trusted_wrapper {
+        padding: 0 0 55px;
+    }
 }
 
 @media only screen and (max-width:420px) {
@@ -3323,7 +3327,7 @@ button {
     }
 
     ._rylic_port_slider_wrap {
-        padding: 30px 0 10px
+        padding: 16px 0 10px
     }
 
     ._rylic_port_slider_content:hover ._rylic_port_slider_ball {
