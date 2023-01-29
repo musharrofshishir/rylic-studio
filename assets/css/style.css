@@ -2981,7 +2981,7 @@ button {
     }
 
     ._rylic_testimonial_card:hover {
-        border: 1px solid rgb(255 255 255 / 36%);
+        border: 1px solid rgb(255 255 255 / 20%);
     }
 
     .slick-dots li {
@@ -3057,6 +3057,10 @@ button {
 
     ._rylic_testimonial_card {
         min-height: 284px
+    }
+
+    ._rylic_footer_content_copy {
+        margin: 24px 0 30px;
     }
 }
 
@@ -3609,7 +3613,7 @@ button {
     }
 
     ._rylic_testimonial_card:hover {
-        border: 1px solid rgb(255 255 255 / 36%);
+        border: 1px solid rgb(255 255 255 / 20%);
     }
 
     .slick-dots li {
