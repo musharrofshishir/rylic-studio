@@ -2981,7 +2981,7 @@ button {
     }
 
     ._rylic_testimonial_card:hover {
-        border: 1px solid
+        border: 1px solid rgb(255 255 255 / 36%);
     }
 
     .slick-dots li {
@@ -3609,7 +3609,7 @@ button {
     }
 
     ._rylic_testimonial_card:hover {
-        border: 1px solid
+        border: 1px solid rgb(255 255 255 / 36%);
     }
 
     .slick-dots li {
