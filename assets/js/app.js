@@ -9,6 +9,15 @@ $(document).ready(function () {
   }, 2000);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+  function noScroll() {
+    if ($('._preloader_wrap:visible').length == 0) {
+      $("._body").toggleClass('_no_scroll');
+    }
+    else {
+      $("._body").toggleClass('_no_scroll');
+    }
+  }
+
   let smoother = ScrollSmoother.create({
     smooth: 1,   // seconds it takes to "catch up" to native scroll position
     effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
@@ -73,24 +82,24 @@ $(document).ready(function () {
     $("._navbar_menu_btn").toggleClass('_open');
     $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
     $("._body").toggleClass('_no_scroll');
-    
+
   })
-  
+
   $("._nav_service").click(() => {
     $("._navbar_menu_btn").toggleClass('_open');
     $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
-    $("._body").toggleClass('overflow-hidden');
+    $("._body").toggleClass('_no_scroll');
     gsap.to(smoother, {
       scrollTop: smoother.offset("#service", "top top"),
       duration: 1
     });
-    
+
   })
-  
+
   $("._nav_project").click(() => {
     $("._navbar_menu_btn").toggleClass('_open');
     $("._mobile_menu_wrap").toggleClass('_mobile_menu_wrap_open');
-    $("._body").toggleClass('overflow-hidden');
+    $("._body").toggleClass('_no_scroll');
     gsap.to(smoother, {
       scrollTop: smoother.offset("#project", "top top"),
       duration: 2.6,
@@ -274,6 +283,7 @@ $(document).ready(function () {
         .to("._preloader_wrap", {
           display: "none",
           duration: .01,
+          onComplete: noScroll
         }, ">")
         .from('.word', {
           y: 60,
@@ -660,7 +670,7 @@ $(document).ready(function () {
       trigger: '._rylic_process_content ',
       scrub: 1,
       start: "top center",
-      end:"center center",
+      end: "center center",
     }
   })
   gsap.from('._rylic_project_card_image_wrap', {
@@ -786,12 +796,12 @@ const selectedNumber2 = {
 
 const instaDiv = document.querySelector('._rylic_instagram_content_ul_wrap');
 
-instaDiv.addEventListener('click',()=>{
+instaDiv.addEventListener('click', () => {
   window.open("https://www.instagram.com/rylicstudio/");
 });
 
 // scroll to top
-$(window).on('beforeunload', function(){
+$(window).on('beforeunload', function () {
   $(window).scrollTop(0);
 });
 // // mobile nav

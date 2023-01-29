@@ -142,7 +142,7 @@ button {
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 ._preloader_txt {
@@ -1619,7 +1619,15 @@ button {
 }
 
 ._rylic_footer_content_li._be:hover {
-    background-color: #053eff
+    background-color: #F8CE68
+}
+
+._rylic_footer_content_li._be svg path {
+    transition: .2s all ease
+}
+
+._rylic_footer_content_li._be:hover svg path {
+    fill: #121212
 }
 
 ._rylic_footer_content_li._linkd:hover {
@@ -1753,6 +1761,14 @@ button {
 
     ._preloader_txt {
         font-size: 6rem
+    }
+
+    ._rylic_testimonial_card_para._des_show {
+        display: none;
+    }
+
+    ._rylic_testimonial_card_para._mob_show {
+        display: block;
     }
 }
 
