@@ -1567,6 +1567,27 @@ button {
     color: #000
 }
 
+._cta_btn ._rylic_cta_content_btn_ic svg {
+    /* width: 12px; */
+    animation: 3.5s infinite arrow
+}
+
+@keyframes arrow {
+
+    0%,
+    100% {
+        transform: translate(0, 0)
+    }
+
+    50% {
+        transform: translate(4px, -4px)
+    }
+}
+
+._rylic_nav_btn svg {
+    animation: none !important
+}
+
 ._rylic_footer_wrapper {
     padding: 70px 0 34px
 }
