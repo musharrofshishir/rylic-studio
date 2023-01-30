@@ -558,7 +558,7 @@ $(document).ready(function () {
     y: 50,
     ease: "Power3.out",
     scrollTrigger: {
-      trigger: '._rylic_header_shape1',
+      trigger: '._rylic_header_wrapper',
       scrub: 1.4
     },
   })
@@ -574,7 +574,7 @@ $(document).ready(function () {
     y: 65,
     ease: "Power4.out",
     scrollTrigger: {
-      trigger: '._rylic_header_shape2',
+      trigger: '._rylic_header_wrapper',
       scrub: 1.2
     },
   })

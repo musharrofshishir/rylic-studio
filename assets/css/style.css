@@ -379,7 +379,8 @@ button {
 ._rylic_header_shape2 {
     position: absolute;
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
+    bottom: 50px;
     transform: translate(0, 50%)
 }
 
@@ -1088,6 +1089,10 @@ button {
     z-index: 2
 }
 
+._real_marque_shape img {
+    width: 110px;
+}
+
 ._real_marque_content_wrap {
     width: 130%;
     height: 90px;
@@ -1776,9 +1781,17 @@ button {
     .container {
         max-width: 1170px
     }
+
+    ._real_marque_shape img {
+        width: 105px;
+    }
 }
 
 @media only screen and (max-width:1199px) {
+    ._real_marque_shape img {
+        width: auto;
+    }
+
     ._rylic_header_wrap {
         min-height: 460px
     }
@@ -1788,7 +1801,8 @@ button {
     }
 
     ._rylic_header_shape2 {
-        bottom: 0
+        /* bottom: 0 */
+        bottom: 50px;
     }
 
     ._rylic_header_shape_img2 {
